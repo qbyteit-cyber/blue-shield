@@ -32,23 +32,6 @@ export default function LogoMarquee() {
                     ))}
                 </div>
             </div>
-
-            <div
-                className="marquee fadeout-horizontal"
-                style={{ "--numItems": 8, "--direction": "reverse" } as React.CSSProperties}
-            >
-                <div className="marquee-track">
-                    {[...badges].reverse().map((badge, i) => (
-                        <div
-                            key={i}
-                            className="marquee-item"
-                            style={{ "--item-position": i + 1 } as React.CSSProperties}
-                        >
-                            <img src={badge.src} alt={badge.alt} className="w-full h-full object-contain" />
-                        </div>
-                    ))}
-                </div>
-            </div>
         </div>
     );
 }

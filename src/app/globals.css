@@ -140,7 +140,7 @@ body {
 .marquee-item svg,
 .marquee-item img {
   height: auto;
-  width: 70%;
+  width: 75%;
   object-fit: contain;
 }
 
