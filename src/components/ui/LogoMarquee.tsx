@@ -1,45 +1,33 @@
 "use client";
 
 import React from "react";
-import {
-    ReactLogo,
-    AstroLogo,
-    TailwindLogo,
-    JSLogo,
-    NextjsLogo,
-    RemixLogo,
-    TSLogo,
-    SvelteLogo,
-    VueLogo,
-} from "./Logos";
 
-const Logos = [
-    ReactLogo,
-    AstroLogo,
-    TailwindLogo,
-    VueLogo,
-    NextjsLogo,
-    RemixLogo,
-    JSLogo,
-    TSLogo,
-    SvelteLogo,
+const badges = [
+    { src: "/tisax-badge-alt.png", alt: "TISAX Certified" },
+    { src: "/iso-27001-badge.png", alt: "ISO 27001 Certified" },
+    { src: "/gdpr-certified-badge.png", alt: "GDPR Certified" },
+    { src: "/tisax-certified-badge.png", alt: "TISAX Specialized" },
+    { src: "/tisax-badge-alt.png", alt: "TISAX Assessment" },
+    { src: "/iso-27001-badge.png", alt: "ISO/IEC 27001" },
+    { src: "/gdpr-certified-badge.png", alt: "GDPR Compliant" },
+    { src: "/tisax-certified-badge.png", alt: "VDA ISA Compliance" },
 ];
 
 export default function LogoMarquee() {
     return (
-        <div className="marquee-wrapper w-full opacity-60 hover:opacity-100 transition-opacity duration-700 py-12">
+        <div className="marquee-wrapper w-full opacity-60 hover:opacity-100 transition-opacity duration-700 pt-8 pb-16">
             <div
                 className="marquee fadeout-horizontal"
-                style={{ "--numItems": 9 } as React.CSSProperties}
+                style={{ "--numItems": 8 } as React.CSSProperties}
             >
                 <div className="marquee-track">
-                    {Logos.map((Logo, i) => (
+                    {badges.map((badge, i) => (
                         <div
                             key={i}
                             className="marquee-item"
                             style={{ "--item-position": i + 1 } as React.CSSProperties}
                         >
-                            <Logo />
+                            <img src={badge.src} alt={badge.alt} className="w-full h-full object-contain" />
                         </div>
                     ))}
                 </div>
@@ -47,16 +35,16 @@ export default function LogoMarquee() {
 
             <div
                 className="marquee fadeout-horizontal"
-                style={{ "--numItems": 9, "--direction": "reverse" } as React.CSSProperties}
+                style={{ "--numItems": 8, "--direction": "reverse" } as React.CSSProperties}
             >
                 <div className="marquee-track">
-                    {[...Logos].reverse().map((Logo, i) => (
+                    {[...badges].reverse().map((badge, i) => (
                         <div
                             key={i}
                             className="marquee-item"
                             style={{ "--item-position": i + 1 } as React.CSSProperties}
                         >
-                            <Logo />
+                            <img src={badge.src} alt={badge.alt} className="w-full h-full object-contain" />
                         </div>
                     ))}
                 </div>

@@ -137,9 +137,11 @@ body {
   transform: scale(1.05);
 }
 
-.marquee-item svg {
+.marquee-item svg,
+.marquee-item img {
   height: auto;
-  width: 50%;
+  width: 70%;
+  object-fit: contain;
 }
 
 @keyframes marquee-move {
