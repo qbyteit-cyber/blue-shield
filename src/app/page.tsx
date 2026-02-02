@@ -11,6 +11,7 @@ import Footer from "@/components/ui/Footer";
 import Testimonials from "@/components/ui/Testimonials";
 import AboutSection from "@/components/ui/AboutSection";
 import FAQSection from "@/components/ui/FAQSection";
+import FeaturedProjects from "@/components/ui/FeaturedProjects";
 
 const SecurityMesh = dynamic(() => import("@/components/canvas/SecurityMesh"), {
   ssr: false,
@@ -90,6 +91,7 @@ export default function Home() {
         </div>
         <AboutSection />
         <TrustMarkers />
+        <FeaturedProjects />
         <Testimonials />
         <FAQSection />
         <div id="contact">
