@@ -25,11 +25,11 @@
   --background: #050505;
   /* Eclipse Black */
   --foreground: #F8FAFC;
-  --color-primary: #C1FF00;
-  /* Cyber Lime */
-  --color-secondary: #FF5C00;
-  /* Safety Orange */
-  --color-accent: #C1FF00;
+  --color-primary: #0861F2;
+  /* Royal Blue */
+  --color-secondary: #C9A063;
+  /* Metallic Gold */
+  --color-accent: #0861F2;
   --color-surface: #0A0A0A;
   --color-surface-hover: #121212;
   --color-muted: #64748B;
@@ -39,7 +39,7 @@
   --glass-card-border: rgba(255, 255, 255, 0.08);
   --glass-card-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
   --fog-color: #050505;
-  --grid-color: rgba(193, 255, 0, 0.03);
+  --grid-color: rgba(8, 97, 242, 0.03);
 }
 
 .bg-blueprint {

@@ -55,7 +55,7 @@ export function TisaxPipeline() {
 
                         {/* Visual Node */}
                         <div className="relative mb-8">
-                            <div className="w-16 h-16 rounded-2xl bg-surface border border-foreground/10 flex items-center justify-center relative z-10 group-hover:border-primary group-hover:shadow-[0_0_30px_rgba(193,255,0,0.2)] transition-all duration-500 overflow-hidden">
+                            <div className="w-16 h-16 rounded-2xl bg-surface border border-foreground/10 flex items-center justify-center relative z-10 group-hover:border-primary group-hover:shadow-[0_0_30px_rgba(8,97,242,0.2)] transition-all duration-500 overflow-hidden">
                                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors" />
                                 <step.icon className="w-8 h-8 text-foreground group-hover:text-primary transition-colors" />
                             </div>

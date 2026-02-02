@@ -46,7 +46,7 @@ export function SuccessMatrix() {
                                 </td>
                                 <td className="px-8 py-6">
                                     <div className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 shadow-[0_0_10px_rgba(193,255,0,0.2)] group-hover:shadow-[0_0_15px_rgba(193,255,0,0.4)] transition-all">
+                                        <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 shadow-[0_0_10px_rgba(8,97,242,0.2)] group-hover:shadow-[0_0_15px_rgba(8,97,242,0.4)] transition-all">
                                             <Check className="w-3.5 h-3.5 text-primary" />
                                         </div>
                                         <span className="text-sm text-foreground font-bold tracking-tight">{row.after}</span>

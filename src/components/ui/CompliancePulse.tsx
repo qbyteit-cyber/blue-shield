@@ -16,7 +16,7 @@ export function CompliancePulse() {
                         ease: "easeOut"
                     }}
                 />
-                <div className="w-3 h-3 bg-primary rounded-full shadow-[0_0_15px_rgba(193,255,0,0.8)]" />
+                <div className="w-3 h-3 bg-primary rounded-full shadow-[0_0_15px_rgba(8,97,242,0.8)]" />
 
                 {/* Radar Line */}
                 <motion.div
