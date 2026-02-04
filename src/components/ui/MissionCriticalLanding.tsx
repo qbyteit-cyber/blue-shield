@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ScanlineFlicker } from "./ScanlineFlicker";
+import { TerminalPulse } from "./TerminalPulse";
 import { CompliancePulse } from "./CompliancePulse";
 import { SuccessMatrix } from "./SuccessMatrix";
 import { TisaxPipeline } from "./TisaxPipeline";
@@ -44,9 +44,9 @@ export default function MissionCriticalLanding() {
                         </motion.div>
 
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-black text-foreground mb-8 tracking-tighter leading-[0.9]">
-                            <ScanlineFlicker text="Securing The Future Of" delay={500} /><br />
-                            <ScanlineFlicker text="Automotive, Cyber and" delay={1000} className="text-primary" /><br />
-                            <ScanlineFlicker text="Aerospace Industry" delay={1500} />
+                            <TerminalPulse text="Securing The Future Of" delay={500} /><br />
+                            <TerminalPulse text="Automotive, Cyber and" delay={2000} className="text-primary" /><br />
+                            <TerminalPulse text="Aerospace Industry" delay={3500} />
                         </h1>
 
                         <motion.p
