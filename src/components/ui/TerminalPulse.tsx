@@ -8,9 +8,10 @@ interface TerminalPulseProps {
     className?: string;
     delay?: number;
     typingSpeed?: number;
+    showCursor?: boolean;
 }
 
-export function TerminalPulse({ text, className, delay = 0, typingSpeed = 50 }: TerminalPulseProps) {
+export function TerminalPulse({ text, className, delay = 0, typingSpeed = 50, showCursor = false }: TerminalPulseProps) {
     const [displayedText, setDisplayedText] = useState("");
     const [isComplete, setIsComplete] = useState(false);
 
@@ -34,15 +35,17 @@ export function TerminalPulse({ text, className, delay = 0, typingSpeed = 50 }: 
     return (
         <span className={className}>
             {displayedText}
-            <motion.span
-                animate={{ opacity: [1, 0, 1] }}
-                transition={{
-                    duration: 0.8,
-                    repeat: Infinity,
-                    ease: "linear"
-                }}
-                className="inline-block w-[0.6em] h-[1.1em] bg-primary ml-1 translate-y-[0.2em]"
-            />
+            {showCursor && (
+                <motion.span
+                    animate={{ opacity: [1, 0, 1] }}
+                    transition={{
+                        duration: 0.8,
+                        repeat: Infinity,
+                        ease: "linear"
+                    }}
+                    className="inline-block w-[0.6em] h-[1.1em] bg-primary ml-1 translate-y-[0.2em]"
+                />
+            )}
         </span>
     );
 }
