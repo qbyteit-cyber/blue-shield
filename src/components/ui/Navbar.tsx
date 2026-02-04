@@ -28,8 +28,8 @@ export default function Navbar() {
     return (
         <>
             <motion.nav
-                initial={{ y: -100 }}
-                animate={{ y: isScrolled ? 0 : -100 }}
+                initial={{ y: 0 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.3 }}
                 className="fixed top-0 left-0 right-0 z-50 px-6 py-4"
             >
