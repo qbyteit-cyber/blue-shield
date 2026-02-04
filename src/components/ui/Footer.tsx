@@ -131,22 +131,34 @@ export default function Footer() {
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                                <a href="mailto:qbyteit@gmail.com" className="text-foreground/60 hover:text-primary transition-colors text-sm">
-                                    qbyteit@gmail.com
+                                <a href="mailto:Iulian.Bozdoghina@itis-secure.com" className="text-foreground/60 hover:text-primary transition-colors text-sm">
+                                    Iulian.Bozdoghina@itis-secure.com
                                 </a>
                             </li>
                             <li className="flex items-start gap-3">
                                 <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                                <a href="tel:+49123456789" className="text-foreground/60 hover:text-primary transition-colors text-sm">
-                                    +49 (0) 123 456 789
+                                <a href="tel:+40741711770" className="text-foreground/60 hover:text-primary transition-colors text-sm">
+                                    +40 741 711 770
                                 </a>
                             </li>
-                            <li className="flex items-start gap-3">
+                            <li className="flex items-start gap-2">
                                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                                <span className="text-foreground/60 text-sm">
-                                    Munich, Germany<br />
-                                    Automotive & Tech Hub
-                                </span>
+                                <div className="space-y-4">
+                                    <div>
+                                        <span className="text-primary text-[10px] font-mono uppercase block mb-1">Sibiu Office</span>
+                                        <span className="text-foreground/60 text-sm leading-relaxed">
+                                            Str. Liliacului nr 2<br />
+                                            Cisnadie, Sibiu
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span className="text-primary text-[10px] font-mono uppercase block mb-1">Brasov Office</span>
+                                        <span className="text-foreground/60 text-sm leading-relaxed">
+                                            Str. Zaharia Stancu 8A<br />
+                                            Ap 603, Brasov
+                                        </span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
