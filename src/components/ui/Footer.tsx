@@ -37,7 +37,7 @@ export default function Footer() {
                         <img
                             src="/logo-branding.png"
                             alt="ITIS Secure"
-                            className="h-20 w-auto mb-6"
+                            className="h-14 w-auto mb-6"
                         />
                         <p className="text-foreground/50 text-sm leading-relaxed mb-4">
                             World-class security audit firm specializing in TISAX, ISO 27001, and automotive compliance standards.
