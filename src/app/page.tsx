@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useState } from "react";
-import ServicesSection from "@/components/ui/ServicesSection";
 import ContactSection from "@/components/ui/ContactSection";
 import TrustMarkers from "@/components/ui/TrustMarkers";
 import ReadinessCalculator from "@/components/ui/ReadinessCalculator";
@@ -37,10 +36,6 @@ export default function Home() {
         <MissionCriticalLanding onOpenCalculator={() => setCalculatorOpen(true)} />
 
         <LogoMarquee />
-
-        <div id="services">
-          <ServicesSection />
-        </div>
 
         <div id="about">
           <AboutSection />

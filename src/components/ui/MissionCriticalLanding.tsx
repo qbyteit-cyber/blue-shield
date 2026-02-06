@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { TerminalPulse } from "./TerminalPulse";
 import { CompliancePulse } from "./CompliancePulse";
-import { SuccessMatrix } from "./SuccessMatrix";
-import { TisaxPipeline } from "./TisaxPipeline";
 import { TechnicalCounter } from "./TechnicalCounter";
 import { Shield, Lock, Activity, Cpu, ChevronRight } from "lucide-react";
 
@@ -95,53 +93,6 @@ export default function MissionCriticalLanding({ onOpenCalculator }: MissionCrit
                 </div>
             </section>
 
-            {/* Success Matrix Table */}
-            <section className="py-32 px-8">
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                        <div>
-                            <span className="text-primary font-mono font-bold tracking-[0.3em] uppercase block mb-4">Empirical Proof</span>
-                            <h2 className="text-4xl md:text-5xl font-display font-black text-foreground mb-8 tracking-tighter">
-                                The Success Matrix: <br />
-                                <span className="text-foreground/40">Automotive Transformation</span>
-                            </h2>
-                            <p className="text-lg text-foreground/50 font-mono mb-8 leading-relaxed">
-                                Our engagement model focuses on shifting legacy infrastructure into high-performance security silos. We prioritize data sovereignty and zero-trust protocols over "just being compliant."
-                            </p>
-                            <div className="flex gap-8">
-                                <div className="space-y-2">
-                                    <div className="flex items-center gap-3">
-                                        <Lock className="w-5 h-5 text-primary" />
-                                        <span className="text-sm font-bold text-foreground">Military-Grade ISMS</span>
-                                    </div>
-                                    <p className="text-xs text-foreground/40 font-mono">ISO 27001:2022 Compliant</p>
-                                </div>
-                                <div className="space-y-2">
-                                    <div className="flex items-center gap-3">
-                                        <Shield className="w-5 h-5 text-primary" />
-                                        <span className="text-sm font-bold text-foreground">OEM Ready AL3</span>
-                                    </div>
-                                    <p className="text-xs text-foreground/40 font-mono">TISAX Specialized Nodes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <SuccessMatrix />
-                    </div>
-                </div>
-            </section>
-
-            {/* TISAX Pipeline Section */}
-            <section className="py-32 px-8 bg-surface/50 border-t border-foreground/5">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-20">
-                        <span className="text-[10px] font-mono font-bold text-primary uppercase tracking-[0.4em] mb-4 block">Deployment Lifecycle</span>
-                        <h2 className="text-4xl md:text-6xl font-display font-black text-foreground tracking-tighter">
-                            TISAX® Implementation Pipeline
-                        </h2>
-                    </div>
-                    <TisaxPipeline />
-                </div>
-            </section>
         </div>
     );
 }
