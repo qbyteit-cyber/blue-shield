@@ -168,10 +168,30 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-8 border-t border-foreground/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="pt-8 border-t border-foreground/5 flex flex-col md:flex-row justify-between items-center gap-8">
                     <p className="text-foreground/40 text-sm">
                         © {currentYear} ITIS Secure. All rights reserved.
                     </p>
+
+                    <div className="flex gap-4 items-center">
+                        <a
+                            href="https://anpc.ro/ce-este-sal/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all"
+                        >
+                            <img src="/SAL.svg" alt="SAL" className="h-10 w-auto" />
+                        </a>
+                        <a
+                            href="https://consumer-redress.ec.europa.eu/site-relocation_en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all"
+                        >
+                            <img src="/SOL.svg" alt="SOL" className="h-10 w-auto" />
+                        </a>
+                    </div>
+
                     <div className="flex gap-6">
                         <Link href="/privacy" className="text-foreground/40 hover:text-primary transition-colors text-sm">
                             Privacy Policy
