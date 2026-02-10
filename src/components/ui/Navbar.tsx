@@ -18,7 +18,7 @@ const megamenuData = [
             { name: "Implementation Support", href: "/implementation-support" },
             { name: "Security Audits and Testing", href: "/services/security-audits-and-testing" },
             { name: "Outsourcing Security Roles", href: "/services/outsourcing-security-roles" },
-            { name: "Training and Courses", href: "/training-and-courses" },
+            { name: "Training and Courses", href: "/services/training-and-courses" },
         ],
     },
     {
