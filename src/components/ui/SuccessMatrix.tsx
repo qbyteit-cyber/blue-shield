@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, X, ShieldAlert, ShieldCheck } from "lucide-react";
+import { Check, X, ShieldCheck } from "lucide-react";
 
 const rows = [
     { metric: "TISAX® Readiness", before: "Unmapped Gaps", after: "Audit Ready AL3", status: "optimized" },

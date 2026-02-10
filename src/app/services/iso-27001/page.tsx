@@ -4,17 +4,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
     Shield,
-    FileText,
     ArrowRight,
     CheckCircle2,
-    Activity,
     Lock,
-    Users,
-    Globe,
-    BarChart3,
-    Zap,
-    Target,
     RefreshCcw,
+    Target,
     Settings,
     Award
 } from "lucide-react";

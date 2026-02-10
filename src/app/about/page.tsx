@@ -5,15 +5,8 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import {
     Award,
-    ShieldCheck,
-    Building,
-    Globe,
-    Users,
-    CheckCircle2,
     FileSearch,
-    TrendingUp,
     Settings,
-    Briefcase,
     BadgeCheck,
     Navigation,
     ArrowRight

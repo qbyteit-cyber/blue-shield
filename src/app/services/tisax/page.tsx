@@ -4,18 +4,13 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
     CheckCircle2,
-    Shield,
     ArrowRight,
-    ChevronRight,
     Car,
-    Zap,
-    FileText,
-    Users,
-    BarChart3,
-    AlertTriangle,
     Target,
-    Activity,
-    Lock
+    Lock,
+    Settings,
+    BadgeCheck,
+    Award
 } from "lucide-react";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
@@ -88,7 +83,7 @@ const ASSESSMENT_LEVELS = [
     }
 ];
 
-import { Settings, BadgeCheck, Award } from "lucide-react";
+
 
 export default function TisaxServicePage() {
     const [calculatorOpen, setCalculatorOpen] = useState(false);

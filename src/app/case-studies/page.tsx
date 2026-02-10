@@ -10,10 +10,8 @@ import {
     Shield,
     TrendingUp,
     Building2,
-    Clock,
     Target
 } from "lucide-react";
-import Image from "next/image";
 import { useState } from "react";
 import ReadinessCalculator from "@/components/ui/ReadinessCalculator";
 

@@ -5,13 +5,9 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import {
     Download,
-    FileText,
-    BookOpen,
     ChevronRight,
-    Shield,
     CheckCircle2,
     ArrowRight,
-    Search,
     Calculator,
     ArrowDownToLine,
     Info

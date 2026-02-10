@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Zap, Activity, Globe, Lock } from "lucide-react";
-import LandingHeroTitle from "./LandingHeroTitle";
+import { ArrowRight, ShieldCheck, Zap } from "lucide-react";
+import { LandingHeroTitle } from "./LandingHeroTitle";
 
 interface MissionCriticalLandingProps {
     onOpenCalculator: () => void;
