@@ -1,8 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, ShieldCheck, Zap, Lock, Database, Search } from "lucide-react";
 import { LandingHeroTitle } from "./LandingHeroTitle";
+import dynamic from "next/dynamic";
+
+const CyberSecurityGrid = dynamic(() => import("../canvas/CyberSecurityGrid"), {
+    ssr: false,
+});
 
 interface MissionCriticalLandingProps {
     onOpenCalculator: () => void;
@@ -17,14 +22,32 @@ const STATS = [
 
 export default function MissionCriticalLanding({ onOpenCalculator }: MissionCriticalLandingProps) {
     return (
-        <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-20 px-4 overflow-hidden">
-            {/* Background elements */}
-            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[800px] bg-primary/5 rounded-full blur-[120px] opacity-50" />
-                <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] opacity-30" />
-            </div>
+        <section className="relative min-h-[95vh] flex flex-col items-center justify-center pt-32 pb-20 px-4 overflow-hidden">
+            {/* Super Cool WebGL Cyber Grid */}
+            <CyberSecurityGrid />
 
             <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col items-center text-center">
+
+                {/* Technical Meta Data Bar */}
+                <div className="absolute top-0 left-0 w-full flex justify-between px-8 py-4 opacity-40 font-mono text-[10px] hidden lg:flex pointer-events-none">
+                    <div className="flex gap-8">
+                        <div className="flex items-center gap-2">
+                            <Database className="w-3 h-3" />
+                            <span>NODE_ALPHA: ACTIVE</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Lock className="w-3 h-3" />
+                            <span>AES_256: VALIDATED</span>
+                        </div>
+                    </div>
+                    <div className="flex gap-8">
+                        <div className="flex items-center gap-2">
+                            <Search className="w-3 h-3" />
+                            <span>SCANNING_NETWORK...</span>
+                        </div>
+                        <span>SEC_PROTOCOL: V5.0</span>
+                    </div>
+                </div>
 
                 {/* Status Bar */}
                 <motion.div
@@ -77,10 +100,11 @@ export default function MissionCriticalLanding({ onOpenCalculator }: MissionCrit
                 >
                     <button
                         onClick={onOpenCalculator}
-                        className="px-10 py-5 bg-primary text-white font-black rounded-xl hover:scale-105 transition-all shadow-2xl shadow-primary/30 flex items-center justify-center gap-3 group uppercase tracking-widest text-[13px]"
+                        className="relative px-10 py-5 bg-primary text-white font-black rounded-xl hover:scale-105 transition-all shadow-2xl shadow-primary/30 flex items-center justify-center gap-3 group uppercase tracking-widest text-[13px] overflow-hidden"
                     >
-                        BOOK FREE GAP ASSESSMENT
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        <div className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
+                        <span className="relative">BOOK FREE GAP ASSESSMENT</span>
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative" />
                     </button>
                     <a
                         href="/resources"
@@ -92,7 +116,7 @@ export default function MissionCriticalLanding({ onOpenCalculator }: MissionCrit
                 </motion.div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-12 w-full pt-12 border-t border-foreground/5">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-12 w-full pt-12 border-t border-foreground/5 bg-foreground/[0.02] backdrop-blur-sm rounded-t-[3rem] p-8 mt-12">
                     {STATS.map((stat, i) => (
                         <motion.div
                             key={i}
@@ -111,6 +135,9 @@ export default function MissionCriticalLanding({ onOpenCalculator }: MissionCrit
                     ))}
                 </div>
             </div>
+
+            {/* Cyber Scanline effect */}
+            <div className="absolute inset-0 pointer-events-none opacity-5 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_4px,3px_100%]" />
         </section>
     );
 }
