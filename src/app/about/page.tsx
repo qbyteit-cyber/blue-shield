@@ -8,31 +8,13 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import ReadinessCalculator from "@/components/ui/ReadinessCalculator";
 import { Users, Lightbulb, Target, Shield, Briefcase, Award } from "lucide-react";
+import { TeamGrid } from "@/components/ui/TeamGrid";
 
 const SecurityMesh = dynamic(() => import("@/components/canvas/SecurityMesh"), {
     ssr: false,
 });
 
-const team = [
-    {
-        name: "Adrian I.",
-        role: "Managing Director",
-        image: "/team/placeholder.png",
-        bio: "Former Automotive Security Lead with 15+ years experience."
-    },
-    {
-        name: "Elena S.",
-        role: "TISAX Compliance Head",
-        image: "/team/placeholder.png",
-        bio: "Certified Lead Auditor for ISO 27001 and TISAX specialist."
-    },
-    {
-        name: "Mihai B.",
-        role: "Senior Security Auditor",
-        image: "/team/placeholder.png",
-        bio: "Expert in NIST and KRITIS frameworks for industrial systems."
-    }
-];
+
 
 const values = [
     {
@@ -149,36 +131,13 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* Legacy Content (Team) - Keep updated with reference names if seen */}
                 <section className="py-32 px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-24">
-                            <h2 className="text-4xl md:text-5xl font-display font-black mb-6">Behind Every Solution <br /> are Real People.</h2>
-                            <p className="text-foreground/50 max-w-2xl mx-auto">Get to know our team of information and cybersecurity experts who turn complex compliance into business value.</p>
+                            <h2 className="text-4xl md:text-5xl font-display font-black mb-6 tracking-tighter">Behind Every Solution <br /> are <span className="text-primary italic">Real People.</span></h2>
+                            <p className="text-foreground/50 max-w-2xl mx-auto font-mono">Get to know our team of information and cybersecurity experts who turn complex compliance into business value.</p>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                            {[
-                                { name: "Radim Trávníček", role: "Expert Auditor" },
-                                { name: "Martin Polepil", role: "Security Strategist" },
-                                { name: "Jan Mareš", role: "Technical Compliance" }
-                            ].map((member, i) => (
-                                <motion.div
-                                    key={i}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: i * 0.15 }}
-                                    className="text-center group"
-                                >
-                                    <div className="w-56 h-56 mx-auto rounded-full bg-primary/5 border border-primary/10 flex items-center justify-center mb-8 group-hover:scale-105 transition-transform duration-500 overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                        <Users className="w-16 h-16 text-primary/20" />
-                                    </div>
-                                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                                    <p className="text-primary text-xs font-mono uppercase tracking-[0.2em]">{member.role}</p>
-                                </motion.div>
-                            ))}
-                        </div>
+                        <TeamGrid />
                     </div>
                 </section>
 

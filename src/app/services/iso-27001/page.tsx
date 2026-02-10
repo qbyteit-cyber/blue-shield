@@ -23,7 +23,6 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ReadinessCalculator from "@/components/ui/ReadinessCalculator";
 import { TerminalPulse } from "@/components/ui/TerminalPulse";
-import { TeamGrid } from "@/components/ui/TeamGrid";
 
 const SecurityMesh = dynamic(() => import("@/components/canvas/SecurityMesh"), {
     ssr: false,
@@ -428,43 +427,36 @@ export default function ISO27001Page() {
                     </div>
                 </section>
 
-                {/* Global Presence Data Section */}
                 <section className="py-32 px-8">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="grid lg:grid-cols-2 gap-20">
-                            <div>
-                                <h3 className="text-3xl font-display font-black text-foreground mb-8">Global Footprint</h3>
-                                <div className="overflow-hidden rounded-2xl border border-foreground/10 bg-foreground/5 backdrop-blur-md font-mono">
-                                    <table className="w-full text-left border-collapse">
-                                        <thead>
-                                            <tr className="bg-foreground/10 border-b border-foreground/10">
-                                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-foreground/40 font-bold">Location</th>
-                                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-foreground/40 font-bold">ISO/TISAX Projects</th>
-                                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-foreground/40 font-bold">Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {LOCATIONS.map((loc, i) => (
-                                                <tr key={i} className="border-b border-foreground/5 hover:bg-foreground/10 transition-colors group">
-                                                    <td className="px-6 py-4 font-bold text-foreground">{loc.city}</td>
-                                                    <td className="px-6 py-4">{loc.projects}</td>
-                                                    <td className="px-6 py-4">
-                                                        <div className="flex items-center gap-2">
-                                                            <div className={`w-2 h-2 rounded-full ${loc.status === 'Active' ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`} />
-                                                            <span className="text-[10px] uppercase tracking-widest font-bold opacity-60">{loc.status}</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div>
-                                <h3 className="text-3xl font-display font-black text-foreground mb-8">The Technical Team</h3>
-                                <TeamGrid />
-                            </div>
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <h3 className="text-3xl font-display font-black text-foreground mb-4">Global Footprint</h3>
+                            <p className="text-foreground/50 font-mono text-sm italic">Our proven track record of successful ISO/TISAX implementations across key automotive hubs.</p>
+                        </div>
+                        <div className="overflow-hidden rounded-2xl border border-foreground/10 bg-foreground/5 backdrop-blur-md font-mono">
+                            <table className="w-full text-left border-collapse">
+                                <thead>
+                                    <tr className="bg-foreground/10 border-b border-foreground/10">
+                                        <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-foreground/40 font-bold">Location</th>
+                                        <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-foreground/40 font-bold">ISO/TISAX Projects</th>
+                                        <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-foreground/40 font-bold">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {LOCATIONS.map((loc, i) => (
+                                        <tr key={i} className="border-b border-foreground/5 hover:bg-foreground/10 transition-colors group">
+                                            <td className="px-6 py-4 font-bold text-foreground">{loc.city}</td>
+                                            <td className="px-6 py-4">{loc.projects}</td>
+                                            <td className="px-6 py-4">
+                                                <div className="flex items-center gap-2">
+                                                    <div className={`w-2 h-2 rounded-full ${loc.status === 'Active' ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`} />
+                                                    <span className="text-[10px] uppercase tracking-widest font-bold opacity-60">{loc.status}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </section>
