@@ -23,6 +23,7 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ReadinessCalculator from "@/components/ui/ReadinessCalculator";
 import { TerminalPulse } from "@/components/ui/TerminalPulse";
+import { TeamGrid } from "@/components/ui/TeamGrid";
 
 const SecurityMesh = dynamic(() => import("@/components/canvas/SecurityMesh"), {
     ssr: false,
@@ -99,11 +100,6 @@ const LOCATIONS = [
     { city: "Berlin", projects: 5, status: "Active" },
 ];
 
-const TEAM = [
-    { name: "Iulian Bozdoghina", role: "Senior Consultant / Lead Auditor", experience: "26+ Frameworks" },
-    { name: "Mihai Caltea", role: "Security Architect / Lead Auditor", experience: "20+ Frameworks" },
-    { name: "Ernest Aduwenye", role: "Compliance Specialist / Auditor", experience: "15+ Frameworks" },
-];
 
 export default function ISO27001Page() {
     const [calculatorOpen, setCalculatorOpen] = useState(false);
@@ -467,32 +463,7 @@ export default function ISO27001Page() {
 
                             <div>
                                 <h3 className="text-3xl font-display font-black text-foreground mb-8">The Technical Team</h3>
-                                <div className="space-y-4">
-                                    {TEAM.map((member, i) => (
-                                        <motion.div
-                                            key={i}
-                                            whileHover={{ x: 10 }}
-                                            className="p-6 bg-foreground/5 border border-foreground/10 rounded-2xl flex justify-between items-center group cursor-default"
-                                        >
-                                            <div className="flex items-center gap-6">
-                                                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                                                    <Users className="w-6 h-6" />
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">{member.name}</h4>
-                                                    <p className="text-xs text-foreground/40 font-mono tracking-tight uppercase">{member.role}</p>
-                                                </div>
-                                            </div>
-                                            <div className="text-right">
-                                                <div className="text-xs font-mono font-bold text-primary">{member.experience}</div>
-                                                <div className="text-[8px] font-mono text-foreground/30 uppercase tracking-widest mt-1">Audit Mastery</div>
-                                            </div>
-                                        </motion.div>
-                                    ))}
-                                    <div className="p-4 bg-primary/5 border border-primary/20 rounded-xl text-center">
-                                        <p className="text-xs text-primary font-mono font-bold uppercase tracking-widest">Combined experience across 26+ TISAX®/ISO Frameworks</p>
-                                    </div>
-                                </div>
+                                <TeamGrid />
                             </div>
                         </div>
                     </div>
