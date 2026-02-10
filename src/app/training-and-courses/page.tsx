@@ -232,7 +232,7 @@ const TrainingAndCourses = () => {
                     </div>
                 </section>
 
-                <Footer />
+                <Footer onOpenCalculator={() => setCalculatorOpen(true)} />
             </div>
 
             <ReadinessCalculator isOpen={calculatorOpen} onClose={() => setCalculatorOpen(false)} />

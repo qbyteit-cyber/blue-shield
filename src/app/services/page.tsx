@@ -89,7 +89,7 @@ export default function ServicesPage() {
                     </div>
                 </section>
 
-                <Footer />
+                <Footer onOpenCalculator={() => setCalculatorOpen(true)} />
             </div>
 
             <ReadinessCalculator isOpen={calculatorOpen} onClose={() => setCalculatorOpen(false)} />

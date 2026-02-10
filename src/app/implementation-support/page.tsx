@@ -253,12 +253,12 @@ const ImplementationSupport = () => {
                             onClick={() => setCalculatorOpen(true)}
                             className="px-12 py-6 bg-primary text-white font-black rounded-3xl text-xl hover:scale-105 transition-all shadow-2xl shadow-primary/30"
                         >
-                            INITIATE IMPLEMENTATION CONSULTATION
+                            Initiate Audit Readiness Test
                         </button>
                     </div>
                 </section>
 
-                <Footer />
+                <Footer onOpenCalculator={() => setCalculatorOpen(true)} />
             </div>
 
             <ReadinessCalculator isOpen={calculatorOpen} onClose={() => setCalculatorOpen(false)} />

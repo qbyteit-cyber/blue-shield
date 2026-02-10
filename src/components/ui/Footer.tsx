@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 
-export default function Footer() {
+interface FooterProps {
+    onOpenCalculator?: () => void;
+}
+
+export default function Footer({ onOpenCalculator }: FooterProps) {
     const currentYear = new Date().getFullYear();
 
     return (
@@ -21,7 +25,10 @@ export default function Footer() {
                         </p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-[0_10px_30px_rgba(8,97,242,0.3)] hover:scale-105 active:scale-95">
+                        <button
+                            onClick={onOpenCalculator}
+                            className="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-[0_10px_30px_rgba(8,97,242,0.3)] hover:scale-105 active:scale-95"
+                        >
                             Book Audit Readiness Check
                         </button>
                         <button className="px-8 py-4 bg-foreground/5 text-foreground font-bold rounded-xl hover:bg-foreground/10 transition-all border border-foreground/10">

@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
 
-        <Footer />
+        <Footer onOpenCalculator={() => setCalculatorOpen(true)} />
       </div>
 
       {/* Readiness Calculator Modal */}
