@@ -16,7 +16,7 @@ const industries = [
         href: "/industries/automotive"
     },
     {
-        title: "Defence & Aerospace",
+        title: "Aerospace & Defence",
         framework: "CMMC 2.0 & DO-326A",
         description: "Navigate the transition to CMMC Level 2. We help European defence subcontractors meet DoD and NATO security requirements.",
         icon: ShieldAlert,

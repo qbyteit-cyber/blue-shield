@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Shield, Mail, MapPin, Linkedin, Globe } from "lucide-react";
+import { Shield, Mail, MapPin, Linkedin, Globe, Phone } from "lucide-react";
 
 export function Footer() {
     return (
@@ -42,7 +42,7 @@ export function Footer() {
                         <h4 className="text-sm font-bold uppercase tracking-widest mb-8 text-accent-coral">Industries</h4>
                         <ul className="space-y-4 text-sm opacity-60">
                             <li><Link href="/industries/automotive" className="hover:opacity-100 transition-opacity">Automotive Supply Chain</Link></li>
-                            <li><Link href="/industries/defence" className="hover:opacity-100 transition-opacity">Defence & Aerospace</Link></li>
+                            <li><Link href="/industries/defence" className="hover:opacity-100 transition-opacity">Aerospace & Defence</Link></li>
                             <li><Link href="/about" className="hover:opacity-100 transition-opacity">About ITIS-SECURE</Link></li>
                         </ul>
                     </div>
@@ -52,15 +52,19 @@ export function Footer() {
                         <ul className="space-y-4 text-sm opacity-60">
                             <li className="flex items-center gap-3">
                                 <Mail size={18} className="text-accent-coral" />
-                                <span>contact@itis-secure.com</span>
+                                <a href="mailto:Iulian.Bozdoghina@itis-secure.com" className="hover:opacity-100 transition-opacity">Iulian.Bozdoghina@itis-secure.com</a>
                             </li>
                             <li className="flex items-center gap-3">
-                                <MapPin size={18} className="text-accent-coral" />
-                                <span>Bucharest, Romania</span>
+                                <Phone size={18} className="text-accent-coral" />
+                                <a href="tel:+40741711770" className="hover:opacity-100 transition-opacity">+40 741 711 770</a>
                             </li>
-                            <li className="flex items-center gap-3">
-                                <Shield className="text-success-emerald" size={18} />
-                                <span>100% First-Time Pass Rate</span>
+                            <li className="flex items-start gap-3">
+                                <MapPin size={18} className="text-accent-coral shrink-0 mt-0.5" />
+                                <span>Str. Liliacului nr 2, Cisnadie, Sibiu</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <MapPin size={18} className="text-accent-coral shrink-0 mt-0.5" />
+                                <span>Str. Zaharia Stancu 8A, Ap 603, Brasov</span>
                             </li>
                         </ul>
                     </div>

@@ -59,7 +59,7 @@ export function Lifecycle() {
                                 <step.icon className={step.color.includes('navy') ? "text-primary-navy" : "text-primary-navy"} size={28} />
                             </div>
                             <h3 className="text-xl font-bold mb-4">{step.title}</h3>
-                            <p className="text-sm opacity-70 leading-relaxed">
+                            <p className="text-sm text-neutral-500 md:text-neutral-700 opacity-70 leading-relaxed">
                                 {step.desc}
                             </p>
 

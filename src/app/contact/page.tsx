@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Clock, Shield, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Clock, Shield, CheckCircle2, Phone } from "lucide-react";
 
 export default function ContactPage() {
     return (
@@ -74,23 +74,59 @@ export default function ContactPage() {
                             <div className="flex flex-col justify-center">
                                 <div className="space-y-12">
                                     <div>
-                                        <h3 className="text-2xl font-black text-primary-navy mb-8 tracking-tight">Direct Channels</h3>
+                                        <h3 className="text-2xl font-black text-primary-navy mb-8 tracking-tight">Contact</h3>
                                         <div className="space-y-6">
-                                            {[
-                                                { icon: Mail, label: "Email", val: "contact@itis-secure.com" },
-                                                { icon: MapPin, label: "Headquarters", val: "Bucharest, Romania" },
-                                                { icon: Clock, label: "SLA Response", val: "Within 4 Business Hours" }
-                                            ].map((item, i) => (
-                                                <div key={i} className="flex gap-6 items-start">
-                                                    <div className="bg-accent-coral/10 p-4 rounded-xl">
-                                                        <item.icon className="text-accent-coral" size={24} />
-                                                    </div>
-                                                    <div>
-                                                        <div className="text-[10px] font-black text-neutral-400 uppercase tracking-widest mb-1">{item.label}</div>
-                                                        <div className="text-lg font-bold text-primary-navy">{item.val}</div>
-                                                    </div>
+                                            <div className="flex gap-6 items-start">
+                                                <div className="bg-accent-coral/10 p-4 rounded-xl">
+                                                    <Mail className="text-accent-coral" size={24} />
                                                 </div>
-                                            ))}
+                                                <div>
+                                                    <div className="text-[10px] font-black text-neutral-400 uppercase tracking-widest mb-1">Email</div>
+                                                    <a href="mailto:Iulian.Bozdoghina@itis-secure.com" className="text-lg font-bold text-primary-navy hover:text-accent-coral transition-colors">
+                                                        Iulian.Bozdoghina@itis-secure.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-6 items-start">
+                                                <div className="bg-accent-coral/10 p-4 rounded-xl">
+                                                    <Phone className="text-accent-coral" size={24} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-[10px] font-black text-neutral-400 uppercase tracking-widest mb-1">Phone</div>
+                                                    <a href="tel:+40741711770" className="text-lg font-bold text-primary-navy hover:text-accent-coral transition-colors">
+                                                        +40 741 711 770
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-6 items-start">
+                                                <div className="bg-accent-coral/10 p-4 rounded-xl">
+                                                    <MapPin className="text-accent-coral" size={24} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-[10px] font-black text-neutral-400 uppercase tracking-widest mb-1">Sibiu Office</div>
+                                                    <div className="text-lg font-bold text-primary-navy">Str. Liliacului nr 2</div>
+                                                    <div className="text-sm text-neutral-500">Cisnadie, Sibiu</div>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-6 items-start">
+                                                <div className="bg-accent-coral/10 p-4 rounded-xl">
+                                                    <MapPin className="text-accent-coral" size={24} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-[10px] font-black text-neutral-400 uppercase tracking-widest mb-1">Brasov Office</div>
+                                                    <div className="text-lg font-bold text-primary-navy">Str. Zaharia Stancu 8A</div>
+                                                    <div className="text-sm text-neutral-500">Ap 603, Brasov</div>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-6 items-start">
+                                                <div className="bg-accent-coral/10 p-4 rounded-xl">
+                                                    <Clock className="text-accent-coral" size={24} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-[10px] font-black text-neutral-400 uppercase tracking-widest mb-1">SLA Response</div>
+                                                    <div className="text-lg font-bold text-primary-navy">Within 4 Business Hours</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 

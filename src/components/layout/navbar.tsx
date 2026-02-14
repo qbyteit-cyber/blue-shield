@@ -128,8 +128,8 @@ export function Navbar() {
                         </button>
                     </div>
 
-                    {/* Industries — Small Dropdown */}
-                    <NavDropdown label="Industries" links={industriesLinks} />
+                    {/* Industries — Plain Link */}
+                    <Link href="/industries" className="hover:text-primary-navy transition-colors">Industries</Link>
 
                     <Link href="/about" className="hover:text-primary-navy transition-colors">About</Link>
                 </div>
@@ -213,45 +213,14 @@ export function Navbar() {
                         </AnimatePresence>
                     </div>
 
-                    {/* Market Segments (Industries) — Expandable */}
-                    <div className="border-b border-neutral-100">
-                        <button
-                            onClick={() => setMobileIndustriesExpanded((v) => !v)}
-                            aria-expanded={mobileIndustriesExpanded}
-                            className="flex items-center justify-between w-full px-6 py-5 text-base font-semibold text-neutral-800"
-                        >
-                            Market Segments
-                            <ArrowRight
-                                size={18}
-                                className={`text-neutral-800 transition-transform duration-200 ${mobileIndustriesExpanded ? "rotate-90" : ""}`}
-                            />
-                        </button>
-
-                        <AnimatePresence>
-                            {mobileIndustriesExpanded && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2 }}
-                                    className="overflow-hidden"
-                                >
-                                    <div className="px-6 pb-5 space-y-1">
-                                        {industriesLinks.map((link) => (
-                                            <Link
-                                                key={link.href}
-                                                href={link.href}
-                                                className="block py-2 pl-3 text-sm font-medium text-neutral-600 hover:text-primary-navy transition-colors"
-                                                onClick={() => setMobileOpen(false)}
-                                            >
-                                                {link.label}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
+                    {/* Market Segments */}
+                    <Link
+                        href="/industries"
+                        className="flex items-center px-6 py-5 text-base font-semibold text-neutral-800 border-b border-neutral-100 hover:bg-neutral-50 transition-colors"
+                        onClick={() => setMobileOpen(false)}
+                    >
+                        Market Segments
+                    </Link>
 
                     {/* Blog */}
                     <Link

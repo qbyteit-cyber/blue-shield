@@ -34,7 +34,7 @@ export const featuredIndustries: Industry[] = [
     },
     {
         slug: "defence",
-        title: "Defence & Aerospace",
+        title: "Aerospace & Defence",
         description:
             "CMMC 2.0 Level 2 readiness for European defence subcontractors. We bridge the gap to NIST 800-171 compliance so you can secure DoD and NATO contracts with surgical precision.",
         icon: ShieldAlert,
@@ -46,6 +46,36 @@ export const featuredIndustries: Industry[] = [
 
 /* ── 6 Standard (white cards, 3-col grid) ─────────────────── */
 export const standardIndustries: Industry[] = [
+    {
+        slug: "government",
+        title: "Government & Public Sector",
+        description:
+            "National security and citizen data protection. NIS2, ISO 27001, and sector-specific frameworks for government agencies and contractors.",
+        icon: Building,
+        frameworks: ["NIS2", "ISO 27001", "BSI IT-Grundschutz", "GDPR"],
+        href: "/industries/government",
+        ctaLabel: "Learn more",
+    },
+    {
+        slug: "technology",
+        title: "Technology",
+        description:
+            "Security-first certification for SaaS, cloud, and software companies. SOC 2, ISO 27001, and GDPR compliance to win enterprise contracts.",
+        icon: Cpu,
+        frameworks: ["ISO 27001", "SOC 2", "GDPR", "CSA STAR"],
+        href: "/industries/technology",
+        ctaLabel: "Learn more",
+    },
+    {
+        slug: "manufacturing",
+        title: "Manufacturing",
+        description:
+            "Securing industrial operations and supply chains. ISO 27001 and NIS2 implementation for smart factories and Industry 4.0 environments.",
+        icon: Factory,
+        frameworks: ["ISO 27001", "NIS2", "IEC 62443", "TISAX®"],
+        href: "/industries/manufacturing",
+        ctaLabel: "Learn more",
+    },
     {
         slug: "financial",
         title: "Financial Services",
@@ -76,46 +106,16 @@ export const standardIndustries: Industry[] = [
         href: "/industries/energy",
         ctaLabel: "Learn more",
     },
-    {
-        slug: "manufacturing",
-        title: "Manufacturing",
-        description:
-            "Securing industrial operations and supply chains. ISO 27001 and NIS2 implementation for smart factories and Industry 4.0 environments.",
-        icon: Factory,
-        frameworks: ["ISO 27001", "NIS2", "IEC 62443", "TISAX®"],
-        href: "/industries/manufacturing",
-        ctaLabel: "Learn more",
-    },
-    {
-        slug: "technology",
-        title: "Technology",
-        description:
-            "Security-first certification for SaaS, cloud, and software companies. SOC 2, ISO 27001, and GDPR compliance to win enterprise contracts.",
-        icon: Cpu,
-        frameworks: ["ISO 27001", "SOC 2", "GDPR", "CSA STAR"],
-        href: "/industries/technology",
-        ctaLabel: "Learn more",
-    },
-    {
-        slug: "government",
-        title: "Government & Public Sector",
-        description:
-            "National security and citizen data protection. NIS2, ISO 27001, and sector-specific frameworks for government agencies and contractors.",
-        icon: Building,
-        frameworks: ["NIS2", "ISO 27001", "BSI IT-Grundschutz", "GDPR"],
-        href: "/industries/government",
-        ctaLabel: "Learn more",
-    },
 ];
 
 /* ── All 8 names (for the ticker) ─────────────────────────── */
 export const allIndustryNames = [
     "Automotive",
-    "Defence & Aerospace",
+    "Aerospace & Defence",
+    "Government & Public Sector",
+    "Technology",
+    "Manufacturing",
     "Financial Services",
     "Healthcare",
     "Energy & Utilities",
-    "Manufacturing",
-    "Technology",
-    "Government",
 ];
