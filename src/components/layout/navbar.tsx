@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Shield, ChevronDown, Menu, X, ArrowRight } from "lucide-react";
+import { ChevronDown, Menu, X, ArrowRight } from "lucide-react";
 import { ServicesMenu } from "./ServicesMenu";
 import { servicesMenuColumns } from "./ServicesMenuData";
 
@@ -96,13 +97,15 @@ export function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-100">
             <div className="relative container mx-auto px-6 h-20 flex items-center justify-between max-w-7xl">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2">
-                    <div className="bg-primary-navy p-1.5 rounded-lg">
-                        <Shield className="text-white" size={24} />
-                    </div>
-                    <span className="text-xl font-black text-primary-navy tracking-tighter">
-                        ITIS-SECURE
-                    </span>
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/itis-secure-logo.svg"
+                        alt="ITIS-SECURE"
+                        width={160}
+                        height={72}
+                        className="h-12 w-auto"
+                        priority
+                    />
                 </Link>
 
                 {/* ── Desktop Nav ─────────────────────────── */}

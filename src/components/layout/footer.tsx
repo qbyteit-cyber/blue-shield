@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Shield, Mail, MapPin, Linkedin, Globe, Phone } from "lucide-react";
+import Image from "next/image";
+import { Mail, MapPin, Linkedin, Globe, Phone } from "lucide-react";
 
 export function Footer() {
     return (
@@ -9,11 +10,14 @@ export function Footer() {
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     <div className="space-y-6">
-                        <Link href="/" className="flex items-center gap-2">
-                            <div className="bg-accent-coral p-1.5 rounded-lg">
-                                <Shield className="text-white" size={24} />
-                            </div>
-                            <span className="text-xl font-black tracking-tighter">ITIS-SECURE</span>
+                        <Link href="/" className="flex items-center">
+                            <Image
+                                src="/itis-secure-logo.svg"
+                                alt="ITIS-SECURE"
+                                width={160}
+                                height={72}
+                                className="h-10 w-auto brightness-0 invert"
+                            />
                         </Link>
                         <p className="text-sm opacity-60 leading-relaxed max-w-xs">
                             European umbrella compliance company taking enterprise clients from zero security posture to full certification across all applicable frameworks.
