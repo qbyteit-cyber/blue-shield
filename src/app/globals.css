@@ -6,7 +6,7 @@
   --color-accent-coral: #ff6b35;
   --color-success-emerald: #059669;
   --color-warning-amber: #d97706;
-  
+
   --color-neutral-900: #0f172a;
   --color-neutral-700: #334155;
   --color-neutral-500: #64748b;
@@ -39,11 +39,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 .mono {
   font-family: var(--font-mono), monospace;
+}
+
+/* ── Infinite ticker (pure CSS) ─────────────────────────── */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
 }
