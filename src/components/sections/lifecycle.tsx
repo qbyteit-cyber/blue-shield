@@ -1,10 +1,9 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Search, ShieldX, Settings, ShieldCheck, RefreshCw } from "lucide-react";
 
-/* ── Step Data ─────────────────────────────────────────── */
 const steps = [
     { title: "Discovery", desc: "We map your data, assets, and regulatory obligations.", icon: Search, featured: false },
     { title: "Gap Analysis", desc: "A deep-dive audit of your posture against VDA ISA or NIST.", icon: ShieldX, featured: false },
@@ -13,235 +12,138 @@ const steps = [
     { title: "Continuous Improvement", desc: "Maintaining your posture through automated monitoring and periodic reviews.", icon: RefreshCw, featured: false },
 ];
 
-/* ── SVG winding path (viewBox 0 0 1000 160) ───────────── */
-const PATH_D = "M 0,80 C 30,80 70,15 100,15 C 130,15 270,145 300,145 C 330,145 470,15 500,15 C 530,15 670,145 700,145 C 730,145 870,15 900,15 C 930,15 970,80 1000,80";
+/* ── SVG Arc Helpers ───────────────────────────── */
+const CX = 200, CY = 200, R = 130;
+const toRad = (d: number) => ((d - 90) * Math.PI) / 180;
+const px = (d: number, r = R) => ({ x: CX + r * Math.cos(toRad(d)), y: CY + r * Math.sin(toRad(d)) });
 
-/* Node positions in SVG coords (above=15, below=145)  */
-const nodes = [
-    { x: 100, y: 15 },   // Step 1 above
-    { x: 300, y: 145 },  // Step 2 below
-    { x: 500, y: 15 },   // Step 3 above
-    { x: 700, y: 145 },  // Step 4 below
-    { x: 900, y: 15 },   // Step 5 above
+function makeArc(s: number, e: number) {
+    const a = px(s), b = px(e);
+    return `M${a.x.toFixed(1)},${a.y.toFixed(1)} A${R},${R} 0 0 1 ${b.x.toFixed(1)},${b.y.toFixed(1)}`;
+}
+
+/* 5 arcs × 58° each, 14° gaps = 360° */
+const arcs = [0, 72, 144, 216, 288].map((start) => ({
+    d: makeArc(start, start + 58),
+    mid: start + 29,
+}));
+
+const colors = ["#0A2463", "#0A2463", "#0A2463", "#FF6B35", "#0A2463"];
+
+/* Card positions around the cycle (desktop) */
+const positions: React.CSSProperties[] = [
+    { right: 0, top: "2%" },
+    { right: 0, top: "42%", transform: "translateY(-50%)" },
+    { left: "50%", bottom: 0, transform: "translateX(-50%)" },
+    { left: 0, top: "42%", transform: "translateY(-50%)" },
+    { left: 0, top: "2%" },
 ];
 
-/* ── Step Card ─────────────────────────────────────────── */
-function StepCard({ step, idx, show }: { step: typeof steps[0]; idx: number; show: boolean }) {
+/* ── Step Card ─────────────────────────────────── */
+function Card({ step, idx, show }: { step: typeof steps[0]; idx: number; show: boolean }) {
     const Icon = step.icon;
-    const num = String(idx + 1).padStart(2, "0");
-    const isAbove = idx % 2 === 0;
-
+    const f = step.featured;
     return (
         <motion.div
-            initial={{ opacity: 0, y: isAbove ? -16 : 16 }}
-            animate={show ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.45, delay: idx * 0.2 }}
-            className="relative"
+            className="w-[210px]"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={show ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.4, delay: 0.6 + idx * 0.12 }}
         >
-            {/* Large faint background number */}
-            <div
-                className={`absolute -top-4 -right-1 text-[80px] font-black leading-none select-none pointer-events-none ${step.featured ? "text-white/[0.08]" : "text-primary-navy/[0.04]"}`}
-            >
-                {idx + 1}
-            </div>
-
-            {/* Card */}
-            <div
-                className={`relative rounded-xl p-6 border transition-all duration-300 ${step.featured
-                    ? "bg-[#0A2463] border-[#0A2463] text-white shadow-[0_8px_32px_rgba(10,36,99,0.3)]"
-                    : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-lg"
-                    }`}
-            >
-                {/* Icon + step number */}
-                <div className="flex items-center justify-between mb-3">
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center ${step.featured ? "bg-white/10" : "bg-[#FFF4F0]"}`}>
-                        <Icon size={20} className={step.featured ? "text-white" : "text-[#FF6B35]"} />
+            <div className={`p-5 rounded-xl border transition-shadow ${f ? "bg-[#0A2463] border-[#0A2463] text-white shadow-[0_8px_32px_rgba(10,36,99,0.3)]" : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-lg"}`}>
+                <div className="flex items-center gap-3 mb-2">
+                    <div className={`w-9 h-9 rounded-full flex items-center justify-center ${f ? "bg-white/10" : "bg-[#FFF4F0]"}`}>
+                        <Icon size={18} className={f ? "text-white" : "text-[#FF6B35]"} />
                     </div>
-                    <span className={`text-[48px] font-[800] leading-none ${step.featured ? "text-white/[0.1]" : "text-[#0A2463]/[0.06]"}`}>
-                        {num}
+                    <span className={`text-[36px] font-[800] leading-none ${f ? "text-white/10" : "text-[#0A2463]/[0.06]"}`}>
+                        {String(idx + 1).padStart(2, "0")}
                     </span>
                 </div>
-                <h3 className={`text-[15px] font-bold mb-1.5 ${step.featured ? "text-white" : "text-[#0A2463]"}`}>
-                    {step.title}
-                </h3>
-                <p className={`text-[13px] leading-[1.6] ${step.featured ? "text-white/[0.65]" : "text-[#64748B]"}`}>
-                    {step.desc}
-                </p>
+                <h3 className={`text-[14px] font-bold mb-1 ${f ? "text-white" : "text-[#0A2463]"}`}>{step.title}</h3>
+                <p className={`text-[12px] leading-[1.5] ${f ? "text-white/65" : "text-[#64748B]"}`}>{step.desc}</p>
             </div>
         </motion.div>
     );
 }
 
-/* ── Main Component ────────────────────────────────────── */
+/* ── Main Component ────────────────────────────── */
 export function Lifecycle() {
-    const sectionRef = useRef<HTMLElement>(null);
-    const pathRef = useRef<SVGPathElement>(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
-    const [pathLen, setPathLen] = useState(0);
-    const [cardsReady, setCardsReady] = useState(false);
-
-    useEffect(() => {
-        if (pathRef.current) setPathLen(pathRef.current.getTotalLength());
-    }, []);
-
-    useEffect(() => {
-        if (isInView) {
-            const t = setTimeout(() => setCardsReady(true), 1000);
-            return () => clearTimeout(t);
-        }
-    }, [isInView]);
+    const ref = useRef<HTMLElement>(null);
+    const inView = useInView(ref, { once: true, amount: 0.2 });
 
     return (
-        <section ref={sectionRef} className="py-24 bg-white overflow-hidden" role="region" aria-label="Zero to Certified Lifecycle">
-            <div className="container mx-auto px-6 max-w-[1280px]">
-                {/* ── Header ── */}
+        <section ref={ref} className="py-24 bg-white overflow-hidden" role="region" aria-label="Zero to Certified Lifecycle">
+            <div className="container mx-auto px-6 max-w-7xl">
                 <div className="text-center mb-16">
-                    <span className="uppercase text-[11px] font-bold text-[#FF6B35] tracking-[0.15em] block mb-4">
-                        Our Methodology
-                    </span>
-                    <h2 className="text-4xl md:text-5xl font-[800] text-[#0A2463]">
-                        The &quot;Zero to Certified&quot; Lifecycle
-                    </h2>
+                    <span className="uppercase text-[11px] font-bold text-[#FF6B35] tracking-[0.15em] block mb-4">Our Methodology</span>
+                    <h2 className="text-4xl md:text-5xl font-[800] text-[#0A2463]">The &quot;Zero to Certified&quot; Lifecycle</h2>
                 </div>
 
-                {/* ═══════════ DESKTOP: Winding Path ═══════════ */}
-                <div className="hidden lg:block">
-                    {/* Row 1 — above cards (steps 1, 3, 5) */}
-                    <div className="grid grid-cols-5">
-                        {steps.map((s, i) =>
-                            i % 2 === 0 ? (
-                                <div key={i} className="px-3"><StepCard step={s} idx={i} show={cardsReady} /></div>
-                            ) : (
-                                <div key={i} />
-                            )
-                        )}
-                    </div>
+                {/* ═══ DESKTOP: PDCA Cycle ═══ */}
+                <div className="hidden lg:block relative mx-auto" style={{ maxWidth: 880, height: 620 }}>
+                    {/* SVG Ring */}
+                    <svg viewBox="0 0 400 400" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px]" aria-hidden="true">
+                        <defs>
+                            <marker id="aN" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+                                <polygon points="0,2 12,7 0,12" fill="#0A2463" />
+                            </marker>
+                            <marker id="aC" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+                                <polygon points="0,2 12,7 0,12" fill="#FF6B35" />
+                            </marker>
+                        </defs>
 
-                    {/* Connectors ↓ from above cards */}
-                    <div className="grid grid-cols-5">
-                        {steps.map((_, i) =>
-                            i % 2 === 0 ? (
-                                <div key={i} className="flex justify-center">
-                                    <div className="w-px h-8 border-l border-dashed border-[#CBD5E1]" />
-                                </div>
-                            ) : (
-                                <div key={i} />
-                            )
-                        )}
-                    </div>
-
-                    {/* SVG Path Zone */}
-                    <div className="relative h-40">
-                        <svg
-                            viewBox="0 0 1000 160"
-                            className="absolute inset-0 w-full h-full"
-                            preserveAspectRatio="none"
-                            aria-hidden="true"
-                        >
-                            <path
-                                ref={pathRef}
-                                d={PATH_D}
-                                stroke="#FF6B35"
-                                strokeWidth={2.5}
+                        {arcs.map((a, i) => (
+                            <motion.path
+                                key={i}
+                                d={a.d}
+                                stroke={colors[i]}
+                                strokeWidth={22}
                                 fill="none"
                                 strokeLinecap="round"
-                                vectorEffect="non-scaling-stroke"
-                                style={{
-                                    strokeDasharray: pathLen || 3000,
-                                    strokeDashoffset: isInView ? 0 : pathLen || 3000,
-                                    transition: "stroke-dashoffset 0.9s ease-in-out",
-                                }}
+                                markerEnd={i === 3 ? "url(#aC)" : "url(#aN)"}
+                                initial={{ pathLength: 0, opacity: 0 }}
+                                animate={inView ? { pathLength: 1, opacity: 1 } : {}}
+                                transition={{ duration: 0.5, delay: i * 0.12, ease: "easeOut" }}
                             />
-                        </svg>
-
-                        {/* Node dots (HTML for perfect circles) */}
-                        {nodes.map((n, i) => (
-                            <div
-                                key={i}
-                                className="absolute -translate-x-1/2 -translate-y-1/2"
-                                style={{
-                                    left: `${n.x / 10}%`,
-                                    top: `${(n.y / 160) * 100}%`,
-                                    opacity: isInView ? 1 : 0,
-                                    transition: `opacity 0.3s ease ${0.6 + i * 0.1}s`,
-                                }}
-                            >
-                                <div
-                                    className={`w-3.5 h-3.5 rounded-full border-[2.5px] border-[#FF6B35] ${steps[i].featured
-                                        ? "bg-[#FF6B35] shadow-[0_0_0_6px_rgba(255,107,53,0.25)]"
-                                        : "bg-white shadow-[0_0_0_4px_rgba(255,107,53,0.15)]"
-                                        }`}
-                                />
-                            </div>
                         ))}
-                    </div>
 
-                    {/* Connectors ↑ to below cards */}
-                    <div className="grid grid-cols-5">
-                        {steps.map((_, i) =>
-                            i % 2 !== 0 ? (
-                                <div key={i} className="flex justify-center">
-                                    <div className="w-px h-8 border-l border-dashed border-[#CBD5E1]" />
-                                </div>
-                            ) : (
-                                <div key={i} />
-                            )
-                        )}
-                    </div>
+                        {/* Center label */}
+                        <text x={CX} y={CY - 14} textAnchor="middle" className="fill-[#0A2463]" style={{ fontSize: 15, fontWeight: 800, letterSpacing: "0.08em" }}>ZERO TO</text>
+                        <text x={CX} y={CY + 14} textAnchor="middle" className="fill-[#FF6B35]" style={{ fontSize: 18, fontWeight: 800, letterSpacing: "0.08em" }}>CERTIFIED</text>
+                    </svg>
 
-                    {/* Row 2 — below cards (steps 2, 4) */}
-                    <div className="grid grid-cols-5">
-                        {steps.map((s, i) =>
-                            i % 2 !== 0 ? (
-                                <div key={i} className="px-3"><StepCard step={s} idx={i} show={cardsReady} /></div>
-                            ) : (
-                                <div key={i} />
-                            )
-                        )}
-                    </div>
+                    {/* Cards around the ring */}
+                    {steps.map((s, i) => (
+                        <div key={s.title} className="absolute" style={positions[i]}>
+                            <Card step={s} idx={i} show={inView} />
+                        </div>
+                    ))}
                 </div>
 
-                {/* ═══════════ MOBILE: Vertical Timeline ═══════════ */}
+                {/* ═══ MOBILE: Vertical Timeline ═══ */}
                 <div className="lg:hidden relative pl-8">
                     <div className="absolute left-[11px] top-0 bottom-0 w-px border-l-2 border-dashed border-[#FF6B35]" />
-
-                    <div className="space-y-8">
-                        {steps.map((step, idx) => {
+                    <div className="space-y-6">
+                        {steps.map((step, i) => {
                             const Icon = step.icon;
+                            const f = step.featured;
                             return (
                                 <div key={step.title} className="relative">
-                                    {/* Node dot */}
-                                    <div
-                                        className={`absolute -left-8 top-6 w-3.5 h-3.5 rounded-full border-[2.5px] border-[#FF6B35] ${step.featured
-                                            ? "bg-[#FF6B35] shadow-[0_0_0_6px_rgba(255,107,53,0.25)]"
-                                            : "bg-white shadow-[0_0_0_4px_rgba(255,107,53,0.15)]"
-                                            }`}
-                                    />
-                                    {/* Horizontal connector */}
-                                    <div className="absolute -left-[17px] top-[27px] w-4 border-t border-dashed border-[#CBD5E1]" />
-
+                                    <div className={`absolute -left-8 top-5 w-3.5 h-3.5 rounded-full border-[2.5px] border-[#FF6B35] ${f ? "bg-[#FF6B35]" : "bg-white"}`} />
                                     <motion.div
                                         initial={{ opacity: 0, x: -12 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
-                                        transition={{ delay: idx * 0.12 }}
-                                        className={`relative rounded-xl p-5 border ${step.featured
-                                            ? "bg-[#0A2463] border-[#0A2463] shadow-[0_8px_32px_rgba(10,36,99,0.3)]"
-                                            : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
-                                            }`}
+                                        transition={{ delay: i * 0.1 }}
+                                        className={`p-5 rounded-xl border ${f ? "bg-[#0A2463] border-[#0A2463] shadow-[0_8px_32px_rgba(10,36,99,0.3)]" : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)]"}`}
                                     >
                                         <div className="flex items-center gap-3 mb-2">
-                                            <div className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 ${step.featured ? "bg-white/10" : "bg-[#FFF4F0]"}`}>
-                                                <Icon size={18} className={step.featured ? "text-white" : "text-[#FF6B35]"} />
+                                            <div className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 ${f ? "bg-white/10" : "bg-[#FFF4F0]"}`}>
+                                                <Icon size={18} className={f ? "text-white" : "text-[#FF6B35]"} />
                                             </div>
-                                            <h3 className={`text-sm font-bold ${step.featured ? "text-white" : "text-[#0A2463]"}`}>{step.title}</h3>
-                                            <span className={`ml-auto text-[32px] font-[800] leading-none ${step.featured ? "text-white/[0.1]" : "text-[#0A2463]/[0.06]"}`}>
-                                                {String(idx + 1).padStart(2, "0")}
-                                            </span>
+                                            <h3 className={`text-sm font-bold ${f ? "text-white" : "text-[#0A2463]"}`}>{step.title}</h3>
                                         </div>
-                                        <p className={`text-[13px] leading-[1.6] ${step.featured ? "text-white/[0.65]" : "text-[#64748B]"}`}>
-                                            {step.desc}
-                                        </p>
+                                        <p className={`text-[13px] leading-[1.6] ${f ? "text-white/65" : "text-[#64748B]"}`}>{step.desc}</p>
                                     </motion.div>
                                 </div>
                             );
