@@ -65,7 +65,11 @@ export function Lifecycle() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <span className="uppercase text-[11px] font-bold text-[#FF6B35] tracking-[0.15em] block mb-4">Our Methodology</span>
-                    <h2 className="text-4xl md:text-5xl font-[800] text-[#0A2463] tracking-tight">The &quot;Zero to Certified&quot; Lifecycle</h2>
+                    <h2 className="text-4xl md:text-5xl font-[800] text-[#0A2463] tracking-tight mb-6">The Gap-to-Certified Lifecycle</h2>
+                    <p className="max-w-3xl mx-auto text-neutral-500 leading-relaxed font-medium">
+                        Whether you're pursuing your first TISAX label, renewing ISO 27001, or upgrading to AL3.
+                        We assess your current posture, close every gap, and stand with you until the auditor signs off.
+                    </p>
                 </div>
 
                 {/* ═══ DESKTOP ═══ */}
@@ -124,7 +128,7 @@ export function Lifecycle() {
                                         <path d="M16 0C16 0 4 4 4 12v8c0 5 4 10 12 14 8-4 12-9 12-14v-8C28 4 16 0 16 0z" />
                                         <path d="M10 16l4 4 8-8" />
                                     </g>
-                                    <text y="0" textAnchor="middle" style={{ fontSize: 11, fontWeight: 700, fill: "#94A3B8", letterSpacing: "0.12em", textTransform: "uppercase" }}>ZERO TO</text>
+                                    <text y="0" textAnchor="middle" style={{ fontSize: 11, fontWeight: 700, fill: "#94A3B8", letterSpacing: "0.12em", textTransform: "uppercase" }}>GAP TO</text>
                                     <text y="22" textAnchor="middle" style={{ fontSize: 19, fontWeight: 800, fill: "#0A2463", letterSpacing: "0.02em" }}>CERTIFIED</text>
                                     <text y="40" textAnchor="middle" style={{ fontSize: 10, fontWeight: 600, fill: "#94A3B8", letterSpacing: "0.1em", textTransform: "uppercase" }}>LIFECYCLE</text>
                                 </motion.g>

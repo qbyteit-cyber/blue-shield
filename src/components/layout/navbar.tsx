@@ -131,9 +131,6 @@ export function Navbar() {
                         </button>
                     </div>
 
-                    {/* ISMS Implementation — Plain Link */}
-                    <Link href="/services/isms-implementation" className="hover:text-primary-navy transition-colors">ISMS Implementation</Link>
-
                     {/* Industries — Plain Link */}
                     <Link href="/industries" className="hover:text-primary-navy transition-colors">Industries</Link>
 
@@ -219,14 +216,6 @@ export function Navbar() {
                         </AnimatePresence>
                     </div>
 
-                    {/* ISMS Implementation */}
-                    <Link
-                        href="/services/isms-implementation"
-                        className="flex items-center px-6 py-5 text-base font-semibold text-neutral-800 border-b border-neutral-100 hover:bg-neutral-50 transition-colors"
-                        onClick={() => setMobileOpen(false)}
-                    >
-                        ISMS Implementation
-                    </Link>
 
                     {/* Market Segments */}
                     <Link

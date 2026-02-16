@@ -61,7 +61,7 @@ export function Footer() {
                         <ul className="space-y-4 text-sm opacity-60">
                             <li className="flex items-center gap-3">
                                 <Mail size={18} className="text-accent-coral" />
-                                <a href="mailto:Iulian.Bozdoghina@itis-secure.com" className="hover:opacity-100 transition-opacity">Iulian.Bozdoghina@itis-secure.com</a>
+                                <a href="mailto:office@itis-secure.com" className="hover:opacity-100 transition-opacity">office@itis-secure.com</a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone size={18} className="text-accent-coral" />

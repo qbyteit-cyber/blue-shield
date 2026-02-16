@@ -63,7 +63,7 @@ export default function LegalNoticePage() {
                                     </tr>
                                     <tr>
                                         <td><strong>Email</strong></td>
-                                        <td><a href="mailto:Iulian.Bozdoghina@itis-secure.com">Iulian.Bozdoghina@itis-secure.com</a></td>
+                                        <td><a href="mailto:office@itis-secure.com">office@itis-secure.com</a></td>
                                     </tr>
                                     <tr>
                                         <td><strong>Phone</strong></td>
@@ -114,7 +114,7 @@ export default function LegalNoticePage() {
 
                             <h2>7. Contact</h2>
                             <ul>
-                                <li><strong>Email:</strong> <a href="mailto:Iulian.Bozdoghina@itis-secure.com">Iulian.Bozdoghina@itis-secure.com</a></li>
+                                <li><strong>Email:</strong> <a href="mailto:office@itis-secure.com">office@itis-secure.com</a></li>
                                 <li><strong>Phone:</strong> +40 741 711 770</li>
                                 <li><strong>Address:</strong> Str. Liliacului nr 2, Cisnadie, Sibiu, Romania</li>
                             </ul>

@@ -58,7 +58,7 @@ export default function PrivacyPolicyPage() {
                             <ul>
                                 <li><strong>Company:</strong> QBYTE IT SRL (trading as ITIS-SECURE)</li>
                                 <li><strong>Registered Office:</strong> Str. Liliacului nr 2, Cisnadie, Sibiu, Romania</li>
-                                <li><strong>Email:</strong> Iulian.Bozdoghina@itis-secure.com</li>
+                                <li><strong>Email:</strong> office@itis-secure.com</li>
                                 <li><strong>Phone:</strong> +40 741 711 770</li>
                             </ul>
 
@@ -210,7 +210,7 @@ export default function PrivacyPolicyPage() {
                                 contact us:
                             </p>
                             <ul>
-                                <li><strong>Email:</strong> <a href="mailto:Iulian.Bozdoghina@itis-secure.com">Iulian.Bozdoghina@itis-secure.com</a></li>
+                                <li><strong>Email:</strong> <a href="mailto:office@itis-secure.com">office@itis-secure.com</a></li>
                                 <li><strong>Phone:</strong> +40 741 711 770</li>
                                 <li><strong>Address:</strong> Str. Liliacului nr 2, Cisnadie, Sibiu, Romania</li>
                             </ul>

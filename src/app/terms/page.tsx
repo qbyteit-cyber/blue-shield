@@ -122,7 +122,7 @@ export default function TermsOfServicePage() {
                             <h2>11. Contact Us</h2>
                             <p>For any questions regarding these Terms, please contact us:</p>
                             <ul>
-                                <li><strong>Email:</strong> <a href="mailto:Iulian.Bozdoghina@itis-secure.com">Iulian.Bozdoghina@itis-secure.com</a></li>
+                                <li><strong>Email:</strong> <a href="mailto:office@itis-secure.com">office@itis-secure.com</a></li>
                                 <li><strong>Phone:</strong> +40 741 711 770</li>
                                 <li><strong>Address:</strong> Str. Liliacului nr 2, Cisnadie, Sibiu, Romania</li>
                             </ul>

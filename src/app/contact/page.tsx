@@ -82,8 +82,8 @@ export default function ContactPage() {
                                                 </div>
                                                 <div>
                                                     <div className="text-[10px] font-black text-neutral-400 uppercase tracking-widest mb-1">Email</div>
-                                                    <a href="mailto:Iulian.Bozdoghina@itis-secure.com" className="text-lg font-bold text-primary-navy hover:text-accent-coral transition-colors">
-                                                        Iulian.Bozdoghina@itis-secure.com
+                                                    <a href="mailto:office@itis-secure.com" className="text-lg font-bold text-primary-navy hover:text-accent-coral transition-colors">
+                                                        office@itis-secure.com
                                                     </a>
                                                 </div>
                                             </div>
