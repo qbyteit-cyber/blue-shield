@@ -63,8 +63,8 @@ export function Hero() {
                             European TISAX® & ISO 27001 Experts
                         </span>
                         <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 leading-[1.1] mb-8">
-                            From Zero to Certified. <br />
-                            <span className="text-primary-navy">Full Compliance.</span>
+                            Certification. Make it happen <br />
+                            <span className="text-primary-navy">With ITIS-Secure.</span>
                         </h1>
                         <p className="text-lg md:text-xl text-neutral-700 mb-12 leading-relaxed max-w-2xl">
                             We take your company from security gaps to full certification. Expert preparation for TISAX®, ISO 27001, NIS2, DORA, GDPR TPISR and other frameworks with a 100% first-time pass rate.
