@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/hero";
 import { IndustrySplit } from "@/components/sections/industry-split";
 import { Lifecycle } from "@/components/sections/lifecycle";
 import { ToolSection } from "@/components/sections/tool-section";
+import { ContactMapSection } from "@/components/sections/contact-map-section";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <IndustrySplit />
         <Lifecycle />
         <ToolSection />
+        <ContactMapSection />
       </main>
       <Footer />
     </>
