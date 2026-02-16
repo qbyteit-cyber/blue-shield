@@ -10,7 +10,7 @@ const steps = [
     { id: 2, title: "Gap Analysis", desc: "A deep-dive audit of your posture against VDA ISA or NIST.", icon: ShieldX, color: "#FF6B35" },
     { id: 3, title: "Implementation", desc: "Engineers build policies and technical controls following the Plan-Do-Check-Act lifecycle for sustainable security.", icon: Settings2, color: "#10B981" },
     { id: 4, title: "Certification", desc: "We stand by your side until the auditor signs off.", icon: ShieldCheck, color: "#0A2463", featured: true },
-    { id: 5, title: "Continuous Improvement", desc: "Maintaining your posture through automated monitoring and periodic reviews.", icon: RefreshCw, color: "#8B5CF6" },
+    { id: 5, title: "Maintaining", desc: "Maintaining your posture through automated monitoring and periodic reviews.", icon: RefreshCw, color: "#8B5CF6" },
 ];
 
 /* ── SVG Helpers ───────────────────────────────────────── */
