@@ -34,7 +34,7 @@ export function ContactMapSection() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
                     {/* ── LEFT: Contact Form ── */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -138,13 +138,7 @@ export function ContactMapSection() {
                             ))}
                         </div>
 
-                        {/* Total badge */}
-                        <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
-                            <span className="text-white/40 text-xs uppercase tracking-widest font-bold">Total Certifications</span>
-                            <span className="text-3xl font-black text-[#4FC3F7]">
-                                {locations.reduce((sum, l) => sum + l.certs, 0)}
-                            </span>
-                        </div>
+
                     </motion.div>
                 </div>
             </div>
