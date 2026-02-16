@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Search, ShieldX, Settings2, ShieldCheck, RefreshCw, Shield } from "lucide-react";
+import { Search, ShieldX, Settings2, ShieldCheck, RefreshCw } from "lucide-react";
 
 /* ── Step Data ─────────────────────────────────────────── */
 const steps = [
@@ -33,14 +33,25 @@ function textArcPath(r: number, s: number, e: number) {
     return `M${p1.x},${p1.y} A${r},${r} 0 0 1 ${p2.x},${p2.y}`;
 }
 
-/* ── Hardcoded label positions for pixel-perfect layout ── */
-/* Percentages of the outer container (880×880 desktop)     */
-const labelLayout: { left: string; top: string; align: "left" | "right" | "center"; maxW: number }[] = [
-    { left: "62%", top: "-2%", align: "left", maxW: 180 }, // Step 1 — top-right
-    { left: "84%", top: "28%", align: "left", maxW: 170 }, // Step 2 — right
-    { left: "72%", top: "72%", align: "left", maxW: 180 }, // Step 3 — bottom-right
-    { left: "4%", top: "64%", align: "right", maxW: 180 }, // Step 4 — bottom-left
-    { left: "2%", top: "12%", align: "right", maxW: 180 }, // Step 5 — top-left
+/* ── Arrow tip positions mapped to container % ─────────── */
+/* SVG sits at left:18% top:12% w:64% h:64% of the square  */
+/* viewBox: -260…260.  Arrow tip at getPoint(216, endAngle) */
+/* containerPct = offset + ((svgCoord+260)/520)*64           */
+/*                                                           */
+/* Step 1 tip @ -18°  → (41.8%, 18.7%)                      */
+/* Step 2 tip @  54°  → (71.5%, 28.4%)                      */
+/* Step 3 tip @ 126°  → (71.5%, 59.6%)                      */
+/* Step 4 tip @ 198°  → (41.8%, 69.3%)                      */
+/* Step 5 tip @ 270°  → (23.4%, 44.0%)                      */
+/*                                                           */
+/* Cards positioned so their nearest corner touches the tip  */
+
+const labelLayout: { left: string; top: string; w: number; touchSide: string }[] = [
+    { left: "22%", top: "5%", w: 172, touchSide: "br" }, // Step 1: card bottom-right → tip
+    { left: "72%", top: "15%", w: 168, touchSide: "bl" }, // Step 2: card bottom-left  → tip
+    { left: "72%", top: "60%", w: 172, touchSide: "tl" }, // Step 3: card top-left     → tip
+    { left: "22%", top: "69%", w: 172, touchSide: "tr" }, // Step 4: card top-right    → tip
+    { left: "4%", top: "37%", w: 172, touchSide: "r" }, // Step 5: card right edge   → tip
 ];
 
 /* ── Main Component ────────────────────────────────────── */
@@ -60,7 +71,8 @@ export function Lifecycle() {
                 {/* ═══ DESKTOP ═══ */}
                 <div className="hidden md:block relative mx-auto" style={{ maxWidth: 880 }}>
                     <div className="relative mx-auto" style={{ width: "100%", paddingBottom: "100%" }}>
-                        {/* SVG Wheel — centered in padded square */}
+
+                        {/* SVG Wheel */}
                         <motion.div
                             className="absolute"
                             style={{ left: "18%", top: "12%", width: "64%", height: "64%" }}
@@ -108,7 +120,6 @@ export function Lifecycle() {
                                 {/* Center Circle */}
                                 <circle cx="0" cy="0" r="118" fill="white" filter="url(#cs)" />
                                 <motion.g initial={{ opacity: 0, scale: 0.8 }} animate={inView ? { opacity: 1, scale: 1 } : {}} transition={{ delay: 0.55, duration: 0.35 }}>
-                                    {/* Shield icon as SVG path */}
                                     <g transform="translate(-16,-52)" fill="none" stroke="#0A2463" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M16 0C16 0 4 4 4 12v8c0 5 4 10 12 14 8-4 12-9 12-14v-8C28 4 16 0 16 0z" />
                                         <path d="M10 16l4 4 8-8" />
@@ -120,7 +131,7 @@ export function Lifecycle() {
                             </svg>
                         </motion.div>
 
-                        {/* Labels positioned absolutely around the wheel */}
+                        {/* Labels — positioned to touch arrow tips */}
                         {steps.map((step, i) => {
                             const Icon = step.icon;
                             const pos = labelLayout[i];
@@ -128,22 +139,20 @@ export function Lifecycle() {
                                 <motion.div
                                     key={step.id}
                                     className="absolute z-10"
-                                    style={{ left: pos.left, top: pos.top, width: pos.maxW, textAlign: pos.align }}
-                                    initial={{ opacity: 0, y: 12 }}
+                                    style={{ left: pos.left, top: pos.top, width: pos.w }}
+                                    initial={{ opacity: 0, y: 10 }}
                                     animate={inView ? { opacity: 1, y: 0 } : {}}
-                                    transition={{ duration: 0.4, delay: 0.85 + i * 0.1, ease: "easeOut" }}
+                                    transition={{ duration: 0.35, delay: 0.8 + i * 0.1, ease: "easeOut" }}
                                 >
-                                    <div className="p-4 bg-white rounded-xl border border-neutral-100/80 shadow-[0_2px_12px_rgba(0,0,0,0.06)] transition-all hover:shadow-lg hover:-translate-y-0.5">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: `${step.color}14` }}>
-                                                <Icon size={14} style={{ color: step.color }} />
+                                    <div className="p-3.5 bg-white rounded-xl border border-neutral-100/80 shadow-[0_2px_12px_rgba(0,0,0,0.06)] transition-all hover:shadow-lg hover:-translate-y-0.5">
+                                        <div className="flex items-center gap-2 mb-1.5">
+                                            <div className="w-6 h-6 rounded-md flex items-center justify-center" style={{ backgroundColor: `${step.color}14` }}>
+                                                <Icon size={13} style={{ color: step.color }} />
                                             </div>
-                                            <span className="text-[10px] font-bold tracking-widest uppercase" style={{ color: step.color }}>
-                                                0{step.id}
-                                            </span>
+                                            <span className="text-[9px] font-bold tracking-widest uppercase" style={{ color: step.color }}>0{step.id}</span>
                                         </div>
-                                        <h3 className="text-[13px] font-bold text-[#0A2463] mb-1">{step.title}</h3>
-                                        <p className="text-[11px] text-[#64748B] leading-[1.55]">{step.desc}</p>
+                                        <h3 className="text-[12px] font-bold text-[#0A2463] mb-0.5 leading-tight">{step.title}</h3>
+                                        <p className="text-[10.5px] text-[#64748B] leading-[1.5]">{step.desc}</p>
                                     </div>
                                 </motion.div>
                             );
