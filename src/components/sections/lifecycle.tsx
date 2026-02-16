@@ -48,8 +48,8 @@ function StepCard({ step, idx, show }: { step: typeof steps[0]; idx: number; sho
             {/* Card */}
             <div
                 className={`relative rounded-xl p-6 border transition-all duration-300 ${step.featured
-                        ? "bg-[#0A2463] border-[#0A2463] text-white shadow-[0_8px_32px_rgba(10,36,99,0.3)]"
-                        : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-lg"
+                    ? "bg-[#0A2463] border-[#0A2463] text-white shadow-[0_8px_32px_rgba(10,36,99,0.3)]"
+                    : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-lg"
                     }`}
             >
                 {/* Icon + step number */}
@@ -86,7 +86,7 @@ export function Lifecycle() {
 
     useEffect(() => {
         if (isInView) {
-            const t = setTimeout(() => setCardsReady(true), 1900);
+            const t = setTimeout(() => setCardsReady(true), 1000);
             return () => clearTimeout(t);
         }
     }, [isInView]);
@@ -149,7 +149,7 @@ export function Lifecycle() {
                                 style={{
                                     strokeDasharray: pathLen || 3000,
                                     strokeDashoffset: isInView ? 0 : pathLen || 3000,
-                                    transition: "stroke-dashoffset 1.8s ease-in-out",
+                                    transition: "stroke-dashoffset 0.9s ease-in-out",
                                 }}
                             />
                         </svg>
@@ -163,13 +163,13 @@ export function Lifecycle() {
                                     left: `${n.x / 10}%`,
                                     top: `${(n.y / 160) * 100}%`,
                                     opacity: isInView ? 1 : 0,
-                                    transition: `opacity 0.3s ease ${1.2 + i * 0.15}s`,
+                                    transition: `opacity 0.3s ease ${0.6 + i * 0.1}s`,
                                 }}
                             >
                                 <div
                                     className={`w-3.5 h-3.5 rounded-full border-[2.5px] border-[#FF6B35] ${steps[i].featured
-                                            ? "bg-[#FF6B35] shadow-[0_0_0_6px_rgba(255,107,53,0.25)]"
-                                            : "bg-white shadow-[0_0_0_4px_rgba(255,107,53,0.15)]"
+                                        ? "bg-[#FF6B35] shadow-[0_0_0_6px_rgba(255,107,53,0.25)]"
+                                        : "bg-white shadow-[0_0_0_4px_rgba(255,107,53,0.15)]"
                                         }`}
                                 />
                             </div>
@@ -213,8 +213,8 @@ export function Lifecycle() {
                                     {/* Node dot */}
                                     <div
                                         className={`absolute -left-8 top-6 w-3.5 h-3.5 rounded-full border-[2.5px] border-[#FF6B35] ${step.featured
-                                                ? "bg-[#FF6B35] shadow-[0_0_0_6px_rgba(255,107,53,0.25)]"
-                                                : "bg-white shadow-[0_0_0_4px_rgba(255,107,53,0.15)]"
+                                            ? "bg-[#FF6B35] shadow-[0_0_0_6px_rgba(255,107,53,0.25)]"
+                                            : "bg-white shadow-[0_0_0_4px_rgba(255,107,53,0.15)]"
                                             }`}
                                     />
                                     {/* Horizontal connector */}
@@ -226,8 +226,8 @@ export function Lifecycle() {
                                         viewport={{ once: true }}
                                         transition={{ delay: idx * 0.12 }}
                                         className={`relative rounded-xl p-5 border ${step.featured
-                                                ? "bg-[#0A2463] border-[#0A2463] shadow-[0_8px_32px_rgba(10,36,99,0.3)]"
-                                                : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
+                                            ? "bg-[#0A2463] border-[#0A2463] shadow-[0_8px_32px_rgba(10,36,99,0.3)]"
+                                            : "bg-white border-[#E2E8F0] shadow-[0_4px_16px_rgba(0,0,0,0.06)]"
                                             }`}
                                     >
                                         <div className="flex items-center gap-3 mb-2">
