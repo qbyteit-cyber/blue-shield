@@ -23,7 +23,12 @@ export function Footer() {
                             European umbrella compliance company taking enterprise clients from zero security posture to full certification across all applicable frameworks.
                         </p>
                         <div className="flex gap-4">
-                            <Link href="#" className="hover:text-accent-coral transition-colors">
+                            <Link
+                                href="https://www.linkedin.com/company/information-security-consulting-srl"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-accent-coral transition-colors"
+                            >
                                 <Linkedin size={20} />
                             </Link>
                             <Link href="#" className="hover:text-accent-coral transition-colors">
