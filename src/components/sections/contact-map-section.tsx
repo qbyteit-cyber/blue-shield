@@ -3,7 +3,22 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, MapPin } from "lucide-react";
+
+/* ── Certified Locations ───────────────────────────── */
+const locations = [
+    { city: "München", certs: 11 },
+    { city: "Stuttgart", certs: 4 },
+    { city: "Pune", certs: 2 },
+    { city: "Kuala Lumpur", certs: 2 },
+    { city: "Den Bosch", certs: 2 },
+    { city: "Düsseldorf", certs: 2 },
+    { city: "Gilching", certs: 2 },
+    { city: "Coventry", certs: 1 },
+    { city: "Darmstadt", certs: 2 },
+    { city: "Durham NC", certs: 1 },
+    { city: "Royal Oak", certs: 3 },
+];
 
 export function ContactMapSection() {
     return (
@@ -19,7 +34,7 @@ export function ContactMapSection() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     {/* ── LEFT: Contact Form ── */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -87,21 +102,49 @@ export function ContactMapSection() {
                         </form>
                     </motion.div>
 
-                    {/* ── RIGHT: Secured Sites Image ── */}
+                    {/* ── RIGHT: Secured Sites ── */}
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="rounded-2xl overflow-hidden shadow-xl border border-neutral-100 bg-white"
+                        className="bg-primary-navy rounded-2xl p-8 md:p-10 shadow-xl"
                     >
-                        <Image
-                            src="/secured-sites.webp"
-                            alt="Successful certified locations for TISAX — 11 global locations including München, Stuttgart, Pune, Kuala Lumpur, Den Bosch, Düsseldorf, Gliching, Coventry, Darmstadt, Durham NC, and Royal Oak"
-                            width={800}
-                            height={600}
-                            className="w-full h-full object-cover"
-                            priority={false}
-                        />
+                        <h3 className="text-xl font-black text-white mb-2 tracking-tight">
+                            Successful Certified Locations
+                        </h3>
+                        <p className="text-sm text-white/50 mb-6">
+                            TISAX® certifications delivered across 11 global locations
+                        </p>
+
+                        {/* Map Image — fully visible */}
+                        <div className="relative w-full rounded-xl overflow-hidden mb-8">
+                            <Image
+                                src="/secured-sites.webp"
+                                alt="World map showing TISAX certified locations across 11 global sites"
+                                width={800}
+                                height={450}
+                                className="w-full h-auto object-contain"
+                            />
+                        </div>
+
+                        {/* Location List */}
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2">
+                            {locations.map((loc) => (
+                                <div key={loc.city} className="flex items-center gap-2 text-sm">
+                                    <MapPin size={12} className="text-[#4FC3F7] shrink-0" />
+                                    <span className="text-white/80 truncate">{loc.city}</span>
+                                    <span className="ml-auto text-[#4FC3F7] font-bold text-xs">{loc.certs}</span>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Total badge */}
+                        <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
+                            <span className="text-white/40 text-xs uppercase tracking-widest font-bold">Total Certifications</span>
+                            <span className="text-3xl font-black text-[#4FC3F7]">
+                                {locations.reduce((sum, l) => sum + l.certs, 0)}
+                            </span>
+                        </div>
                     </motion.div>
                 </div>
             </div>
