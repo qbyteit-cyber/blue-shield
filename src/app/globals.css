@@ -73,3 +73,94 @@ h6 {
 .ticker-track:hover {
   animation-play-state: paused;
 }
+
+/* ── Badge Slider (CodePen-style infinite logo carousel) ── */
+@keyframes badge-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.badge-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 2.5rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.badge-slider__fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.badge-slider__fade--left {
+  left: 0;
+  background: linear-gradient(to right, #fff 0%, transparent 100%);
+}
+
+.badge-slider__fade--right {
+  right: 0;
+  background: linear-gradient(to left, #fff 0%, transparent 100%);
+}
+
+.badge-slider__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: badge-scroll 20s linear infinite;
+}
+
+.badge-slider__track:hover {
+  animation-play-state: paused;
+}
+
+.badge-slider__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0 1.5rem;
+}
+
+.badge-slider__img {
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.badge-slider__img--small {
+  height: 2.2rem;
+}
+
+.badge-slider__img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .badge-slider__img {
+    height: 4.5rem;
+  }
+
+  .badge-slider__img--small {
+    height: 3rem;
+  }
+
+  .badge-slider__slide {
+    padding: 0 2.5rem;
+  }
+}

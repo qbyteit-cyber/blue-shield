@@ -79,8 +79,11 @@ export function Hero() {
                             </Link>
                         </div>
 
-                        <CertificationBadgeStrip />
                     </motion.div>
+                </div>
+
+                <div className="mt-16 md:mt-20 -mx-6 md:mx-0">
+                    <CertificationBadgeStrip />
                 </div>
             </div>
         </section>
