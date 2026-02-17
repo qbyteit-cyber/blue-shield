@@ -8,8 +8,8 @@ export function Footer() {
     return (
         <footer className="bg-primary-navy text-white pt-24 pb-12 border-t border-white/10">
             <div className="container mx-auto px-6 max-w-7xl">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                    <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+                    <div className="lg:col-span-1 space-y-6">
                         <Link href="/" className="flex items-center">
                             <Image
                                 src="/itis-secure-logo.svg"
@@ -57,6 +57,25 @@ export function Footer() {
                     </div>
 
                     <div>
+                        <h4 className="text-sm font-bold uppercase tracking-widest mb-8 text-accent-coral">Legal</h4>
+                        <ul className="space-y-4 text-sm opacity-60">
+                            <li><Link href="/privacy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link></li>
+                            <li><Link href="/terms" className="hover:opacity-100 transition-opacity">Terms of Service</Link></li>
+                            <li><Link href="/legal-notice" className="hover:opacity-100 transition-opacity">Legal Notice</Link></li>
+                            <li><Link href="/accessibility" className="hover:opacity-100 transition-opacity">Accessibility</Link></li>
+                            <li>
+                                <button
+                                    onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
+                                    className="hover:opacity-100 transition-opacity text-left appearance-none"
+                                    type="button"
+                                >
+                                    Cookie Settings
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
                         <h4 className="text-sm font-bold uppercase tracking-widest mb-8 text-accent-coral">Contact</h4>
                         <ul className="space-y-4 text-sm opacity-60">
                             <li className="flex items-center gap-3">
@@ -71,28 +90,19 @@ export function Footer() {
                                 <MapPin size={18} className="text-accent-coral shrink-0 mt-0.5" />
                                 <span>Str. Liliacului nr 2, Cisnadie, Sibiu</span>
                             </li>
-                            <li className="flex items-start gap-3">
-                                <MapPin size={18} className="text-accent-coral shrink-0 mt-0.5" />
-                                <span>Str. Zaharia Stancu 8A, Ap 603, Brasov</span>
-                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6 text-xs opacity-40">
-                    <p>© 2026 ITIS-SECURE. All rights reserved.</p>
+                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[10px] uppercase tracking-widest opacity-40">
+                    <div className="space-y-1">
+                        <p>© 2026 ITIS-SECURE. All rights reserved.</p>
+                        <p>QBYTE IT SRL | Str. Liliacului nr 2, Cisnadie, Sibiu, Romania | VAT: DE123456789</p>
+                    </div>
                     <div className="flex gap-8">
-                        <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
-                        <Link href="/terms" className="hover:underline">Terms of Service</Link>
-                        <Link href="/legal-notice" className="hover:underline">Legal Notice</Link>
-                        <Link href="/accessibility" className="hover:underline">Accessibility</Link>
-                        <button
-                            onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
-                            className="hover:underline text-left appearance-none"
-                            type="button"
-                        >
-                            Cookies
-                        </button>
+                        <Link href="/privacy" className="hover:underline">Privacy</Link>
+                        <Link href="/terms" className="hover:underline">Terms</Link>
+                        <Link href="/legal-notice" className="hover:underline">Notice</Link>
                     </div>
                 </div>
             </div>
