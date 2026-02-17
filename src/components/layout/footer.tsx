@@ -86,6 +86,13 @@ export function Footer() {
                         <Link href="/terms" className="hover:underline">Terms of Service</Link>
                         <Link href="/legal-notice" className="hover:underline">Legal Notice</Link>
                         <Link href="/accessibility" className="hover:underline">Accessibility</Link>
+                        <button
+                            onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
+                            className="hover:underline text-left appearance-none"
+                            type="button"
+                        >
+                            Cookies
+                        </button>
                     </div>
                 </div>
             </div>
