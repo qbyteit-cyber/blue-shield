@@ -28,10 +28,11 @@ export function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-accent-coral transition-colors"
+                                aria-label="LinkedIn"
                             >
                                 <Linkedin size={20} />
                             </Link>
-                            <Link href="#" className="hover:text-accent-coral transition-colors">
+                            <Link href="#" className="hover:text-accent-coral transition-colors" aria-label="Website">
                                 <Globe size={20} />
                             </Link>
                         </div>

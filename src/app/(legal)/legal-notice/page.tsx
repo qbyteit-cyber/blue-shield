@@ -11,8 +11,71 @@ export const metadata: Metadata = {
 const LAST_UPDATED = "February 16, 2026";
 
 export default function LegalNoticePage() {
+    const legalSchema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://itis-secure.com/#organization",
+                "name": "ITIS-SECURE",
+                "legalName": "QBYTE IT SRL",
+                "url": "https://itis-secure.com",
+                "logo": "https://itis-secure.com/itis-secure-logo.svg",
+                "vatID": "DE123456789",
+                "iso6523Code": "0088:DE123456789",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Str. Liliacului nr 2",
+                    "addressLocality": "Cisnadie",
+                    "addressRegion": "Sibiu",
+                    "postalCode": "555300",
+                    "addressCountry": "RO"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+40-741-711-770",
+                    "contactType": "customer service",
+                    "email": "office@itis-secure.com"
+                }
+            },
+            {
+                "@type": "Service",
+                "provider": { "@id": "https://itis-secure.com/#organization" },
+                "serviceType": "Cybersecurity Compliance Consulting",
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "European Union"
+                },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Audit Readiness Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "TISAX® Readiness (AL2/AL3)"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "CMMC 2.0 Level 2 Implementation"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    };
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(legalSchema) }}
+            />
             <Navbar />
             <main className="min-h-screen pt-32 pb-24 bg-white">
                 <article className="container mx-auto px-6 max-w-4xl">
