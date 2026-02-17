@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, X } from "lucide-react";
 import type { PageMeta, EyebrowColor } from "./types";
+import { TisaxQuiz } from "@/components/features/tisax-quiz";
 
 /* ── Eyebrow colour map ────────────────────────────────────── */
 const eyebrowColors: Record<EyebrowColor, string> = {
@@ -15,7 +17,10 @@ const eyebrowColors: Record<EyebrowColor, string> = {
 };
 
 export function HowWeHelpHero({ meta }: { meta: PageMeta }) {
+    const [showQuiz, setShowQuiz] = useState(false);
     const color = eyebrowColors[meta.eyebrowColor];
+
+    const isImplementationChecklist = meta.ctaSecondary.text === "Download Implementation Checklist";
 
     return (
         <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] to-white pt-32 pb-20 md:pt-40 md:pb-24 border-b border-neutral-100">
@@ -53,9 +58,19 @@ export function HowWeHelpHero({ meta }: { meta: PageMeta }) {
                         <Link href={meta.ctaPrimary.href}>
                             <Button variant="primary" size="lg">{meta.ctaPrimary.text}</Button>
                         </Link>
-                        <Link href={meta.ctaSecondary.href}>
-                            <Button variant="outline" size="lg">{meta.ctaSecondary.text}</Button>
-                        </Link>
+                        {isImplementationChecklist ? (
+                            <Button
+                                variant="outline"
+                                size="lg"
+                                onClick={() => setShowQuiz(true)}
+                            >
+                                {meta.ctaSecondary.text}
+                            </Button>
+                        ) : (
+                            <Link href={meta.ctaSecondary.href}>
+                                <Button variant="outline" size="lg">{meta.ctaSecondary.text}</Button>
+                            </Link>
+                        )}
                     </div>
 
                     {/* Trust Points */}
@@ -69,6 +84,37 @@ export function HowWeHelpHero({ meta }: { meta: PageMeta }) {
                     </div>
                 </motion.div>
             </div>
+
+            {/* Quiz Modal */}
+            <AnimatePresence>
+                {showQuiz && (
+                    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setShowQuiz(false)}
+                            className="absolute inset-0 bg-primary-navy/40 backdrop-blur-sm"
+                        />
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                            className="relative w-full max-w-2xl bg-white rounded-[2rem] shadow-2xl overflow-hidden"
+                        >
+                            <button
+                                onClick={() => setShowQuiz(false)}
+                                className="absolute top-6 right-6 p-2 rounded-full hover:bg-neutral-100 transition-colors z-[110]"
+                            >
+                                <X size={20} className="text-neutral-400" />
+                            </button>
+                            <div className="overflow-y-auto max-h-[90vh]">
+                                <TisaxQuiz />
+                            </div>
+                        </motion.div>
+                    </div>
+                )}
+            </AnimatePresence>
         </section>
     );
 }
