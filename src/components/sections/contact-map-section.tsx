@@ -92,13 +92,17 @@ export function ContactMapSection() {
                                     className="w-full bg-neutral-50 border border-neutral-100 rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-coral focus:outline-none transition-all resize-none"
                                 />
                             </div>
-                            <p className="text-[10px] text-neutral-400 leading-relaxed px-1">
-                                Your data remains strictly confidential. GDPR compliant.
-                            </p>
-                            <Button className="w-full bg-primary-navy text-white h-14 rounded-xl font-bold text-base hover:bg-primary-navy/90 transition-all flex items-center justify-center gap-3">
-                                Book Initial Assessment
-                                <CheckCircle2 size={18} className="text-accent-coral" />
-                            </Button>
+                            <div className="space-y-4">
+                                <Button className="w-full bg-primary-navy text-white h-14 rounded-xl font-bold text-base hover:bg-primary-navy/90 transition-all flex items-center justify-center gap-3">
+                                    Book Initial Assessment
+                                    <CheckCircle2 size={18} className="text-accent-coral" />
+                                </Button>
+                                <p className="text-[10px] text-neutral-400 leading-relaxed px-1 text-center">
+                                    By submitting this inquiry, you agree to our <a href="/privacy" className="underline hover:text-accent-coral">Privacy Policy</a>.
+                                    Your data remains strictly confidential and is used solely for the purpose of scheduling your technical assessment.
+                                    Strategy confirmed via secure Link. GDPR Compliant.
+                                </p>
+                            </div>
                         </form>
                     </motion.div>
 
