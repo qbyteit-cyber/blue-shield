@@ -58,7 +58,7 @@ export default function AboutPage() {
                                     Lead by <br /> Auditor Insight.
                                 </h2>
                                 <p className="text-lg text-white/60 mb-8 leading-relaxed">
-                                    Founded by Iulian Bozdoghina, a Lead Auditor with years of hands-on experience in high-rigor information security environments, ITIS-SECURE was built for a single purpose: to solve the failure rate of European suppliers facing OEM compliance audits.
+                                    Founded by Iulian Bozdoghina, a Lead Auditor with years of hands-on experience in high-rigor information security environments, ITIS-Secure was built for a single purpose: to solve the failure rate of European suppliers facing OEM compliance audits.
                                 </p>
                                 <p className="text-lg text-white/60 mb-10 leading-relaxed">
                                     We don't just speak 'policy'. We speak 'avionics', 'automotive engineering', and 'network architecture'. We don't just give you a "To-Do" list; we provide the engineers to DO it.

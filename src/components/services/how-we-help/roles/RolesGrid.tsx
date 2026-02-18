@@ -134,7 +134,7 @@ export function RolesGrid({
                                 <tr className="border-b-2 border-primary-navy">
                                     <th className="text-left py-3 pr-6 font-bold text-primary-navy"></th>
                                     <th className="text-left py-3 px-6 font-bold text-primary-navy">Full-Time Hire</th>
-                                    <th className="text-left py-3 px-6 font-bold text-accent-coral">ITIS Outsourced Role</th>
+                                    <th className="text-left py-3 px-6 font-bold text-accent-coral">ITIS-Secure Outsourced Role</th>
                                 </tr>
                             </thead>
                             <tbody>

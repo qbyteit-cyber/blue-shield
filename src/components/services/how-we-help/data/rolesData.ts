@@ -138,8 +138,8 @@ export const rolesPageMeta: PageMeta = {
     introH2: "Senior Security Expertise, Without the Full-Time Cost",
     introParagraphs: [
         "Finding a qualified CISO with ISO 27001 lead auditor credentials and TISAX experience who wants to work for a 300-person automotive supplier in Central Europe is genuinely difficult. And even if you find one, the salary is €120,000–€180,000 for a function that might need 2 days of senior attention per week.",
-        "ITIS provides qualified, certified security professionals on a fractional basis. They attend your management reviews, run your audit programme, manage your ISMS, report to your board, and interface with certification bodies — as a full member of your team, not a remote adviser who sends monthly reports.",
-        "You get a verifiable credential (their certifications are real, their experience is documented), continuity (the same person, not a revolving door of consultants), and flexibility (scale up before a certification audit, scale back during quiet periods). Our outsourced professionals are engaged through ITIS Secure and are fully accountable to the terms of your engagement agreement.",
+        "ITIS-Secure provides qualified, certified security professionals on a fractional basis. They attend your management reviews, run your audit programme, manage your ISMS, report to your board, and interface with certification bodies — as a full member of your team, not a remote adviser who sends monthly reports.",
+        "You get a verifiable credential (their certifications are real, their experience is documented), continuity (the same person, not a revolving door of consultants), and flexibility (scale up before a certification audit, scale back during quiet periods). Our outsourced professionals are engaged through ITIS-Secure and are fully accountable to the terms of your engagement agreement.",
     ],
     introStats: [
         { value: "7", label: "Specialist roles available" },
@@ -180,8 +180,8 @@ export const rolesPageMeta: PageMeta = {
     ],
     faqs: [
         {
-            question: "Are your outsourced professionals employees of ITIS Secure?",
-            answer: "Our outsourced professionals are engaged through ITIS Secure and operate under our engagement agreements. The specific contractual arrangement (employment or specialist contractor) depends on the role and jurisdiction. In all cases, ITIS Secure is your single point of accountability for delivery and quality.",
+            question: "Are your outsourced professionals employees of ITIS-Secure?",
+            answer: "Our outsourced professionals are engaged through ITIS-Secure and operate under our engagement agreements. The specific contractual arrangement (employment or specialist contractor) depends on the role and jurisdiction. In all cases, ITIS-Secure is your single point of accountability for delivery and quality.",
         },
         {
             question: "What qualifications do your outsourced professionals hold?",

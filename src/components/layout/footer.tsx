@@ -13,7 +13,7 @@ export function Footer() {
                         <Link href="/" className="flex items-center">
                             <Image
                                 src="/itis-secure-logo.svg"
-                                alt="ITIS-SECURE"
+                                alt="ITIS-Secure"
                                 width={160}
                                 height={72}
                                 className="h-10 w-auto brightness-0 invert"
@@ -53,7 +53,7 @@ export function Footer() {
                         <ul className="space-y-4 text-sm opacity-60">
                             <li><Link href="/industries/automotive" className="hover:opacity-100 transition-opacity">Automotive Supply Chain</Link></li>
                             <li><Link href="/industries/defence" className="hover:opacity-100 transition-opacity">Aerospace & Defence</Link></li>
-                            <li><Link href="/about" className="hover:opacity-100 transition-opacity">About ITIS-SECURE</Link></li>
+                            <li><Link href="/about" className="hover:opacity-100 transition-opacity">About ITIS-Secure</Link></li>
                         </ul>
                     </div>
 
@@ -97,7 +97,7 @@ export function Footer() {
 
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[10px] uppercase tracking-widest opacity-40">
                     <div className="space-y-1">
-                        <p>© 2026 ITIS-SECURE. All rights reserved.</p>
+                        <p>© 2026 ITIS-Secure. All rights reserved.</p>
                         <p>Information Security Consulting SRL | Str. Liliacului nr 2, Cisnadie, Sibiu, Romania | VAT: DE123456789</p>
                     </div>
                     <div className="flex gap-8">

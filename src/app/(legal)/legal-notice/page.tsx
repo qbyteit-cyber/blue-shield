@@ -4,8 +4,8 @@ import { Info, Building, MapPin, Contact, Briefcase, Copyright, Landmark } from 
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Legal Notice | ITIS-SECURE",
-    description: "Statutory information and company details for Information Security Consulting SRL (ITIS-SECURE).",
+    title: "Legal Notice | ITIS-Secure",
+    description: "Statutory information and company details for Information Security Consulting SRL (ITIS-Secure).",
 };
 
 const LAST_UPDATED = "February 16, 2026";
@@ -17,7 +17,7 @@ export default function LegalNoticePage() {
             {
                 "@type": "LocalBusiness",
                 "@id": "https://itis-secure.com/#organization",
-                "name": "ITIS-SECURE",
+                "name": "ITIS-Secure",
                 "legalName": "Information Security Consulting SRL",
                 "url": "https://itis-secure.com",
                 "logo": "https://itis-secure.com/itis-secure-logo.svg",
@@ -103,7 +103,7 @@ export default function LegalNoticePage() {
                             <p>This website is operated as a commercial presence by:</p>
                             <p>
                                 <strong>Information Security Consulting SRL</strong><br />
-                                Trading as: <strong>ITIS-SECURE</strong>
+                                Trading as: <strong>ITIS-Secure</strong>
                             </p>
                         </section>
 
@@ -149,7 +149,7 @@ export default function LegalNoticePage() {
                                 <h2 className="m-0 text-2xl">5. Professional Liability Insurance</h2>
                             </div>
                             <p>
-                                ITIS-SECURE maintains professional indemnity insurance covering the delivery of cybersecurity consulting services across the European Union.
+                                ITIS-Secure maintains professional indemnity insurance covering the delivery of cybersecurity consulting services across the European Union.
                             </p>
                         </section>
 
@@ -159,7 +159,7 @@ export default function LegalNoticePage() {
                                 <h2 className="m-0 text-2xl">6. Copyright & Trademarks</h2>
                             </div>
                             <p>
-                                TISAX® is a registered trademark of the ENX Association. ITIS-SECURE is an independent consultancy and not an official representative of the ENX Association. All other content, including layout and images, is protected by copyright laws of Romania and the EU.
+                                TISAX® is a registered trademark of the ENX Association. ITIS-Secure is an independent consultancy and not an official representative of the ENX Association. All other content, including layout and images, is protected by copyright laws of Romania and the EU.
                             </p>
                         </section>
                     </div>

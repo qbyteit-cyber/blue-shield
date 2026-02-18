@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ITIS-SECURE | Enterprise TISAX & CMMC Compliance",
+  title: "ITIS-Secure | Enterprise TISAX & CMMC Compliance",
   description: "From zero to certified. One partner. Full compliance for Automotive & Defence.",
 };
 export default function RootLayout({

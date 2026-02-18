@@ -2,7 +2,7 @@ export function SchemaMarkup() {
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "ITIS-SECURE",
+        "name": "ITIS-Secure",
         "legalName": "Information Security Consulting SRL",
         "url": "https://itis-secure.com",
         "logo": "https://itis-secure.com/itis-secure-logo.svg",
@@ -33,7 +33,7 @@ export function SchemaMarkup() {
         "serviceType": "Information Security Consulting",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "ITIS-SECURE"
+            "name": "ITIS-Secure"
         },
         "areaServed": "Europe",
         "hasOfferCatalog": {

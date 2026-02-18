@@ -4,7 +4,7 @@ import { Shield, Lock, Eye, FileText, Database, UserCheck, Bell, MessageSquare }
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy | ITIS-SECURE",
+    title: "Privacy Policy | ITIS-Secure",
     description: "Our commitment to protecting your personal data in compliance with GDPR and EU privacy regulations.",
 };
 
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
                                 <h2 className="m-0 text-2xl">1. Information We Collect</h2>
                             </div>
                             <p>
-                                ITIS-SECURE ("we", "us", or "our"), operated by Information Security Consulting SRL, collects personal data to provide our consulting and audit-preparation services. This includes:
+                                ITIS-Secure ("we", "us", or "our"), operated by Information Security Consulting SRL, collects personal data to provide our consulting and audit-preparation services. This includes:
                             </p>
                             <ul>
                                 <li><strong>Identity Data:</strong> Name, company role, and professional credentials.</li>

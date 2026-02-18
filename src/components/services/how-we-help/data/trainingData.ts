@@ -178,7 +178,7 @@ export const trainingPageMeta: PageMeta = {
     introH2: "Build the Expertise Your Compliance Requires",
     introParagraphs: [
         "The compliance gap is often a knowledge gap. Companies implement frameworks with external consultants, then fail to maintain compliance because their own team doesn't understand what they're running. This is particularly acute with TISAX (3-year recertification cycle) and ISO 27001 (annual surveillance audits) — frameworks that require continuous, informed operation.",
-        "ITIS training is delivered by practitioners — people who have run TISAX assessments, conducted ISO 27001 audits, and implemented NIS2 programmes for real organisations. Not academics. Not slide-deck readers. People who've seen what auditors look for and what causes non-conformities.",
+        "ITIS-Secure training is delivered by practitioners — people who have run TISAX assessments, conducted ISO 27001 audits, and implemented NIS2 programmes for real organisations. Not academics. Not slide-deck readers. People who've seen what auditors look for and what causes non-conformities.",
         "Whether your team needs a half-day awareness session or a full 3-day auditor certification programme, we build and deliver the course around your frameworks, your industry, and your timeline.",
     ],
     introStats: [

@@ -90,7 +90,7 @@ export default function AutomotiveIndustryPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <h3 className="text-2xl font-black text-primary-navy mb-4">The ITIS Secure Advantage</h3>
+                                <h3 className="text-2xl font-black text-primary-navy mb-4">The ITIS-Secure Advantage</h3>
                                 <p className="text-neutral-600 mb-6">
                                     We don't just give you a checklist. We provide the auditors who understand the ENX portal requirements and the engineers who implement the controls.
                                 </p>

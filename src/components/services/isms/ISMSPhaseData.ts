@@ -227,7 +227,7 @@ export const ismsFAQs: FAQItem[] = [
     {
         question: "Do we need an ISMS before pursuing TISAX?",
         answer:
-            "Yes. TISAX assessments (both AL2 and AL3) are built on top of an ISO 27001-aligned ISMS. The VDA ISA catalogue evaluates your ISMS as its foundation. Implementing your ISMS with ITIS Secure means your TISAX preparation is already 60–70% complete, because we align every control to both standards simultaneously.",
+            "Yes. TISAX assessments (both AL2 and AL3) are built on top of an ISO 27001-aligned ISMS. The VDA ISA catalogue evaluates your ISMS as its foundation. Implementing your ISMS with ITIS-Secure means your TISAX preparation is already 60–70% complete, because we align every control to both standards simultaneously.",
     },
     {
         question: "What is a Statement of Applicability?",

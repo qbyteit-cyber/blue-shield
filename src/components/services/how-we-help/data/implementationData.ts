@@ -79,7 +79,7 @@ export const implementationPageMeta: PageMeta = {
     eyebrowColor: "blue",
     h1: "Implementation Support.",
     subheadline:
-        "Getting from zero to certified isn't a documentation exercise — it's a full-scale operational transformation. ITIS Secure embeds alongside your team to build, configure, and prove every control your certification requires.",
+        "Getting from zero to certified isn't a documentation exercise — it's a full-scale operational transformation. ITIS-Secure embeds alongside your team to build, configure, and prove every control your certification requires.",
     ctaPrimary: { text: "Book Your Free Gap Assessment", href: "/contact" },
     ctaSecondary: { text: "Explore ISMS Implementation", href: "/services/isms-implementation" },
     trustPoints: [
@@ -90,8 +90,8 @@ export const implementationPageMeta: PageMeta = {
     introH2: "What Is Implementation Support?",
     introParagraphs: [
         "Most companies attempting ISO 27001 or TISAX certification try to do it with their existing IT team, treating it as an internal project. They underestimate the bandwidth required, the depth of expertise needed, and the evidence requirements they don't yet know about. By month three, the project stalls — policies are half-written, risk assessments are incomplete, and the certification deadline hasn't moved.",
-        "ITIS Secure doesn't hand over a framework template and leave. We assign a dedicated expert who works inside your organisation through the full implementation lifecycle: scoping, policy development, control implementation, evidence building, and audit preparation. Your consultant becomes part of your team for the duration of the engagement.",
-        "The outcome is a genuinely implemented, audit-ready security programme — not just a folder of policies no one reads. Every control is operational, every piece of evidence is documented, and your team understands what they're running. Note: ITIS Secure provides implementation support and consultancy. Official certifications are issued by independent accredited certification bodies.",
+        "ITIS-Secure doesn't hand over a framework template and leave. We assign a dedicated expert who works inside your organisation through the full implementation lifecycle: scoping, policy development, control implementation, evidence building, and audit preparation. Your consultant becomes part of your team for the duration of the engagement.",
+        "The outcome is a genuinely implemented, audit-ready security programme — not just a folder of policies no one reads. Every control is operational, every piece of evidence is documented, and your team understands what they're running. Note: ITIS-Secure provides implementation support and consultancy. Official certifications are issued by independent accredited certification bodies.",
     ],
     introStats: [
         { value: "98%", label: "First-time pass rate" },

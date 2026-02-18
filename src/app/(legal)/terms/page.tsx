@@ -4,8 +4,8 @@ import { Scale, FileCheck, ShieldAlert, CreditCard, Gavel, Globe, HelpCircle } f
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Terms of Service | ITIS-SECURE",
-    description: "Legal terms governing the use of ITIS-SECURE consulting services and our digital assets.",
+    title: "Terms of Service | ITIS-Secure",
+    description: "Legal terms governing the use of ITIS-Secure consulting services and our digital assets.",
 };
 
 const LAST_UPDATED = "February 16, 2026";
@@ -38,7 +38,7 @@ export default function TermsOfServicePage() {
                                 <h2 className="m-0 text-2xl">1. Acceptance of Terms</h2>
                             </div>
                             <p>
-                                By accessing the ITIS-SECURE website (itis-secure.com) and utilizing our compliance consultancy services, you engage in our "Service" and agree to be bound by the following terms and conditions. These terms apply to all users of the site, including without limitation users who are browsers, vendors, customers, or merchants.
+                                By accessing the ITIS-Secure website (itis-secure.com) and utilizing our compliance consultancy services, you engage in our "Service" and agree to be bound by the following terms and conditions. These terms apply to all users of the site, including without limitation users who are browsers, vendors, customers, or merchants.
                             </p>
                         </section>
 
@@ -48,7 +48,7 @@ export default function TermsOfServicePage() {
                                 <h2 className="m-0 text-2xl">2. Service Provision</h2>
                             </div>
                             <p>
-                                ITIS-SECURE provides professional advisory services for TISAX®, CMMC, and ISO 27001 readiness. Our services are based on the current state of regulatory requirements and are provided with the objective of preparing your organization for high-rigor audits.
+                                ITIS-Secure provides professional advisory services for TISAX®, CMMC, and ISO 27001 readiness. Our services are based on the current state of regulatory requirements and are provided with the objective of preparing your organization for high-rigor audits.
                             </p>
                         </section>
 
@@ -68,7 +68,7 @@ export default function TermsOfServicePage() {
                                 <h2 className="m-0 text-2xl">4. Limitation of Liability</h2>
                             </div>
                             <p>
-                                While we maintain a 100% first-time pass rate, final certification is granted solely by independent audit bodies (ENX, C3PAO, etc.). ITIS-SECURE shall not be liable for the decisions of these bodies or for any indirect, incidental, or consequential damages arising from the use of our recommendations.
+                                While we maintain a 100% first-time pass rate, final certification is granted solely by independent audit bodies (ENX, C3PAO, etc.). ITIS-Secure shall not be liable for the decisions of these bodies or for any indirect, incidental, or consequential damages arising from the use of our recommendations.
                             </p>
                         </section>
 

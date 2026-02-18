@@ -109,7 +109,7 @@ export default function ISMSImplementationPage() {
                                     <span className="text-accent-coral">That Gets You Certified.</span>
                                 </h1>
                                 <p className="text-lg text-neutral-600 mb-10 leading-relaxed max-w-xl">
-                                    Your OEM just added ISO 27001 to the contract requirements. Your TISAX deadline is approaching. You need an ISMS that is audit-ready, not a stack of templates. ITIS Secure implements, documents, and maintains your Information Security Management System end-to-end.
+                                    Your OEM just added ISO 27001 to the contract requirements. Your TISAX deadline is approaching. You need an ISMS that is audit-ready, not a stack of templates. ITIS-Secure implements, documents, and maintains your Information Security Management System end-to-end.
                                 </p>
                                 <div className="flex gap-4 mb-10">
                                     <Link href="/contact">
@@ -171,7 +171,7 @@ export default function ISMSImplementationPage() {
                                         For automotive suppliers pursuing TISAX, defence subcontractors navigating CMMC, or any European company facing NIS2 obligations, an ISMS is no longer optional — it is the contractual baseline. BMW, Volkswagen, and Airbus require evidence of a functioning ISMS before awarding or renewing supply contracts. Without one, you are excluded from the bidding table entirely.
                                     </p>
                                     <p>
-                                        But your ISMS should be viewed as a <strong>business asset</strong>, not just a compliance burden. It is the foundation upon which every future certification is built — ISO 27001, TISAX, NIS2, DORA, and beyond. At ITIS Secure, we implement your ISMS using the proven ISO 27001 Plan-Do-Check-Act lifecycle, ensuring that every control, every record, and every process is audit-ready from the very first day.
+                                        But your ISMS should be viewed as a <strong>business asset</strong>, not just a compliance burden. It is the foundation upon which every future certification is built — ISO 27001, TISAX, NIS2, DORA, and beyond. At ITIS-Secure, we implement your ISMS using the proven ISO 27001 Plan-Do-Check-Act lifecycle, ensuring that every control, every record, and every process is audit-ready from the very first day.
                                     </p>
                                 </div>
                             </div>
@@ -352,7 +352,7 @@ export default function ISMSImplementationPage() {
                                     TISAX Assessment Levels 2 and 3 require a functioning ISMS as their foundation. The VDA ISA catalogue — the control framework that TISAX auditors use — is built directly on top of ISO 27001 principles. This means every hour invested in your ISMS directly accelerates your TISAX timeline.
                                 </p>
                                 <p className="text-neutral-600 leading-relaxed mb-8">
-                                    When you implement your ISMS with ITIS Secure, your TISAX preparation is already 60–70% complete on the day your ISMS goes live. Our methodology is designed to satisfy both frameworks simultaneously, reducing your total investment by approximately 30% compared to treating them as separate projects.
+                                    When you implement your ISMS with ITIS-Secure, your TISAX preparation is already 60–70% complete on the day your ISMS goes live. Our methodology is designed to satisfy both frameworks simultaneously, reducing your total investment by approximately 30% compared to treating them as separate projects.
                                 </p>
                                 <Link
                                     href="/services/tisax"
@@ -381,18 +381,18 @@ export default function ISMSImplementationPage() {
                     </div>
                 </section>
 
-                {/* ═══ WHY ITIS SECURE ═══ */}
+                {/* ═══ WHY ITIS-Secure ═══ */}
                 <section className="py-24 bg-white">
                     <div className="container mx-auto px-6 max-w-7xl">
                         <h2 className="text-3xl md:text-4xl font-black text-primary-navy tracking-tighter mb-16 text-center">
-                            Why Automotive and Defence Leaders Choose ITIS Secure
+                            Why Automotive and Defence Leaders Choose ITIS-Secure
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {[
                                 {
                                     icon: Layers,
                                     title: "End-to-End Ownership",
-                                    desc: "ITIS Secure does not just advise — we implement, document, and maintain your entire ISMS. From gap analysis through certification, you have a single partner responsible for every deliverable.",
+                                    desc: "ITIS-Secure does not just advise — we implement, document, and maintain your entire ISMS. From gap analysis through certification, you have a single partner responsible for every deliverable.",
                                 },
                                 {
                                     icon: Eye,
@@ -518,7 +518,7 @@ export default function ISMSImplementationPage() {
                             "serviceType": "Information Security Management System Implementation",
                             "provider": {
                                 "@type": "Organization",
-                                "name": "ITIS Secure",
+                                "name": "ITIS-Secure",
                                 "url": "https://itis-secure.com"
                             },
                             "areaServed": {

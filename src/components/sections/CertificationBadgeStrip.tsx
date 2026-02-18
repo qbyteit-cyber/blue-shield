@@ -42,7 +42,7 @@ export function CertificationBadgeStrip() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Organization",
-                        "name": "ITIS-SECURE",
+                        "name": "ITIS-Secure",
                         "award": standards,
                     }),
                 }}

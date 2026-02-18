@@ -4,8 +4,8 @@ import { Accessibility, MousePointer2, Type, Laptop, Send, ShieldCheck } from "l
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Accessibility Statement | ITIS-SECURE",
-    description: "Our commitment to ensuring digital accessibility for people with disabilities on the ITIS-SECURE platform.",
+    title: "Accessibility Statement | ITIS-Secure",
+    description: "Our commitment to ensuring digital accessibility for people with disabilities on the ITIS-Secure platform.",
 };
 
 const LAST_UPDATED = "February 16, 2026";
@@ -38,7 +38,7 @@ export default function AccessibilityPage() {
                                 <h2 className="m-0 text-2xl">1. Our Commitment</h2>
                             </div>
                             <p>
-                                ITIS-SECURE is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+                                ITIS-Secure is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
                             </p>
                         </section>
 
@@ -58,7 +58,7 @@ export default function AccessibilityPage() {
                                 <h2 className="m-0 text-2xl">3. Technical Specifications</h2>
                             </div>
                             <p>
-                                Accessibility of the ITIS-SECURE website relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:
+                                Accessibility of the ITIS-Secure website relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:
                             </p>
                             <ul>
                                 <li>HTML</li>

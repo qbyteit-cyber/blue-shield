@@ -153,7 +153,7 @@ export default function ContactPage() {
                                         <Shield className="absolute -bottom-10 -right-10 text-white opacity-5" size={200} />
                                         <h4 className="text-xl font-bold mb-4 relative z-10">Auditor-Direct Support</h4>
                                         <p className="text-sm text-neutral-400 leading-relaxed relative z-10">
-                                            Founded by Iulian Bozdoghina, ITIS-SECURE provides direct technical implementation guidance that moves beyond manual checklists.
+                                            Founded by Iulian Bozdoghina, ITIS-Secure provides direct technical implementation guidance that moves beyond manual checklists.
                                         </p>
                                         <div className="mt-8 flex gap-3 relative z-10">
                                             <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold">TISAX® Specialist</div>

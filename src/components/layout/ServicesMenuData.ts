@@ -30,13 +30,13 @@ export const servicesMenuColumns: MenuColumn[] = [
     {
         heading: "Security Management Frameworks",
         items: [
-            { label: "ISO 27001", href: "/services/iso-27001", icon: Award },
             { label: "TISAX", href: "/services/tisax", icon: Car },
-            { label: "ISMS Implementation", href: "/services/isms-implementation", icon: ClipboardList },
+            { label: "ISO 27001", href: "/services/iso-27001", icon: Award },
+            { label: "TPISR", href: "/services/tpisr", icon: Network },
             { label: "NIS2", href: "/services/nis2", icon: Globe },
             { label: "DORA", href: "/services/dora", icon: Building2 },
             { label: "GDPR", href: "/services/gdpr", icon: Lock },
-            { label: "TPISR", href: "/services/tpisr", icon: Network },
+            { label: "ISMS Implementation", href: "/services/isms-implementation", icon: ClipboardList },
             { label: "Other Frameworks", href: "/services", icon: LayoutGrid },
         ],
     },

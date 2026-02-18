@@ -100,7 +100,7 @@ export function Navbar() {
                 <Link href="/" className="flex items-center">
                     <Image
                         src="/itis-secure-logo.svg"
-                        alt="ITIS-SECURE"
+                        alt="ITIS-Secure"
                         width={160}
                         height={72}
                         className="h-12 w-auto"
