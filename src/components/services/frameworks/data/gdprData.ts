@@ -18,7 +18,7 @@ export const gdprData: FrameworkPageData = {
         description: "We bridge the gap between legal privacy requirements and technical security controls. From Article 30 Records of Processing to Article 32 Security of Processing.",
         buttons: {
             primary: { text: "Book Privacy Audit", action: "scroll" },
-            secondary: { text: "Hire a DPO", link: "/services/outsourced-roles" },
+            secondary: { text: "Hire a DPO", link: "/contact" },
         },
         complianceCard: {
             status: "Mandatory",

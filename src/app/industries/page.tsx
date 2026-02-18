@@ -248,7 +248,7 @@ export default function IndustriesPage() {
                                     Book Assessment
                                 </Button>
                             </Link>
-                            <Link href="/about">
+                            <Link href="/contact">
                                 <Button
                                     variant="outline"
                                     size="lg"

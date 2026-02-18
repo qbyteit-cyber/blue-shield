@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { Shield, CheckCircle2, ArrowRight, FileText, Search, Activity, HeartPulse } from "lucide-react";
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
 
@@ -32,12 +33,16 @@ export default function TisaxServicePage() {
                                     95-day roadmap to TISAX® Assessment Level 2 & 3. We implement the VDA ISA 5.0 controls and manage your entire ENX portal registration.
                                 </p>
                                 <div className="flex gap-4">
-                                    <Button variant="primary" size="lg" className="px-8 bg-primary-navy">
-                                        Get Started
-                                    </Button>
-                                    <Button variant="outline" size="lg" className="px-8">
-                                        View Roadmap
-                                    </Button>
+                                    <Link href="/contact">
+                                        <Button variant="primary" size="lg" className="px-8 bg-primary-navy">
+                                            Get Started
+                                        </Button>
+                                    </Link>
+                                    <Link href="/contact">
+                                        <Button variant="outline" size="lg" className="px-8">
+                                            View Roadmap
+                                        </Button>
+                                    </Link>
                                 </div>
                             </motion.div>
                             <div className="relative">
@@ -175,9 +180,11 @@ export default function TisaxServicePage() {
                         <p className="text-xl text-neutral-500 mb-12 max-w-2xl mx-auto">
                             Don't gamble with your next rotation of OEM contracts. Get the audit-ready expertise you need today.
                         </p>
-                        <Button className="bg-accent-coral text-white hover:bg-accent-coral/90 text-lg px-12 py-8 h-auto rounded-xl">
-                            Request Quote for TISAX® Prep
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-accent-coral text-white hover:bg-accent-coral/90 text-lg px-12 py-8 h-auto rounded-xl">
+                                Request Quote for TISAX® Prep
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </main>

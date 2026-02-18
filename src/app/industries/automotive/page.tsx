@@ -3,8 +3,9 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { CheckCircle2, Shield, Calendar, Award, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
 import Image from "next/image";
 
@@ -197,9 +198,11 @@ export default function AutomotiveIndustryPage() {
                         <p className="text-xl mb-12 opacity-90 max-w-2xl mx-auto font-medium">
                             Our experts are standing by to conduct an initial gap analysis of your current posture. Response within 4 hours.
                         </p>
-                        <Button className="bg-primary-navy text-white hover:bg-primary-navy/90 text-lg px-12 py-8 h-auto rounded-xl">
-                            Book Free 30-Min Consultation
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-primary-navy text-white hover:bg-primary-navy/90 text-lg px-12 py-8 h-auto rounded-xl">
+                                Book Free 30-Min Consultation
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </main>

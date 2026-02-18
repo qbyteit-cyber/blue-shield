@@ -18,7 +18,7 @@ export const doraData: FrameworkPageData = {
         description: "The Digital Operational Resilience Act unification is here. We help financial entities and critical ICT providers build robust risk management frameworks.",
         buttons: {
             primary: { text: "Start DORA Assessment", action: "scroll" },
-            secondary: { text: "View The 5 Pillars", link: "#" },
+            secondary: { text: "View The 5 Pillars", link: "/contact" },
         },
         complianceCard: {
             status: "Enforcement",

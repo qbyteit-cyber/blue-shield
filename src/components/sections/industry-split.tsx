@@ -13,7 +13,7 @@ const industries = [
         bg: "bg-primary-navy",
         textColor: "text-white",
         btnVariant: "text-white border-white/20 hover:bg-white/10",
-        href: "/industries/automotive"
+        href: "/contact"
     },
     {
         title: "Aerospace & Defence",
@@ -23,7 +23,7 @@ const industries = [
         bg: "bg-neutral-100",
         textColor: "text-neutral-900",
         btnVariant: "text-neutral-900 border-neutral-200 hover:bg-neutral-200",
-        href: "/industries/defence"
+        href: "/contact"
     }
 ];
 

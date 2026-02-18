@@ -47,9 +47,11 @@ export function FrameworkHero({ data }: { data: FrameworkHeroProps }) {
 
                         {/* Buttons */}
                         <div className="flex flex-wrap gap-4">
-                            <Button size="lg" className="bg-primary-navy text-white px-8 h-14 rounded-xl font-bold">
-                                {data.buttons.primary.text}
-                            </Button>
+                            <Link href="/contact">
+                                <Button size="lg" className="bg-primary-navy text-white px-8 h-14 rounded-xl font-bold">
+                                    {data.buttons.primary.text}
+                                </Button>
+                            </Link>
                             {data.buttons.secondary && (
                                 <Link href={data.buttons.secondary.link}>
                                     <Button variant="outline" size="lg" className="px-8 h-14 rounded-xl font-bold">

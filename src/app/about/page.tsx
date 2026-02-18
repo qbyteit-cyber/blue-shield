@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Shield, Target, Users, BookOpen, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function AboutPage() {
     return (
@@ -124,9 +125,11 @@ export default function AboutPage() {
                         <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-8 leading-tight">
                             Ready to Experience <br /> Expert-Led Compliance?
                         </h2>
-                        <Button className="bg-primary-navy text-white px-12 h-16 rounded-xl font-bold text-lg hover:bg-primary-navy/90 shadow-2xl">
-                            Book Your Free Consultation
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-primary-navy text-white px-12 h-16 rounded-xl font-bold text-lg hover:bg-primary-navy/90 shadow-2xl">
+                                Book Your Free Consultation
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </main>

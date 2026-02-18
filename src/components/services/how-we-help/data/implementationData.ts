@@ -155,6 +155,6 @@ export const implementationPageMeta: PageMeta = {
         h2: "Ready to Start Your Implementation?",
         body: "Every day without a compliant security programme is a day your competitors could be winning contracts you're not eligible for. Your gap assessment is free, takes 30 minutes, and gives you a clear implementation roadmap.",
         ctaPrimary: { text: "Book Your Free Gap Assessment", href: "/contact" },
-        ctaSecondary: { text: "View Our ISMS Service", href: "/services/isms-implementation" },
+        ctaSecondary: { text: "View Our ISMS Service", href: "/contact" },
     },
 };

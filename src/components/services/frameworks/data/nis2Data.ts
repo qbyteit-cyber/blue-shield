@@ -18,7 +18,7 @@ export const nis2Data: FrameworkPageData = {
         description: "Complete NIS2 compliance roadmap for Essential and Important entities. We operationalize Article 21 technical measures and streamline your incident reporting obligations.",
         buttons: {
             primary: { text: "Book NIS2 Gap Analysis", action: "scroll" },
-            secondary: { text: "Download Checklist", link: "#" },
+            secondary: { text: "Download Checklist", link: "/contact" },
         },
         complianceCard: {
             status: "Required",

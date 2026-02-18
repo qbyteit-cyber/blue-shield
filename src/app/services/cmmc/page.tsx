@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { Shield, Lock, FileCheck, Server, Terminal, AlertCircle } from "lucide-react";
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
 
@@ -34,12 +35,16 @@ export default function CmmcServicePage() {
                                 implementation of all 110 NIST SP 800-171 practices for Tier-2 European defence subcontractors. No POA&M allowed for final certification. 100% adherence guaranteed.
                             </p>
                             <div className="flex gap-4">
-                                <Button className="bg-accent-coral text-white px-8 h-14 rounded-none font-bold text-base hover:bg-accent-coral/90">
-                                    Start Gap Analysis
-                                </Button>
-                                <Button variant="outline" className="border-white/20 text-white px-8 h-14 rounded-none font-bold text-base hover:bg-white/10">
-                                    Download Roadmap
-                                </Button>
+                                <Link href="/contact">
+                                    <Button className="bg-accent-coral text-white px-8 h-14 rounded-none font-bold text-base hover:bg-accent-coral/90">
+                                        Start Gap Analysis
+                                    </Button>
+                                </Link>
+                                <Link href="/contact">
+                                    <Button variant="outline" className="border-white/20 text-white px-8 h-14 rounded-none font-bold text-base hover:bg-white/10">
+                                        Download Roadmap
+                                    </Button>
+                                </Link>
                             </div>
                         </motion.div>
                     </div>
@@ -125,9 +130,11 @@ export default function CmmcServicePage() {
                         <p className="text-xl text-neutral-600 mb-12">
                             We prepare Tier-2 and Tier-3 subcontractors to meet DoD requirements without derailing production schedules.
                         </p>
-                        <Button className="bg-primary-navy text-white px-12 h-16 rounded-none font-bold text-lg hover:bg-primary-navy/90">
-                            Book Your CMMC Strategy Consultation
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-primary-navy text-white px-12 h-16 rounded-none font-bold text-lg hover:bg-primary-navy/90">
+                                Book Your CMMC Strategy Consultation
+                            </Button>
+                        </Link>
                     </div>
                 </section>
 

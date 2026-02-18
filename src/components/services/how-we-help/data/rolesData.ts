@@ -216,6 +216,6 @@ export const rolesPageMeta: PageMeta = {
         h2: "The Expertise You Need, Exactly When You Need It.",
         body: "Your compliance programme requires qualified, accountable security leadership — not a subscription to a policy template platform. Talk to us about which role you need and we'll match you with the right professional within the week.",
         ctaPrimary: { text: "Discuss Your Requirements", href: "/contact" },
-        ctaSecondary: { text: "View All Services", href: "/services/implementation-support" },
+        ctaSecondary: { text: "View All Services", href: "/contact" },
     },
 };

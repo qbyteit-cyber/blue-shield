@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { Shield, BookOpen, UserCheck, Search, CheckCircle, FileText } from "lucide-react";
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
 
@@ -32,12 +33,16 @@ export default function IsoServicePage() {
                                 Building your Information Security Management System (ISMS) from the ground up. Expert-led preparation for the global supply chain with 100% first-time pass guarantee.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button size="lg" className="bg-primary-navy text-white px-10 h-14 text-base rounded-xl font-bold">
-                                    Book Gap Analysis
-                                </Button>
-                                <Button size="lg" variant="outline" className="px-10 h-14 text-base rounded-xl font-bold">
-                                    Download ISO Matrix
-                                </Button>
+                                <Link href="/contact">
+                                    <Button size="lg" className="bg-primary-navy text-white px-10 h-14 text-base rounded-xl font-bold">
+                                        Book Gap Analysis
+                                    </Button>
+                                </Link>
+                                <Link href="/contact">
+                                    <Button size="lg" variant="outline" className="px-10 h-14 text-base rounded-xl font-bold">
+                                        Download ISO Matrix
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -128,9 +133,11 @@ export default function IsoServicePage() {
                         <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-8">
                             Start Your ISO 27001 Journey Today.
                         </h2>
-                        <Button className="bg-accent-coral text-white text-lg px-12 py-8 h-auto rounded-xl font-bold hover:bg-accent-coral/90">
-                            Book Free 30-Min Consultation
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-accent-coral text-white text-lg px-12 py-8 h-auto rounded-xl font-bold hover:bg-accent-coral/90">
+                                Book Free 30-Min Consultation
+                            </Button>
+                        </Link>
                         <p className="mt-8 opacity-40 text-xs uppercase tracking-widest font-bold">
                             Response within 4 hours ● Authorized Auditor Insights
                         </p>

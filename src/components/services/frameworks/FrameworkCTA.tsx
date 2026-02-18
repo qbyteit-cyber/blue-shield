@@ -19,7 +19,7 @@ export function FrameworkCTA({ data }: { data: { title: string; description: str
                             {data.buttonText}
                         </Button>
                     </Link>
-                    <Link href="/services#frameworks">
+                    <Link href="/contact">
                         <Button variant="outline" className="text-lg px-12 py-8 h-auto rounded-xl font-bold w-full md:w-auto">
                             Compare Frameworks
                         </Button>
