@@ -32,7 +32,7 @@ export function Hero() {
                             <Link href="/contact">
                                 <Button size="lg">Book Your Free Gap Assessment</Button>
                             </Link>
-                            <Link href="/contact">
+                            <Link href="/services/tisax">
                                 <Button variant="secondary" size="lg">Explore Solutions</Button>
                             </Link>
                         </div>

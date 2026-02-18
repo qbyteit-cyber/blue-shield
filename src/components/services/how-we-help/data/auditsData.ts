@@ -99,7 +99,7 @@ export const auditsPageMeta: PageMeta = {
     subheadline:
         "The worst time to find a gap is when the auditor is sitting across the table. Our internal audit and testing services find every non-conformity before it costs you a certification — or a contract.",
     ctaPrimary: { text: "Book Your Gap Analysis", href: "/contact" },
-    ctaSecondary: { text: "Request Audit Readiness Guide", href: "/contact" },
+    ctaSecondary: { text: "Explore Security Management Frameworks", href: "/services/isms-implementation" },
     trustPoints: [
         { text: "Audit against ISO 27001, TISAX, CMMC, NIS2 and more" },
         { text: "Written audit reports with actionable remediation plans" },

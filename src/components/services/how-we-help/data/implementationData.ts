@@ -81,7 +81,7 @@ export const implementationPageMeta: PageMeta = {
     subheadline:
         "Getting from zero to certified isn't a documentation exercise — it's a full-scale operational transformation. ITIS Secure embeds alongside your team to build, configure, and prove every control your certification requires.",
     ctaPrimary: { text: "Book Your Free Gap Assessment", href: "/contact" },
-    ctaSecondary: { text: "Request Implementation Checklist", href: "/contact" },
+    ctaSecondary: { text: "Explore ISMS Implementation", href: "/services/isms-implementation" },
     trustPoints: [
         { text: "ISO 27001 Lead Auditor certified" },
         { text: "TISAX AL3 preparation specialists" },
@@ -155,6 +155,6 @@ export const implementationPageMeta: PageMeta = {
         h2: "Ready to Start Your Implementation?",
         body: "Every day without a compliant security programme is a day your competitors could be winning contracts you're not eligible for. Your gap assessment is free, takes 30 minutes, and gives you a clear implementation roadmap.",
         ctaPrimary: { text: "Book Your Free Gap Assessment", href: "/contact" },
-        ctaSecondary: { text: "View Our ISMS Service", href: "/contact" },
+        ctaSecondary: { text: "View Our ISMS Service", href: "/services/isms-implementation" },
     },
 };

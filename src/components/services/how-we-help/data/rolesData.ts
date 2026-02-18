@@ -129,7 +129,7 @@ export const rolesPageMeta: PageMeta = {
     subheadline:
         "Not every organisation needs a full-time CISO. But every organisation handling sensitive data, pursuing certification, or operating in a regulated industry needs that expertise — on demand, accountable, and embedded in your business.",
     ctaPrimary: { text: "Discuss Your Requirements", href: "/contact" },
-    ctaSecondary: { text: "Download Outsourced Roles Guide", href: "/contact" },
+    ctaSecondary: { text: "Explore Industries", href: "/industries" },
     trustPoints: [
         { text: "Qualified professionals with active framework certifications" },
         { text: "Flexible engagement — days per month to full-time" },

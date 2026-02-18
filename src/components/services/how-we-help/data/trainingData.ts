@@ -257,6 +257,6 @@ export const trainingPageMeta: PageMeta = {
         h2: "Build a Team That Owns Your Compliance.",
         body: "External consultants can implement a framework. Only your team can maintain it — and that requires real knowledge, not a certificate on the wall.",
         ctaPrimary: { text: "Request a Training Programme", href: "/contact" },
-        ctaSecondary: { text: "Download Course Catalogue", href: "/contact" },
+        ctaSecondary: { text: "Request Course Catalogue", href: "/contact" },
     },
 };
