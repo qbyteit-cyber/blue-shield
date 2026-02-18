@@ -2,11 +2,14 @@
 
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Clock, Shield, CheckCircle2, Phone } from "lucide-react";
 
 export default function ContactPage() {
+    const [agreedToGdpr, setAgreedToGdpr] = useState(false);
+
     return (
         <>
             <Navbar />
@@ -61,15 +64,27 @@ export default function ContactPage() {
                                         <textarea rows={4} placeholder="Tell us about your project or target deadline..." className="w-full bg-neutral-50 border border-neutral-100 rounded-xl px-4 py-4 focus:ring-2 focus:ring-accent-coral focus:outline-none transition-all resize-none"></textarea>
                                     </div>
                                     <div className="space-y-4">
-                                        <Button className="w-full bg-primary-navy text-white h-16 rounded-xl font-bold text-lg hover:bg-primary-navy/90 transition-all flex items-center justify-center gap-3">
+                                        <Button
+                                            disabled={!agreedToGdpr}
+                                            className="w-full bg-primary-navy text-white h-16 rounded-xl font-bold text-lg hover:bg-primary-navy/90 focus:ring-2 focus:ring-accent-coral focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-3"
+                                        >
                                             Book Initial Assessment
                                             <CheckCircle2 size={20} className="text-accent-coral" />
                                         </Button>
-                                        <p className="text-[10px] text-neutral-400 leading-relaxed px-1 text-center">
-                                            By submitting this inquiry, you agree to our <a href="/privacy" className="underline hover:text-accent-coral">Privacy Policy</a>.
-                                            Your data remains strictly confidential and is used solely for the purpose of scheduling your technical assessment.
-                                            Strategy confirmed via secure Link. GDPR Compliant.
-                                        </p>
+                                        <div className="flex gap-3 px-1">
+                                            <input
+                                                type="checkbox"
+                                                id="gdpr-consent"
+                                                checked={agreedToGdpr}
+                                                onChange={(e) => setAgreedToGdpr(e.target.checked)}
+                                                className="mt-1 h-3.5 w-3.5 rounded border-neutral-300 text-accent-coral focus:ring-accent-coral cursor-pointer"
+                                            />
+                                            <label htmlFor="gdpr-consent" className="text-[10px] text-neutral-400 leading-relaxed cursor-pointer">
+                                                By submitting this inquiry, you agree to our <a href="/privacy" className="underline hover:text-accent-coral">Privacy Policy</a>.
+                                                Your data remains strictly confidential and is used solely for the purpose of scheduling your technical assessment.
+                                                Strategy confirmed via secure Link. GDPR Compliant.
+                                            </label>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
