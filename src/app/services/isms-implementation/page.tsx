@@ -116,7 +116,7 @@ export default function ISMSImplementationPage() {
                                         <Button variant="primary" size="lg">Book Your Free ISMS Gap Assessment</Button>
                                     </Link>
                                     <Link href="/contact">
-                                        <Button variant="outline" size="lg">Download Methodology Overview</Button>
+                                        <Button variant="outline" size="lg">Request Methodology Overview</Button>
                                     </Link>
                                 </div>
                                 <div className="flex flex-wrap gap-6 text-xs font-bold text-neutral-500">
@@ -498,7 +498,7 @@ export default function ISMSImplementationPage() {
                                 </Link>
                                 <Link href="/contact">
                                     <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 text-lg px-10 py-6 h-auto rounded-xl">
-                                        Download ISMS Implementation Guide
+                                        Request ISMS Implementation Guide
                                     </Button>
                                 </Link>
                             </div>

@@ -43,7 +43,7 @@ export default function AutomotiveIndustryPage() {
                                     Book Free Gap Assessment
                                 </Button>
                                 <Button variant="outline" size="lg" className="px-8 border-white/20 text-white hover:bg-white/10">
-                                    Download Checklist
+                                    Request Checklist
                                 </Button>
                             </div>
                         </motion.div>
