@@ -81,7 +81,7 @@ export const implementationPageMeta: PageMeta = {
     subheadline:
         "Getting from zero to certified isn't a documentation exercise — it's a full-scale operational transformation. ITIS Secure embeds alongside your team to build, configure, and prove every control your certification requires.",
     ctaPrimary: { text: "Book Your Free Gap Assessment", href: "/contact" },
-    ctaSecondary: { text: "Download Implementation Checklist", href: "/contact" },
+    ctaSecondary: { text: "Request Implementation Checklist", href: "/contact" },
     trustPoints: [
         { text: "ISO 27001 Lead Auditor certified" },
         { text: "TISAX AL3 preparation specialists" },

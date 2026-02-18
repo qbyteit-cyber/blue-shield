@@ -169,7 +169,7 @@ export const trainingPageMeta: PageMeta = {
     subheadline:
         "Compliance frameworks only work when the people responsible for them actually understand them. Our training programmes build genuine framework expertise — for security managers, auditors, executives, and IT teams.",
     ctaPrimary: { text: "Request a Training Programme", href: "/contact" },
-    ctaSecondary: { text: "Download Course Catalogue", href: "/contact" },
+    ctaSecondary: { text: "Request Course Catalogue", href: "/contact" },
     trustPoints: [
         { text: "Framework-expert trainers with practitioner experience" },
         { text: "Industry-specific courses for Automotive and Defence sectors" },
