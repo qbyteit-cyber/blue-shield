@@ -21,8 +21,8 @@ export default function LegalNoticePage() {
                 "legalName": "Information Security Consulting SRL",
                 "url": "https://itis-secure.com",
                 "logo": "https://itis-secure.com/itis-secure-logo.svg",
-                "vatID": "DE123456789",
-                "iso6523Code": "0088:DE123456789",
+                "vatID": "RO45485372",
+                "iso6523Code": "0088:RO45485372",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Str. Liliacului nr 2",
@@ -98,11 +98,11 @@ export default function LegalNoticePage() {
                         <section className="mb-12">
                             <div className="flex items-center gap-3 mb-4">
                                 <Building className="text-primary-navy" size={20} />
-                                <h2 className="m-0 text-2xl">1. Information according to § 5 TMG / Romanian Law</h2>
+                                <h2 className="m-0 text-2xl">1. Information according to Romanian Law</h2>
                             </div>
                             <p>This website is operated as a commercial presence by:</p>
                             <p>
-                                <strong>Information Security Consulting SRL</strong><br />
+                                <strong>INFORMATION SECURITY CONSULTING SRL</strong><br />
                                 Trading as: <strong>ITIS-Secure</strong>
                             </p>
                         </section>
@@ -110,13 +110,26 @@ export default function LegalNoticePage() {
                         <section className="mb-12">
                             <div className="flex items-center gap-3 mb-4">
                                 <MapPin className="text-primary-navy" size={20} />
-                                <h2 className="m-0 text-2xl">2. Registered Office</h2>
+                                <h2 className="m-0 text-2xl">2. Offices</h2>
                             </div>
-                            <p>
-                                Str. Liliacului nr 2<br />
-                                555300 Cisnadie, Sibiu<br />
-                                Romania
-                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 className="text-sm font-bold uppercase tracking-widest text-accent-coral mb-2">Sibiu Office (HQ)</h3>
+                                    <p>
+                                        Str. Liliacului nr 2<br />
+                                        555300 Cisnadie, Sibiu<br />
+                                        Romania
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-bold uppercase tracking-widest text-accent-coral mb-2">Brasov Office</h3>
+                                    <p>
+                                        Str. Zaharia Stancu 8A, Ap 603<br />
+                                        500482 Brasov<br />
+                                        Romania
+                                    </p>
+                                </div>
+                            </div>
                         </section>
 
                         <section className="mb-12">
@@ -136,10 +149,12 @@ export default function LegalNoticePage() {
                         <section className="mb-12">
                             <div className="flex items-center gap-3 mb-4">
                                 <Landmark className="text-primary-navy" size={20} />
-                                <h2 className="m-0 text-2xl">4. Commercial Register</h2>
+                                <h2 className="m-0 text-2xl">4. Registration & Tax</h2>
                             </div>
                             <p>
-                                Registered in the Trade Register (Registrul Comerțului) of Romania.
+                                <strong>Trade Register Number:</strong> J32/68/2022<br />
+                                <strong>VAT ID:</strong> RO45485372<br />
+                                <strong>EUID:</strong> ROONRC.J32/68/2022
                             </p>
                         </section>
 

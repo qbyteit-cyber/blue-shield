@@ -89,7 +89,17 @@ export function Footer() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <MapPin size={18} className="text-accent-coral shrink-0 mt-0.5" />
-                                <span>Str. Liliacului nr 2, Cisnadie, Sibiu</span>
+                                <div>
+                                    <div className="font-bold text-white mb-1">Sibiu Office</div>
+                                    <span>Str. Liliacului nr 2, Cisnadie</span>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <MapPin size={18} className="text-accent-coral shrink-0 mt-0.5" />
+                                <div>
+                                    <div className="font-bold text-white mb-1">Brasov Office</div>
+                                    <span>Str. Zaharia Stancu 8A, Ap 603</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -98,7 +108,7 @@ export function Footer() {
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[10px] uppercase tracking-widest opacity-40">
                     <div className="space-y-1">
                         <p>© 2026 ITIS-Secure. All rights reserved.</p>
-                        <p>Information Security Consulting SRL | Str. Liliacului nr 2, Cisnadie, Sibiu, Romania | VAT: DE123456789</p>
+                        <p>INFORMATION SECURITY CONSULTING SRL | J32/68/2022 | VAT: RO45485372 | EUID: ROONRC.J32/68/2022</p>
                     </div>
                     <div className="flex gap-8">
                         <Link href="/privacy" className="hover:underline">Privacy</Link>
