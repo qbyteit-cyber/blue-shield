@@ -39,12 +39,16 @@ export default function AutomotiveIndustryPage() {
                                 The definitive TISAX® AL3 preparation roadmap for Tier-1 suppliers. We bridge the gap between your current posture and ENX label readiness with a 100% first-time pass rate.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button variant="primary" size="lg" className="px-8">
-                                    Book Free Gap Assessment
-                                </Button>
-                                <Button variant="outline" size="lg" className="px-8 border-white/20 text-white hover:bg-white/10">
-                                    Request Checklist
-                                </Button>
+                                <Link href="/contact">
+                                    <Button variant="primary" size="lg" className="px-8 w-full sm:w-auto">
+                                        Book Free Gap Assessment
+                                    </Button>
+                                </Link>
+                                <Link href="/contact">
+                                    <Button variant="outline" size="lg" className="px-8 border-white/20 text-white hover:bg-white/10 w-full sm:w-auto">
+                                        Request Checklist
+                                    </Button>
+                                </Link>
                             </div>
                         </motion.div>
                     </div>

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Shield, Lock, Globe, Zap, ArrowRight, CheckCircle } from "lucide-react";
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
+import Link from "next/link";
 
 export default function DefenceIndustryPage() {
     return (
@@ -37,12 +38,16 @@ export default function DefenceIndustryPage() {
                                 Bridge the Gap to NIST 800-171. We help Tier-2 and Tier-3 subcontractors secure DoD and NATO contracts with surgical precision and engineering depth.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button variant="primary" size="lg" className="px-8 h-14 text-base rounded-none bg-accent-coral hover:bg-accent-coral/90">
-                                    Book CMMC Consultation
-                                </Button>
-                                <Button variant="outline" size="lg" className="px-8 h-14 text-base rounded-none border-white/20 text-white hover:bg-white/10">
-                                    NIST 800-171 Matrix
-                                </Button>
+                                <Link href="/contact">
+                                    <Button variant="primary" size="lg" className="px-8 h-14 text-base rounded-none bg-accent-coral hover:bg-accent-coral/90 w-full sm:w-auto">
+                                        Book CMMC Consultation
+                                    </Button>
+                                </Link>
+                                <Link href="/industries/defence/nist-800-171-matrix">
+                                    <Button variant="outline" size="lg" className="px-8 h-14 text-base rounded-none border-white/20 text-white hover:bg-white/10 w-full sm:w-auto">
+                                        NIST 800-171 Matrix
+                                    </Button>
+                                </Link>
                             </div>
                         </motion.div>
                     </div>
@@ -182,9 +187,11 @@ export default function DefenceIndustryPage() {
                         <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">
                             Secure Your Contract in the <br /> €300B NATO Defence Market
                         </h2>
-                        <Button className="bg-accent-coral text-white hover:bg-accent-coral/90 text-lg px-12 py-8 h-auto rounded-none font-bold">
-                            Book Gap Analysis Consultation
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-accent-coral text-white hover:bg-accent-coral/90 text-lg px-12 py-8 h-auto rounded-none font-bold">
+                                Book Gap Analysis Consultation
+                            </Button>
+                        </Link>
                         <p className="mt-8 text-neutral-500 text-sm font-medium">
                             Response within 4 hours. ITAR compliant data handling.
                         </p>
