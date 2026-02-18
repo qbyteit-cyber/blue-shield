@@ -217,22 +217,13 @@ export function Navbar() {
                     </div>
 
 
-                    {/* Market Segments */}
+                    {/* Industries */}
                     <Link
                         href="/industries"
                         className="flex items-center px-6 py-5 text-base font-semibold text-neutral-800 border-b border-neutral-100 hover:bg-neutral-50 transition-colors"
                         onClick={() => setMobileOpen(false)}
                     >
-                        Market Segments
-                    </Link>
-
-                    {/* Blog */}
-                    <Link
-                        href="/blog"
-                        className="flex items-center px-6 py-5 text-base font-semibold text-neutral-800 border-b border-neutral-100 hover:bg-neutral-50 transition-colors"
-                        onClick={() => setMobileOpen(false)}
-                    >
-                        Blog
+                        Industries
                     </Link>
 
                     {/* About Us */}
@@ -244,14 +235,7 @@ export function Navbar() {
                         About Us
                     </Link>
 
-                    {/* Security */}
-                    <Link
-                        href="/security"
-                        className="flex items-center px-6 py-5 text-base font-semibold text-neutral-800 border-b border-neutral-100 hover:bg-neutral-50 transition-colors"
-                        onClick={() => setMobileOpen(false)}
-                    >
-                        Security
-                    </Link>
+
                 </div>
             )}
         </nav>
