@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Legal Notice | ITIS-SECURE",
-    description: "Statutory information and company details for QBYTE IT SRL (ITIS-SECURE).",
+    description: "Statutory information and company details for Information Security Consulting SRL (ITIS-SECURE).",
 };
 
 const LAST_UPDATED = "February 16, 2026";
@@ -18,7 +18,7 @@ export default function LegalNoticePage() {
                 "@type": "LocalBusiness",
                 "@id": "https://itis-secure.com/#organization",
                 "name": "ITIS-SECURE",
-                "legalName": "QBYTE IT SRL",
+                "legalName": "Information Security Consulting SRL",
                 "url": "https://itis-secure.com",
                 "logo": "https://itis-secure.com/itis-secure-logo.svg",
                 "vatID": "DE123456789",
@@ -102,7 +102,7 @@ export default function LegalNoticePage() {
                             </div>
                             <p>This website is operated as a commercial presence by:</p>
                             <p>
-                                <strong>QBYTE IT SRL</strong><br />
+                                <strong>Information Security Consulting SRL</strong><br />
                                 Trading as: <strong>ITIS-SECURE</strong>
                             </p>
                         </section>

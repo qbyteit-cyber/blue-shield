@@ -3,7 +3,7 @@ export function SchemaMarkup() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "ITIS-SECURE",
-        "legalName": "QBYTE IT SRL",
+        "legalName": "Information Security Consulting SRL",
         "url": "https://itis-secure.com",
         "logo": "https://itis-secure.com/itis-secure-logo.svg",
         "image": "https://itis-secure.com/og-image.jpg",

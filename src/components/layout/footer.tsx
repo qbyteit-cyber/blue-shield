@@ -98,7 +98,7 @@ export function Footer() {
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[10px] uppercase tracking-widest opacity-40">
                     <div className="space-y-1">
                         <p>© 2026 ITIS-SECURE. All rights reserved.</p>
-                        <p>QBYTE IT SRL | Str. Liliacului nr 2, Cisnadie, Sibiu, Romania | VAT: DE123456789</p>
+                        <p>Information Security Consulting SRL | Str. Liliacului nr 2, Cisnadie, Sibiu, Romania | VAT: DE123456789</p>
                     </div>
                     <div className="flex gap-8">
                         <Link href="/privacy" className="hover:underline">Privacy</Link>

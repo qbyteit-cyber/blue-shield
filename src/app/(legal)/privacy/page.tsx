@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
                                 <h2 className="m-0 text-2xl">1. Information We Collect</h2>
                             </div>
                             <p>
-                                ITIS-SECURE ("we", "us", or "our"), operated by QBYTE IT SRL, collects personal data to provide our consulting and audit-preparation services. This includes:
+                                ITIS-SECURE ("we", "us", or "our"), operated by Information Security Consulting SRL, collects personal data to provide our consulting and audit-preparation services. This includes:
                             </p>
                             <ul>
                                 <li><strong>Identity Data:</strong> Name, company role, and professional credentials.</li>
@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
                                 For any privacy-related inquiries:
                             </p>
                             <p>
-                                <strong>QBYTE IT SRL</strong><br />
+                                <strong>Information Security Consulting SRL</strong><br />
                                 Str. Liliacului nr 2, Cisnadie, Sibiu, Romania<br />
                                 Email: <a href="mailto:office@itis-secure.com">office@itis-secure.com</a>
                             </p>
