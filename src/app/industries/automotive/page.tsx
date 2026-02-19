@@ -65,7 +65,7 @@ export default function AutomotiveIndustryPage() {
                                     Why 40% of Automotive Suppliers Fail TISAX® on Their First Attempt
                                 </h2>
                                 <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                                    The transition to **VDA ISA 5.0** has raised the bar for physical security, prototype protection, and supply chain transparency. Most failures occur not from a lack of security, but from a lack of <span className="text-primary-navy font-bold italic">auditable evidence</span>.
+                                    The transition to **VDA ISA 6.0** has raised the bar for physical security, prototype protection, and supply chain transparency. Most failures occur not from a lack of security, but from a lack of <span className="text-primary-navy font-bold italic">auditable evidence</span>.
                                 </p>
                                 <div className="space-y-6">
                                     {[
@@ -90,7 +90,7 @@ export default function AutomotiveIndustryPage() {
                                     <div className="absolute bottom-6 left-6 right-6">
                                         <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
                                             <div className="text-[10px] uppercase tracking-widest font-bold text-accent-coral mb-1">Status Report</div>
-                                            <div className="text-white text-sm font-mono">ENX Portal: VDA ISA 5.0 Compliant</div>
+                                            <div className="text-white text-sm font-mono">ENX Portal: VDA ISA 6.0 Compliant</div>
                                         </div>
                                     </div>
                                 </div>

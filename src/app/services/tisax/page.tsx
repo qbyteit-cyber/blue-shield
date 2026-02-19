@@ -30,7 +30,7 @@ export default function TisaxServicePage() {
                                     <span className="text-accent-coral">ENX Accreditation.</span>
                                 </h1>
                                 <p className="text-lg text-neutral-600 mb-10 leading-relaxed max-w-xl">
-                                    95-day roadmap to TISAX® Assessment Level 2 & 3. We implement the VDA ISA 5.0 controls and manage your entire ENX portal registration.
+                                    95-day roadmap to TISAX® Assessment Level 2 & 3. We implement the VDA ISA 6.0 controls and manage your entire ENX portal registration.
                                 </p>
                                 <div className="flex gap-4">
                                     <Link href="/contact">
@@ -53,7 +53,7 @@ export default function TisaxServicePage() {
                                             <span className="text-success-emerald">ACTIVE</span>
                                         </div>
                                         {[
-                                            { label: "VDA ISA 5.0 Mapping", progress: 100 },
+                                            { label: "VDA ISA 6.0 Mapping", progress: 100 },
                                             { label: "Evidence Collection", progress: 100 },
                                             { label: "Internal Audit Status", progress: 95 },
                                             { label: "ENX Scoping", progress: 100 }
@@ -100,7 +100,7 @@ export default function TisaxServicePage() {
                             <div className="absolute top-1/2 left-0 right-0 h-px bg-neutral-100 hidden md:block -translate-y-1/2" />
                             {[
                                 { step: "01", title: "Portal & Scoping", icon: FileText, desc: "Registration on the ENX portal and site-level scope optimization." },
-                                { step: "02", title: "Gap Assessment", icon: Search, desc: "Mapping current ISMS against the 140+ VDA ISA 5.0 controls." },
+                                { step: "02", title: "Gap Assessment", icon: Search, desc: "Mapping current ISMS against the 140+ VDA ISA 6.0 controls." },
                                 { step: "03", title: "Remediation", icon: Activity, desc: "Build-out of policies, physical security, and tech controls." },
                                 { step: "04", title: "Final Audit", icon: CheckCircle2, desc: "Coordination with the audit body and 100% pass guarantee." }
                             ].map((item, i) => (
@@ -144,7 +144,7 @@ export default function TisaxServicePage() {
                                     <HeartPulse className="text-accent-coral mb-4" size={32} />
                                     <h4 className="text-lg font-bold mb-4">Integrated Management Systems (IMS)</h4>
                                     <p className="text-xs text-white/40 leading-relaxed">
-                                        While TISAX is based on ISO 27001, it has specific automotive requirements. We build an Integrated Management System (IMS) that satisfies both with 80% overlapping effort.
+                                        While TISAX is based on ISO 27001, it has specific automotive requirements. We build an Integrated Management System (IMS) that satisfies both with 80% overlapping effort and NIS2 compliance.
                                     </p>
                                 </div>
                             </div>
@@ -158,7 +158,9 @@ export default function TisaxServicePage() {
                                         { label: "Policy Framework", time: "Day 1-15" },
                                         { label: "Technical Hardening", time: "Day 16-45" },
                                         { label: "Evidence Packaging", time: "Day 46-75" },
-                                        { label: "Mock Audit", time: "Day 76-95" }
+                                        { label: "Mock Audit", time: "Day 76-95" },
+                                        { label: "Certification", time: "Final Stage" },
+                                        { label: "Corrective and Preventive Action (CAPA)", time: "ongoing" }
                                     ].map((milestone, i) => (
                                         <div key={i} className="flex items-center justify-between p-4 bg-neutral-50 rounded-xl border border-neutral-100">
                                             <span className="font-bold text-sm tracking-tight">{milestone.label}</span>

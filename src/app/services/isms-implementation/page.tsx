@@ -349,7 +349,7 @@ export default function ISMSImplementationPage() {
                                     Your ISMS Is the Foundation for TISAX Certification
                                 </h2>
                                 <p className="text-neutral-600 leading-relaxed mb-6">
-                                    TISAX Assessment Levels 2 and 3 require a functioning ISMS as their foundation. The VDA ISA catalogue — the control framework that TISAX auditors use — is built directly on top of ISO 27001 principles. This means every hour invested in your ISMS directly accelerates your TISAX timeline.
+                                    TISAX Assessment Levels 2 and 3 require a functioning ISMS as their foundation. The VDA ISA 6.0 catalogue — the control framework that TISAX auditors use — is built directly on top of ISO 27001 principles. This means every hour invested in your ISMS directly accelerates your TISAX timeline.
                                 </p>
                                 <p className="text-neutral-600 leading-relaxed mb-8">
                                     When you implement your ISMS with ITIS-Secure, your TISAX preparation is already 60–70% complete on the day your ISMS goes live. Our methodology is designed to satisfy both frameworks simultaneously, reducing your total investment by approximately 30% compared to treating them as separate projects.

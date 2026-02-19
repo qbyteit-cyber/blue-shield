@@ -38,7 +38,7 @@ export const trainingProgrammes: TrainingProgramme[] = [
         duration: "1–2 days",
         format: "In-person / Remote",
         highlights: [
-            "VDA ISA 5.0 structure and control domains",
+            "VDA ISA 6.0 structure and control domains",
             "TISAX AL1 / AL2 / AL3 differences",
             "Evidence requirements and common non-conformities",
             "How TISAX assessments work",

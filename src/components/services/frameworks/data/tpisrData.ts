@@ -64,7 +64,7 @@ export const tpisrData: FrameworkPageData = {
             {
                 step: "02",
                 title: "Due Diligence",
-                description: "Sending and analyzing security questionnaires (SIG, CAIQ, VDA ISA) to assess control maturity.",
+                description: "Sending and analyzing security questionnaires (SIG, CAIQ, VDA ISA 6.0) to assess control maturity.",
                 icon: "Search",
             },
             {
@@ -87,11 +87,11 @@ export const tpisrData: FrameworkPageData = {
         points: [
             "Unified Supplier Inventory: Creating a single source of truth for all external data handlers.",
             "Risk-Based Approach: Focusing resources on 'Critical' and 'High' risk vendors.",
-            "Questionnaire Management: Automating the collection and scoring of SIG/VDA ISA assessments.",
+            "Questionnaire Management: Automating the collection and scoring of SIG/VDA ISA 6.0 assessments.",
             "Fourth-Party Risk: Understanding who your vendors outsource to.",
             "Offboarding Security: Ensuring data destruction and access revocation when contracts end.",
         ],
-        insightTitle: "TISAX & VDA ISA Supply Chain",
+        insightTitle: "TISAX & VDA ISA 6.0 Supply Chain",
         insightDescription: "For the automotive sector, TPISR is codified in TISAX. If you are an OEM or Tier 1 supplier, you must prove you are auditing your own sub-processors. We handle this cascading assurance process, collecting TISAX labels and conducting 'Second Party Audits' where labels are missing.",
     },
     cta: {

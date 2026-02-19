@@ -28,7 +28,7 @@ export const featuredIndustries: Industry[] = [
         description:
             "TISAX® AL3 preparation for Tier-1 and Tier-2 suppliers. We secure your OEM contracts with BMW, VW, and Mercedes-Benz through a battle-tested 95-day roadmap and a 100% first-time pass rate.",
         icon: Car,
-        frameworks: ["TISAX®", "ISO 27001", "VDA ISA 5.0", "TPISR"],
+        frameworks: ["TISAX®", "ISO 27001", "VDA ISA 6.0", "TPISR"],
         href: "/services/tisax",
         ctaLabel: "Explore Automotive Solutions",
     },

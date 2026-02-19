@@ -108,7 +108,7 @@ export const auditsPageMeta: PageMeta = {
     introH2: "Know Your Gaps Before the Auditor Does",
     introParagraphs: [
         "A company invests 6 months and €50,000 in certification preparation, walks into the official assessment, and fails on a major non-conformity that could have been caught in week 3. This scenario is avoidable. Internal auditing is the quality control mechanism for your implementation — it finds the gaps while there's still time to close them.",
-        "ITIS-Secure's audit services are independent, rigorous internal assessments conducted by the same people who prepare clients for official certification. Our auditors know what VDA ISA assessors look for, what ISO 27001 auditors scrutinise first, and where companies consistently fail.",
+        "ITIS-Secure's audit services are independent, rigorous internal assessments conducted by the same people who prepare clients for official certification. Our auditors know what VDA ISA 6.0 assessors look for, what ISO 27001 auditors scrutinise first, and where companies consistently fail.",
         "Every audit ends with a written report, a prioritised remediation plan, and a clear picture of certification readiness. No vague findings, no unexplained scores — just the specific actions needed to close the gap between where you are and where your certification body expects you to be.",
     ],
     introStats: [

@@ -39,7 +39,7 @@ export const ismsPhases: ISMSPhase[] = [
         pdcaBg: "#EFF6FF",
         icon: "SearchCode",
         introParagraph:
-            "Before building, we diagnose. The Gap Analysis phase establishes the foundation of your entire ISMS programme. We map your current security posture against ISO 27001:2022 and VDA ISA 5.0 requirements, identifying every gap between where you are and where certification demands you to be. This diagnostic precision ensures that no resource is wasted on controls you already satisfy — and no critical gap is left unaddressed.",
+            "Before building, we diagnose. The Gap Analysis phase establishes the foundation of your entire ISMS programme. We map your current security posture against ISO 27001:2022 and VDA ISA 6.0 requirements, identifying every gap between where you are and where certification demands you to be. This diagnostic precision ensures that no resource is wasted on controls you already satisfy — and no critical gap is left unaddressed.",
         bullets: [
             { text: "Initialization of new certification projects" },
             { text: "Planning and establishing the ISMS" },
@@ -80,7 +80,7 @@ export const ismsPhases: ISMSPhase[] = [
                 text: "Create and maintain the ISMS framework Dashboards on the internal or cloud infrastructure",
             },
             {
-                text: "Develop and maintain a Statement of Applicability in accordance with ISO 27001, VDA, and Client requirements",
+                text: "Develop and maintain a Statement of Applicability in accordance with ISO 27001, VDA 6, and Client requirements",
             },
         ],
     },
@@ -227,17 +227,17 @@ export const ismsFAQs: FAQItem[] = [
     {
         question: "Do we need an ISMS before pursuing TISAX?",
         answer:
-            "Yes. TISAX assessments (both AL2 and AL3) are built on top of an ISO 27001-aligned ISMS. The VDA ISA catalogue evaluates your ISMS as its foundation. Implementing your ISMS with ITIS-Secure means your TISAX preparation is already 60–70% complete, because we align every control to both standards simultaneously.",
+            "Yes. TISAX assessments (both AL2 and AL3) are built on top of an ISO 27001-aligned ISMS. The VDA ISA 6.0 catalogue evaluates your ISMS as its foundation. Implementing your ISMS with ITIS-Secure means your TISAX preparation is already 60–70% complete, because we align every control to both standards simultaneously.",
     },
     {
         question: "What is a Statement of Applicability?",
         answer:
-            "The Statement of Applicability (SoA) is a mandatory ISO 27001 document that lists all Annex A controls and states which are applicable to your organisation, which are not, and the justification for each decision. It is one of the first documents auditors request. We develop and maintain your SoA in alignment with ISO 27001, VDA ISA, and your specific client requirements.",
+            "The Statement of Applicability (SoA) is a mandatory ISO 27001 document that lists all Annex A controls and states which are applicable to your organisation, which are not, and the justification for each decision. It is one of the first documents auditors request. We develop and maintain your SoA in alignment with ISO 27001, VDA ISA 6.0, and your specific client requirements.",
     },
     {
         question: "What are Risk Assessment ID Cards?",
         answer:
-            "Risk Assessment ID Cards are a structured method used within the VDA ISA framework to document, evaluate, and track individual information security risks. Each card captures the risk description, likelihood, impact, current controls, and treatment plan. They provide auditors with clear, traceable evidence of your risk management process.",
+            "Risk Assessment ID Cards are a structured method used within the VDA ISA 6.0 framework to document, evaluate, and track individual information security risks. Each card captures the risk description, likelihood, impact, current controls, and treatment plan. They provide auditors with clear, traceable evidence of your risk management process.",
     },
     {
         question:
