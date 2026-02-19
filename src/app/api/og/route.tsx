@@ -4,8 +4,13 @@ import type { NextRequest } from "next/server";
 export const runtime = "edge";
 
 export async function GET(request: NextRequest) {
-    const { searchParams } = new URL(request.url);
+    const { searchParams, origin } = new URL(request.url);
     const title = searchParams.get("title") ?? "Enterprise TISAX® & ISO 27001 Compliance";
+
+    // Fetch the logo as a base64 data URL — required for edge sandbox rendering
+    const logoRes = await fetch(`${origin}/itis-secure-logo.svg`);
+    const logoSvg = await logoRes.text();
+    const logoDataUrl = `data:image/svg+xml;base64,${Buffer.from(logoSvg).toString("base64")}`;
 
     return new ImageResponse(
         (
@@ -22,19 +27,35 @@ export async function GET(request: NextRequest) {
                     fontFamily: "sans-serif",
                 }}
             >
-                {/* Top-left: Brand name */}
+                {/* Top-left: Logo + Brand name */}
                 <div
                     style={{
                         position: "absolute",
                         top: "48px",
                         left: "64px",
-                        color: "#D4AF37",
-                        fontSize: "32px",
-                        fontWeight: "bold",
-                        letterSpacing: "0.05em",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "16px",
                     }}
                 >
-                    ITIS-Secure
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                        src={logoDataUrl}
+                        alt="ITIS-Secure Logo"
+                        width={80}
+                        height={80}
+                        style={{ objectFit: "contain" }}
+                    />
+                    <span
+                        style={{
+                            color: "#D4AF37",
+                            fontSize: "32px",
+                            fontWeight: "bold",
+                            letterSpacing: "0.05em",
+                        }}
+                    >
+                        ITIS-Secure
+                    </span>
                 </div>
 
                 {/* Center: Page title */}
@@ -50,7 +71,7 @@ export async function GET(request: NextRequest) {
                     <div
                         style={{
                             color: "#ffffff",
-                            fontSize: "56px",
+                            fontSize: "52px",
                             fontWeight: "bold",
                             lineHeight: 1.2,
                             maxWidth: "1000px",
@@ -59,7 +80,7 @@ export async function GET(request: NextRequest) {
                         {title}
                     </div>
 
-                    {/* Gold divider line */}
+                    {/* Gold divider */}
                     <div
                         style={{
                             marginTop: "32px",
@@ -98,9 +119,6 @@ export async function GET(request: NextRequest) {
                 </div>
             </div>
         ),
-        {
-            width: 1200,
-            height: 630,
-        }
+        { width: 1200, height: 630 }
     );
 }

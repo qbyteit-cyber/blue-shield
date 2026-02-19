@@ -31,13 +31,20 @@ export const metadata: Metadata = {
     "TISAX AL3",
     "information security consulting",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_GB",
     siteName: "ITIS-Secure",
     images: [
       {
-        url: "/og-default.png",
+        url: "/api/og?title=Enterprise+TISAX%C2%AE+%26+ISO+27001+Compliance",
         width: 1200,
         height: 630,
         alt: "ITIS-Secure — Enterprise TISAX® & ISO 27001 Compliance",
@@ -46,6 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/api/og?title=Enterprise+TISAX%C2%AE+%26+ISO+27001+Compliance"],
   },
   robots: {
     index: true,
