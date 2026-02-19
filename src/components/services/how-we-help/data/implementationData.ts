@@ -14,7 +14,7 @@ export const deliveryAreas: DeliveryArea[] = [
         id: "isms-foundation",
         title: "ISMS Foundation",
         icon: Layers,
-        body: "We establish your Information Security Management System from the ground up — scope definition, context of organisation, leadership requirements, and the full PDCA operating model aligned to ISO 27001:2022.",
+        body: "We establish your Information Security Management System from the ground up. Scope definition, context of organisation, leadership requirements, and the full PDCA operating model aligned to ISO 27001:2022.",
     },
     {
         id: "risk-assessment",
@@ -26,7 +26,7 @@ export const deliveryAreas: DeliveryArea[] = [
         id: "policy-documentation",
         title: "Policy & Documentation Library",
         icon: FileText,
-        body: "We develop the full policy suite your certification requires — information security policy, acceptable use, access control, incident response, business continuity, and 20+ supporting procedures — all tailored to your environment, not copied from a template.",
+        body: "We develop the full policy suite your certification requires. Information security policy, acceptable use, access control, incident response, business continuity, and 20+ supporting procedures — all tailored to your environment, not copied from a template.",
     },
     {
         id: "technical-controls",
@@ -44,7 +44,7 @@ export const deliveryAreas: DeliveryArea[] = [
         id: "audit-preparation",
         title: "Pre-Certification Preparation",
         icon: ClipboardCheck,
-        body: "Before your official assessment, we conduct a structured mock audit against your target standard — identifying and closing gaps while there's still time to fix them.",
+        body: "Before your official assessment, we conduct a structured mock audit against your target standard. Identifying and closing gaps while there's still time to fix them.",
     },
 ];
 
@@ -89,7 +89,7 @@ export const implementationPageMeta: PageMeta = {
     ],
     introH2: "What Is Implementation Support?",
     introParagraphs: [
-        "Most companies attempting ISO 27001 or TISAX certification try to do it with their existing IT team, treating it as an internal project. They underestimate the bandwidth required, the depth of expertise needed, and the evidence requirements they don't yet know about. By month three, the project stalls — policies are half-written, risk assessments are incomplete, and the certification deadline hasn't moved.",
+        "Most companies attempting ISO 27001 or TISAX certification try to do it with their existing IT team, treating it as an internal project. They underestimate the bandwidth required, the depth of expertise needed, and the evidence requirements they don't yet know about. By month three, the project stalls. Policies are half-written, risk assessments are incomplete, and the certification deadline hasn't moved.",
         "ITIS-Secure doesn't hand over a framework template and leave. We assign a dedicated expert who works inside your organisation through the full implementation lifecycle: scoping, policy development, control implementation, evidence building, and audit preparation. Your consultant becomes part of your team for the duration of the engagement.",
         "The outcome is a genuinely implemented, audit-ready security programme — not just a folder of policies no one reads. Every control is operational, every piece of evidence is documented, and your team understands what they're running. Note: ITIS-Secure provides implementation support and consultancy. Official certifications are issued by independent accredited certification bodies.",
     ],
@@ -124,23 +124,23 @@ export const implementationPageMeta: PageMeta = {
         },
         {
             question: "Do you work alongside our existing IT team?",
-            answer: "Yes — we embed with your team, not above it. We transfer knowledge throughout the engagement so your team can maintain the ISMS independently post-certification. By the time we complete, your people own the system.",
+            answer: "Yes. We embed with your team, not above it. We transfer knowledge throughout the engagement so your team can maintain the ISMS independently post-certification. By the time we complete, your people own the system.",
         },
         {
             question: "What's the difference between Implementation Support and consulting?",
-            answer: "Consulting gives advice. Implementation means we do the work — writing policies, building evidence, configuring controls, and preparing auditors' evidence packs. We deliver a completed, audit-ready programme, not a report with recommendations.",
+            answer: "Consulting gives advice. Implementation means we do the work. Writing policies, building evidence, configuring controls, and preparing auditors' evidence packs. We deliver a completed, audit-ready programme, not a report with recommendations.",
         },
         {
             question: "Do you guarantee certification?",
-            answer: "We don't certify companies — certifications are issued by independent accredited bodies (ENX for TISAX, ISO-accredited CBs for ISO 27001). What we guarantee is that our implementation will be ready for assessment. Our 98% first-time pass rate speaks to that.",
+            answer: "We don't certify companies. Certifications are issued by independent accredited bodies (ENX for TISAX, ISO-accredited CBs for ISO 27001). What we guarantee is that our implementation will be ready for assessment. Our 98% first-time pass rate speaks to that.",
         },
         {
             question: "How many consultants will be assigned to our project?",
-            answer: "Typically a lead consultant with framework-specific specialists for technical controls. Project scope determines team composition — we'll confirm your team structure at proposal stage.",
+            answer: "Typically a lead consultant with framework-specific specialists for technical controls. Project scope determines team composition. We'll confirm your team structure at proposal stage.",
         },
         {
             question: "Can you implement TISAX and ISO 27001 simultaneously?",
-            answer: "Yes — and we recommend it. The frameworks share significant control overlap. Dual implementation reduces total effort by 25–35% compared to sequential projects.",
+            answer: "Yes. And we recommend it. The frameworks share significant control overlap. Dual implementation reduces total effort by 25–35% compared to sequential projects.",
         },
         {
             question: "What happens after certification?",
@@ -148,7 +148,7 @@ export const implementationPageMeta: PageMeta = {
         },
         {
             question: "Do you work with companies of all sizes?",
-            answer: "Yes — from 20-person software suppliers needing TISAX AL2 to multi-site manufacturers requiring ISO 27001 across 6 locations. Our methodology scales to fit your organisation.",
+            answer: "Yes. From 20-person software suppliers needing TISAX AL2 to multi-site manufacturers requiring ISO 27001 across 6 locations. Our methodology scales to fit your organisation.",
         },
     ],
     finalCta: {

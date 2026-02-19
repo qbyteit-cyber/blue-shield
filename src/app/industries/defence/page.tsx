@@ -94,7 +94,7 @@ export default function DefenceIndustryPage() {
                                 <div className="relative z-10">
                                     <Shield className="text-accent-coral mb-8" size={60} />
                                     <blockquote className="text-2xl font-bold leading-tight mb-8">
-                                        "Compliance is no longer a checklist—it's your license to operate in the €300B NATO defence market."
+                                        "Compliance is no longer a checklist. It's your license to operate in the €300B NATO defence market."
                                     </blockquote>
                                     <div className="h-px w-full bg-white/10 mb-8" />
                                     <div className="space-y-4">

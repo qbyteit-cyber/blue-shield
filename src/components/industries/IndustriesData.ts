@@ -29,7 +29,7 @@ export const featuredIndustries: Industry[] = [
             "TISAX® AL3 preparation for Tier-1 and Tier-2 suppliers. We secure your OEM contracts with BMW, VW, and Mercedes-Benz through a battle-tested 95-day roadmap and a 100% first-time pass rate.",
         icon: Car,
         frameworks: ["TISAX®", "ISO 27001", "VDA ISA 5.0", "TPISR"],
-        href: "/contact",
+        href: "/services/tisax",
         ctaLabel: "Explore Automotive Solutions",
     },
     {
@@ -39,7 +39,7 @@ export const featuredIndustries: Industry[] = [
             "CMMC 2.0 Level 2 readiness for European defence subcontractors. We bridge the gap to NIST 800-171 compliance so you can secure DoD and NATO contracts with surgical precision.",
         icon: ShieldAlert,
         frameworks: ["CMMC 2.0", "NIST 800-171", "DO-326A", "ITAR"],
-        href: "/contact",
+        href: "/industries/defence",
         ctaLabel: "Explore Defence Solutions",
     },
 ];

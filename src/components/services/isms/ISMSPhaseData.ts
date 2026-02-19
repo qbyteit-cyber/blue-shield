@@ -63,7 +63,7 @@ export const ismsPhases: ISMSPhase[] = [
         pdcaBg: "#F0FDF4",
         icon: "Settings2",
         introParagraph:
-            "This is where strategy becomes operational reality. Our team works alongside yours — not just handing over documentation, but actively implementing controls, building dashboards, and embedding security into your daily business processes. From vendor risk assessments during procurement to maintaining your Statement of Applicability, we operate as an extension of your team.",
+            "This is where strategy becomes operational reality. Our team works alongside yours. Not just handing over documentation, but actively implementing controls, building dashboards, and embedding security into your daily business processes. From vendor risk assessments during procurement to maintaining your Statement of Applicability, we operate as an extension of your team.",
         bullets: [
             { text: "Support Business with requirements analysis during RFP" },
             {
@@ -126,7 +126,7 @@ export const ismsPhases: ISMSPhase[] = [
         pdcaBg: "#FFF7ED",
         icon: "Activity",
         introParagraph:
-            "What doesn't get measured doesn't get improved — and auditors look here first. The CHECK phase transforms your ISMS from a static document set into a living, measurable programme. We establish continuous monitoring cycles, communicate results to stakeholders, and ensure that every internal assessment feeds directly into your improvement pipeline.",
+            "What doesn't get measured doesn't get improved. And auditors look here first. The CHECK phase transforms your ISMS from a static document set into a living, measurable programme. We establish continuous monitoring cycles, communicate results to stakeholders, and ensure that every internal assessment feeds directly into your improvement pipeline.",
         bullets: [
             { text: "Monitoring and Review" },
             {
@@ -155,7 +155,7 @@ export const ismsPhases: ISMSPhase[] = [
         pdcaBg: "#FFF7ED",
         icon: "ClipboardCheck",
         introParagraph:
-            "Think of this as the dress rehearsal before the official assessment. A robust internal audit programme is not just a certification requirement — it is your early warning system. We develop and execute a TISAX-aligned audit plan that identifies findings before external auditors do, giving your team the time and clarity to resolve them systematically.",
+            "Think of this as the dress rehearsal before the official assessment. A robust internal audit programme is not just a certification requirement. It is your early warning system. We develop and execute a TISAX-aligned audit plan that identifies findings before external auditors do, giving your team the time and clarity to resolve them systematically.",
         bullets: [
             { text: "Develop the TISAX internal Audit Program and Plan" },
             { text: "Provide yearly internal audits" },
@@ -179,7 +179,7 @@ export const ismsPhases: ISMSPhase[] = [
         pdcaBg: "#FDF4FF",
         icon: "RefreshCw",
         introParagraph:
-            "Continuous improvement is not optional in ISO 27001 — it is a certification requirement. The ACT phase makes it systematic. We implement corrective and preventive action procedures, publish them across your organisation, and ensure that every improvement achieves its intended objective. When it is time for certification or recertification, we stand beside you through every step of the process.",
+            "Continuous improvement is not optional in ISO 27001. It is a certification requirement. The ACT phase makes it systematic. We implement corrective and preventive action procedures, publish them across your organisation, and ensure that every improvement achieves its intended objective. When it is time for certification or recertification, we stand beside you through every step of the process.",
         bullets: [
             {
                 text: "Provide valuable input to Management for the continuous improvement of the ISMS",
@@ -217,7 +217,7 @@ export const ismsFAQs: FAQItem[] = [
     {
         question: "What is the difference between an ISMS and ISO 27001?",
         answer:
-            "An Information Security Management System (ISMS) is the actual framework of policies, procedures, controls, and risk management processes that protect your organisation's information. ISO 27001 is the international standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an ISMS. In short, ISO 27001 is the blueprint — your ISMS is the building.",
+            "An Information Security Management System (ISMS) is the actual framework of policies, procedures, controls, and risk management processes that protect your organisation's information. ISO 27001 is the international standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an ISMS. In short, ISO 27001 is the blueprint. Your ISMS is the building.",
     },
     {
         question: "How long does ISMS implementation take?",
@@ -253,6 +253,6 @@ export const ismsFAQs: FAQItem[] = [
     {
         question: "Can we implement ISMS and TISAX simultaneously?",
         answer:
-            "Absolutely — and this is the approach we recommend. Since TISAX is built on ISO 27001, implementing both in parallel eliminates duplicate effort and reduces your total investment by approximately 30%. Our methodology is specifically designed to produce an Integrated Management System (IMS) that satisfies both frameworks from day one.",
+            "Absolutely. And this is the approach we recommend. Since TISAX is built on ISO 27001, implementing both in parallel eliminates duplicate effort and reduces your total investment by approximately 30%. Our methodology is specifically designed to produce an Integrated Management System (IMS) that satisfies both frameworks from day one.",
     },
 ];

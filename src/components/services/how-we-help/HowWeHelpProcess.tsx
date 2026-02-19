@@ -22,7 +22,7 @@ export function HowWeHelpProcess({ h2, intro, steps }: Props) {
 
                 {/* Timeline */}
                 <div className="relative">
-                    {/* Connecting line — desktop only */}
+                    {/* Connecting line. Desktop only */}
                     <div className="hidden md:block absolute top-6 left-0 right-0 h-0.5 bg-neutral-200" />
 
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0">

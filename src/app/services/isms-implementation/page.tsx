@@ -165,10 +165,10 @@ export default function ISMSImplementationPage() {
                                 </h2>
                                 <div className="space-y-6 text-neutral-600 leading-relaxed">
                                     <p>
-                                        An Information Security Management System (ISMS) is the structured framework of policies, procedures, risk assessments, and technical controls that an organisation uses to protect its information assets. It is not a single tool or a one-time project — it is a living system that governs how your company identifies, manages, and reduces information security risks across every department, supplier, and process.
+                                        An Information Security Management System (ISMS) is the structured framework of policies, procedures, risk assessments, and technical controls that an organisation uses to protect its information assets. It is not a single tool or a one-time project. It is a living system that governs how your company identifies, manages, and reduces information security risks across every department, supplier, and process.
                                     </p>
                                     <p>
-                                        For automotive suppliers pursuing TISAX, defence subcontractors navigating CMMC, or any European company facing NIS2 obligations, an ISMS is no longer optional — it is the contractual baseline. BMW, Volkswagen, and Airbus require evidence of a functioning ISMS before awarding or renewing supply contracts. Without one, you are excluded from the bidding table entirely.
+                                        For automotive suppliers pursuing TISAX, defence subcontractors navigating CMMC, or any European company facing NIS2 obligations, an ISMS is no longer optional. It is the contractual baseline. BMW, Volkswagen, and Airbus require evidence of a functioning ISMS before awarding or renewing supply contracts. Without one, you are excluded from the bidding table entirely.
                                     </p>
                                     <p>
                                         But your ISMS should be viewed as a <strong>business asset</strong>, not just a compliance burden. It is the foundation upon which every future certification is built — ISO 27001, TISAX, NIS2, DORA, and beyond. At ITIS-Secure, we implement your ISMS using the proven ISO 27001 Plan-Do-Check-Act lifecycle, ensuring that every control, every record, and every process is audit-ready from the very first day.

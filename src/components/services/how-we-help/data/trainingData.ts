@@ -177,8 +177,8 @@ export const trainingPageMeta: PageMeta = {
     ],
     introH2: "Build the Expertise Your Compliance Requires",
     introParagraphs: [
-        "The compliance gap is often a knowledge gap. Companies implement frameworks with external consultants, then fail to maintain compliance because their own team doesn't understand what they're running. This is particularly acute with TISAX (3-year recertification cycle) and ISO 27001 (annual surveillance audits) — frameworks that require continuous, informed operation.",
-        "ITIS-Secure training is delivered by practitioners — people who have run TISAX assessments, conducted ISO 27001 audits, and implemented NIS2 programmes for real organisations. Not academics. Not slide-deck readers. People who've seen what auditors look for and what causes non-conformities.",
+        "The compliance gap is often a knowledge gap. Companies implement frameworks with external consultants, then fail to maintain compliance because their own team doesn't understand what they're running. This is particularly acute with TISAX (3-year recertification cycle) and ISO 27001 (annual surveillance audits). Frameworks that require continuous, informed operation.",
+        "ITIS-Secure training is delivered by practitioners. People who have run TISAX assessments, conducted ISO 27001 audits, and implemented NIS2 programmes for real organisations. Not academics. Not slide-deck readers. People who've seen what auditors look for and what causes non-conformities.",
         "Whether your team needs a half-day awareness session or a full 3-day auditor certification programme, we build and deliver the course around your frameworks, your industry, and your timeline.",
     ],
     introStats: [
@@ -226,7 +226,7 @@ export const trainingPageMeta: PageMeta = {
         },
         {
             question: "Can you deliver training in languages other than English?",
-            answer: "Yes — our trainers deliver in English and Romanian as standard. Additional language availability can be discussed at proposal stage depending on the programme.",
+            answer: "Yes. Our trainers deliver in English and Romanian as standard. Additional language availability can be discussed at proposal stage depending on the programme.",
         },
         {
             question: "How many participants can attend?",
@@ -238,7 +238,7 @@ export const trainingPageMeta: PageMeta = {
         },
         {
             question: "Can training be delivered at our premises?",
-            answer: "Yes — we travel anywhere in Europe. Most in-house clients prefer this as it allows us to use real examples from their environment and maximise team engagement.",
+            answer: "Yes. We travel anywhere in Europe. Most in-house clients prefer this as it allows us to use real examples from their environment and maximise team engagement.",
         },
         {
             question: "How far in advance do we need to book?",
@@ -246,11 +246,11 @@ export const trainingPageMeta: PageMeta = {
         },
         {
             question: "Do you offer training as part of an implementation project?",
-            answer: "Yes — awareness training and internal auditor training are included in our full implementation packages. This ensures your team can maintain the ISMS independently after we complete the project.",
+            answer: "Yes. Awareness training and internal auditor training are included in our full implementation packages. This ensures your team can maintain the ISMS independently after we complete the project.",
         },
         {
             question: "Can the training be tailored to our specific industry?",
-            answer: "Absolutely — automotive, defence, healthcare, finance. All examples, case studies, and framework emphasis are adjusted to your sector so the learning is immediately applicable.",
+            answer: "Absolutely. Automotive, defence, healthcare, finance. All examples, case studies, and framework emphasis are adjusted to your sector so the learning is immediately applicable.",
         },
     ],
     finalCta: {

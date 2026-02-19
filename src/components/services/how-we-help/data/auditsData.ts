@@ -159,7 +159,7 @@ export const auditsPageMeta: PageMeta = {
         },
         {
             question: "Are your audits official certification audits?",
-            answer: "No — our audits are internal assessments that prepare you for official certification. Official TISAX labels are issued by ENX-accredited assessment providers; ISO 27001 certificates by accredited certification bodies. We prepare you to pass those official assessments with confidence.",
+            answer: "No. Our audits are internal assessments that prepare you for official certification. Official TISAX labels are issued by ENX-accredited assessment providers; ISO 27001 certificates by accredited certification bodies. We prepare you to pass those official assessments with confidence.",
         },
         {
             question: "How long does a gap analysis take?",
@@ -171,7 +171,7 @@ export const auditsPageMeta: PageMeta = {
         },
         {
             question: "Can you test our technical security controls?",
-            answer: "Yes — penetration testing and vulnerability assessments test the technical layer. Internal audits test process and procedural controls. Most pre-certification programmes benefit from both types of assessment.",
+            answer: "Yes. Penetration testing and vulnerability assessments test the technical layer. Internal audits test process and procedural controls. Most pre-certification programmes benefit from both types of assessment.",
         },
         {
             question: "How far in advance of our certification should we book a mock audit?",
@@ -183,7 +183,7 @@ export const auditsPageMeta: PageMeta = {
         },
         {
             question: "Can you audit us against multiple frameworks simultaneously?",
-            answer: "Yes — for companies pursuing TISAX and ISO 27001 simultaneously, a combined audit is significantly more efficient. We map findings across both frameworks in a single integrated report.",
+            answer: "Yes. For companies pursuing TISAX and ISO 27001 simultaneously, a combined audit is significantly more efficient. We map findings across both frameworks in a single integrated report.",
         },
     ],
     finalCta: {

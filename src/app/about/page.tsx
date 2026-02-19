@@ -24,7 +24,7 @@ export default function AboutPage() {
                                 <span className="text-accent-coral italic">RE-ENGINEERED.</span>
                             </h1>
                             <p className="text-xl text-neutral-500 leading-relaxed max-w-2xl mx-auto">
-                                We bridge the "Compliance Gap"—the space between corporate ambition and the deep technical knowledge required to pass high-rigor audits.
+                                We bridge the "Compliance Gap". The space between corporate ambition and the deep technical knowledge required to pass high-rigor audits.
                             </p>
                         </motion.div>
                     </div>

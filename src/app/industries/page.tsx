@@ -131,7 +131,7 @@ export default function IndustriesPage() {
                                                     (fw) => (
                                                         <span
                                                             key={fw}
-                                                            className="px-3 py-1 text-[10px] font-bold tracking-wider uppercase text-white/50 border border-white/10 rounded-full"
+                                                            className="px-3 py-1 text-[10px] font-bold tracking-wider uppercase text-white bg-white/10 border border-white/20 rounded-full backdrop-blur-sm"
                                                         >
                                                             {fw}
                                                         </span>
@@ -189,7 +189,7 @@ export default function IndustriesPage() {
                                             {industry.frameworks.map((fw) => (
                                                 <span
                                                     key={fw}
-                                                    className="px-2.5 py-0.5 text-[10px] font-bold tracking-wider uppercase text-neutral-400 bg-neutral-50 border border-neutral-100 rounded-full"
+                                                    className="px-2.5 py-0.5 text-[10px] font-bold tracking-wider uppercase text-primary-navy bg-primary-navy/5 border border-primary-navy/10 rounded-full"
                                                 >
                                                     {fw}
                                                 </span>
@@ -248,7 +248,7 @@ export default function IndustriesPage() {
                                     Book Assessment
                                 </Button>
                             </Link>
-                            <Link href="/contact">
+                            <Link href="/about">
                                 <Button
                                     variant="outline"
                                     size="lg"

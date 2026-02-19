@@ -55,7 +55,7 @@ export default function ServicesPage() {
                                 <span className="text-accent-coral">One Partner.</span>
                             </h1>
                             <p className="text-xl text-white/60 leading-relaxed max-w-2xl">
-                                We cover the full compliance lifecycle — strategy, implementation, training, auditing, and ongoing management — across every major security framework.
+                                We cover the full compliance lifecycle. Strategy, implementation, training, auditing, and ongoing management — across every major security framework.
                             </p>
                         </div>
                     </div>

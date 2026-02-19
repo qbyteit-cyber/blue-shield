@@ -16,7 +16,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Cybersecurity Manager (CISO)",
         icon: UserCog,
         description:
-            "Own the information security programme — ISMS management, risk oversight, board reporting, certification management, incident response leadership, and stakeholder communications. Your CISO, on demand.",
+            "Own the information security programme. ISMS management, risk oversight, board reporting, certification management, incident response leadership, and stakeholder communications. Your CISO, on demand.",
         typicalEngagement: "2–8 days/month retainer",
         relevantFor:
             "SMEs and mid-market companies that need executive-level security leadership without a full-time C-suite hire.",
@@ -27,7 +27,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Data Privacy Officer (DPO)",
         icon: Eye,
         description:
-            "Fulfil the statutory DPO function under GDPR Article 37 — advising on data protection obligations, conducting DPIAs, managing data subject requests, liaising with supervisory authorities, and maintaining records of processing activities. Organisations required to appoint a DPO under Article 37 must ensure the external DPO meets the independence requirements of Article 38.",
+            "Fulfil the statutory DPO function under GDPR Article 37. Advising on data protection obligations, conducting DPIAs, managing data subject requests, liaising with supervisory authorities, and maintaining records of processing activities. Organisations required to appoint a DPO under Article 37 must ensure the external DPO meets the independence requirements of Article 38.",
         typicalEngagement: "Part-time retainer",
         relevantFor:
             "Any organisation processing personal data at scale or handling special category data — particularly under GDPR Article 37(1).",
@@ -38,7 +38,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Cybersecurity Architect",
         icon: Shield,
         description:
-            "Design and oversee your security architecture — network segmentation, zero-trust implementation, cloud security controls, and technical control frameworks. Ensures your technical environment is built to certification standard from the ground up.",
+            "Design and oversee your security architecture. Network segmentation, zero-trust implementation, cloud security controls, and technical control frameworks. Ensures your technical environment is built to certification standard from the ground up.",
         typicalEngagement: "Project-based or part-time retainer",
         relevantFor:
             "Companies building new infrastructure or undergoing digital transformation alongside compliance programmes.",
@@ -49,7 +49,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Internal Auditor",
         icon: ClipboardList,
         description:
-            "Design and execute your internal audit programme — conducting structured audits against ISO 27001, TISAX, CMMC, or NIS2, writing formal audit reports, managing nonconformities, and maintaining the evidence trail certification bodies require.",
+            "Design and execute your internal audit programme. Conducting structured audits against ISO 27001, TISAX, CMMC, or NIS2, writing formal audit reports, managing nonconformities, and maintaining the evidence trail certification bodies require.",
         typicalEngagement: "Quarterly audit cycles or annual programme",
         relevantFor:
             "Companies under ISO 27001 surveillance audits, TISAX recertification cycles, or CMMC annual affirmations.",
@@ -60,7 +60,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Risk Management Specialist",
         icon: AlertTriangle,
         description:
-            "Own your risk management process — conducting risk assessments, maintaining the risk register, developing risk treatment plans, and ensuring risk management meets the requirements of your certification framework.",
+            "Own your risk management process. Conducting risk assessments, maintaining the risk register, developing risk treatment plans, and ensuring risk management meets the requirements of your certification framework.",
         typicalEngagement: "Quarterly reviews or project-based",
         relevantFor:
             "Organisations whose risk assessment is a certification requirement (ISO 27001 Clause 6, TISAX, CMMC RM domain).",
@@ -71,7 +71,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "ISMS Manager",
         icon: FolderKey,
         description:
-            "Day-to-day management of your Information Security Management System — control monitoring, document management, evidence collection, supplier oversight, awareness programme coordination, and management review preparation.",
+            "Day-to-day management of your Information Security Management System. Control monitoring, document management, evidence collection, supplier oversight, awareness programme coordination, and management review preparation.",
         typicalEngagement: "1–4 days/month retainer",
         relevantFor:
             "Companies post-certification who need someone to maintain the ISMS without a full-time resource.",
@@ -82,7 +82,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Compliance Officer",
         icon: BadgeCheck,
         description:
-            "Monitor and manage regulatory compliance across your applicable frameworks — tracking regulatory changes, ensuring controls remain current, managing compliance registers, and interfacing with legal and regulatory bodies.",
+            "Monitor and manage regulatory compliance across your applicable frameworks. Tracking regulatory changes, ensuring controls remain current, managing compliance registers, and interfacing with legal and regulatory bodies.",
         typicalEngagement: "Part-time retainer or project-based",
         relevantFor:
             "Regulated industries (financial services, healthcare, defence) where the compliance landscape evolves frequently.",
@@ -189,11 +189,11 @@ export const rolesPageMeta: PageMeta = {
         },
         {
             question: "Can we see the CV/profile of our assigned professional before committing?",
-            answer: "Yes — we present matched profiles before engagement confirmation. You'll meet your assigned professional and confirm the fit before any commitment.",
+            answer: "Yes. We present matched profiles before engagement confirmation. You'll meet your assigned professional and confirm the fit before any commitment.",
         },
         {
             question: "What if the assigned professional doesn't meet our expectations?",
-            answer: "We offer a replacement guarantee — if the match isn't working within the first 30 days, we replace at no additional cost. Your satisfaction and project continuity are non-negotiable.",
+            answer: "We offer a replacement guarantee. If the match isn't working within the first 30 days, we replace at no additional cost. Your satisfaction and project continuity are non-negotiable.",
         },
         {
             question: "How quickly can an outsourced CISO or DPO start?",
@@ -201,7 +201,7 @@ export const rolesPageMeta: PageMeta = {
         },
         {
             question: "Can the outsourced professional work on-site?",
-            answer: "Yes — we can accommodate regular on-site presence as part of the engagement scope. Most clients use a hybrid model combining on-site days with remote availability.",
+            answer: "Yes. We can accommodate regular on-site presence as part of the engagement scope. Most clients use a hybrid model combining on-site days with remote availability.",
         },
         {
             question: "What's the minimum engagement period?",
@@ -209,7 +209,7 @@ export const rolesPageMeta: PageMeta = {
         },
         {
             question: "Can the outsourced role transition to a permanent hire later?",
-            answer: "Yes — and we support that transition. Many engagements begin as outsourced and transition to permanent once the organisation has the maturity and budget for a full-time hire.",
+            answer: "Yes. And we support that transition. Many engagements begin as outsourced and transition to permanent once the organisation has the maturity and budget for a full-time hire.",
         },
     ],
     finalCta: {

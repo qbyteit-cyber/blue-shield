@@ -33,7 +33,7 @@ export function ServicesMenu({ isOpen, onClose }: ServicesMenuProps) {
         <AnimatePresence>
             {isOpen && (
                 <>
-                    {/* Backdrop — click outside to close */}
+                    {/* Backdrop. Click outside to close */}
                     <div
                         className="fixed inset-0 z-40"
                         onClick={onClose}
