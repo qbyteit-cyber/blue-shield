@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
-import { CookieConsentBanner } from "@/components/privacy/CookieConsentBanner";
+import { CookieConsentComponent } from "@/components/privacy/CookieConsent";
 import "./globals.css";
 
 const inter = Inter({
@@ -36,7 +36,7 @@ export default function RootLayout({
         <div id="main-content" tabIndex={-1} className="outline-none">
           {children}
         </div>
-        <CookieConsentBanner />
+        <CookieConsentComponent />
       </body>
     </html>
   );

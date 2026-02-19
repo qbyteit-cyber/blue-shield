@@ -165,3 +165,107 @@ h6 {
     padding: 0 2.5rem;
   }
 }
+
+/* ── vanilla-cookieconsent v3 — Custom Theme ─────────────── */
+
+/* Consent bar (bottom banner) */
+#cc-main .cm {
+  --cc-bg: #0A2463;
+  --cc-primary-color: #ffffff;
+  --cc-secondary-color: rgba(255, 255, 255, 0.7);
+  --cc-btn-primary-bg: #FF6B35;
+  --cc-btn-primary-color: #ffffff;
+  --cc-btn-primary-hover-bg: #e55a2b;
+  --cc-btn-primary-hover-color: #ffffff;
+  --cc-btn-secondary-bg: rgba(255, 255, 255, 0.12);
+  --cc-btn-secondary-color: #ffffff;
+  --cc-btn-secondary-hover-bg: rgba(255, 255, 255, 0.2);
+  --cc-btn-secondary-hover-color: #ffffff;
+  --cc-separator-border-color: rgba(255, 255, 255, 0.1);
+  --cc-cookie-category-block-bg: rgba(255, 255, 255, 0.06);
+  --cc-cookie-category-block-border: rgba(255, 255, 255, 0.1);
+  --cc-toggle-on-bg: #FF6B35;
+  --cc-toggle-off-bg: rgba(255, 255, 255, 0.2);
+  --cc-toggle-readonly-bg: rgba(255, 107, 53, 0.4);
+  --cc-toggle-knob-bg: #ffffff;
+  border-radius: 16px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Preferences modal */
+#cc-main .pm {
+  --cc-bg: #0A2463;
+  --cc-primary-color: #ffffff;
+  --cc-secondary-color: rgba(255, 255, 255, 0.7);
+  --cc-btn-primary-bg: #FF6B35;
+  --cc-btn-primary-color: #ffffff;
+  --cc-btn-primary-hover-bg: #e55a2b;
+  --cc-btn-primary-hover-color: #ffffff;
+  --cc-btn-secondary-bg: rgba(255, 255, 255, 0.12);
+  --cc-btn-secondary-color: #ffffff;
+  --cc-btn-secondary-hover-bg: rgba(255, 255, 255, 0.2);
+  --cc-btn-secondary-hover-color: #ffffff;
+  --cc-separator-border-color: rgba(255, 255, 255, 0.1);
+  --cc-cookie-category-block-bg: rgba(255, 255, 255, 0.06);
+  --cc-cookie-category-block-border: rgba(255, 255, 255, 0.1);
+  --cc-toggle-on-bg: #FF6B35;
+  --cc-toggle-off-bg: rgba(255, 255, 255, 0.2);
+  --cc-toggle-readonly-bg: rgba(255, 107, 53, 0.4);
+  --cc-toggle-knob-bg: #ffffff;
+  border-radius: 16px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Titles and headings visibility */
+#cc-main .cm__title,
+#cc-main .pm__title,
+#cc-main .pm__section-title {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+/* Buttons — rounded pill style */
+#cc-main .cm__btn,
+#cc-main .pm__btn {
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* Links inside the banner */
+#cc-main .cc-link {
+  color: #FF6B35;
+  font-weight: 600;
+}
+
+#cc-main .cc-link:hover {
+  color: #ffffff;
+}
+
+/* Section titles in preferences modal */
+#cc-main .pm__section-title {
+  letter-spacing: -0.02em;
+}
+
+/* Cookie table styling */
+#cc-main .pm__table {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#cc-main .pm__table th {
+  color: #FF6B35;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+#cc-main .pm__table td {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+}
+
+/* Overlay */
+#cc-main .cm--bar .cm__body {
+  padding: 1.25rem 1.5rem;
+}

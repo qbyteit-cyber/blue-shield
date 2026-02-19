@@ -66,7 +66,10 @@ export function Footer() {
                             <li><Link href="/accessibility" className="hover:opacity-100 transition-opacity">Accessibility</Link></li>
                             <li>
                                 <button
-                                    onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
+                                    onClick={() => {
+                                        const win = window as Window & { openCookieSettings?: () => void };
+                                        if (win.openCookieSettings) win.openCookieSettings();
+                                    }}
                                     className="hover:opacity-100 transition-opacity text-left appearance-none"
                                     type="button"
                                 >
