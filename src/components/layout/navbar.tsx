@@ -234,8 +234,6 @@ export function Navbar() {
                     >
                         About Us
                     </Link>
-
-
                 </div>
             )}
         </nav>

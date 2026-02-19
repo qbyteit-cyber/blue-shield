@@ -36,6 +36,14 @@ export function Footer() {
                                 <Globe size={20} />
                             </Link>
                         </div>
+                        <div className="mt-4 pt-4 border-t border-white/10">
+                            <p className="text-[10px] text-white/35 leading-relaxed">
+                                Information Security Consulting SRL
+                            </p>
+                            <p className="text-[10px] text-white/35 leading-relaxed">
+                                J32/68/2022 &middot; VAT: RO45485372 &middot; EUID: ROONRC.J32/68/2022
+                            </p>
+                        </div>
                     </div>
 
                     <div>
@@ -108,11 +116,43 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[10px] uppercase tracking-widest opacity-40">
-                    <div className="space-y-1">
-                        <p>© 2026 ITIS-Secure. All rights reserved.</p>
-                        <p>INFORMATION SECURITY CONSULTING SRL | J32/68/2022 | VAT: RO45485372 | EUID: ROONRC.J32/68/2022</p>
+                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest opacity-40">
+                    {/* Left: Copyright */}
+                    <p className="w-full md:w-auto text-center md:text-left">© 2026 ITIS-Secure. All rights reserved.</p>
+
+                    {/* Center: Compliance Badges */}
+                    <div className="flex items-center gap-3">
+                        <a
+                            href="https://anpc.ro/ce-este-sal/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="transition-opacity hover:opacity-75"
+                        >
+                            <Image
+                                src="/SAL.svg"
+                                alt="SAL - Solutionarea Alternativa a Litigiilor"
+                                width={120}
+                                height={24}
+                                className="w-[120px] h-auto"
+                            />
+                        </a>
+                        <a
+                            href="https://ec.europa.eu/consumers/odr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="transition-opacity hover:opacity-75"
+                        >
+                            <Image
+                                src="/SOL.svg"
+                                alt="SOL - Solutionarea Online a Litigiilor"
+                                width={120}
+                                height={24}
+                                className="w-[120px] h-auto"
+                            />
+                        </a>
                     </div>
+
+                    {/* Right: Legal Links */}
                     <div className="flex gap-8">
                         <Link href="/privacy" className="hover:underline">Privacy</Link>
                         <Link href="/terms" className="hover:underline">Terms</Link>
