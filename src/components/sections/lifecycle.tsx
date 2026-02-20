@@ -64,7 +64,7 @@ export function Lifecycle() {
             <div className="container mx-auto px-6 max-w-7xl">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <span className="uppercase text-[11px] font-bold text-[#FF6B35] tracking-[0.15em] block mb-4">Our Methodology</span>
+                    <span className="uppercase text-[11px] font-bold text-[#c2410c] tracking-[0.15em] block mb-4">Our Methodology</span>
                     <h2 className="text-4xl md:text-5xl font-[800] text-[#0A2463] tracking-tight mb-6">The Gap-to-Certified Lifecycle</h2>
                     <p className="max-w-3xl mx-auto text-neutral-500 leading-relaxed font-medium">
                         Whether you're pursuing your first TISAX label, renewing ISO 27001, or upgrading to AL3.

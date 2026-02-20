@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { CertificationBadgeStrip } from "./CertificationBadgeStrip";
 import Link from "next/link";
 
@@ -29,11 +29,11 @@ export function Hero() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="/contact">
-                                <Button size="lg">Book Your Free Gap Assessment</Button>
+                            <Link href="/contact" className={buttonVariants({ size: "lg" })}>
+                                Book Your Free Gap Assessment
                             </Link>
-                            <Link href="/services/tisax">
-                                <Button variant="secondary" size="lg">Explore Solutions</Button>
+                            <Link href="/services/tisax" className={buttonVariants({ variant: "secondary", size: "lg" })}>
+                                Explore Solutions
                             </Link>
                         </div>
 

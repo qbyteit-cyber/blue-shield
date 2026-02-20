@@ -67,7 +67,7 @@ export function ContactMapSection() {
             <div className="container mx-auto px-6 max-w-7xl">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <span className="uppercase text-[11px] font-bold text-accent-coral tracking-[0.15em] block mb-4">
+                    <span className="uppercase text-[11px] font-bold text-[#c2410c] tracking-[0.15em] block mb-4">
                         Get In Touch
                     </span>
                     <h2 className="text-3xl md:text-5xl font-black text-primary-navy tracking-tight">
@@ -109,6 +109,7 @@ export function ContactMapSection() {
                                     style={{ position: "absolute", opacity: 0, pointerEvents: "none" }}
                                     tabIndex={-1}
                                     autoComplete="off"
+                                    aria-hidden="true"
                                 />
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -141,7 +142,7 @@ export function ContactMapSection() {
                                     <label className="text-[10px] font-black uppercase text-neutral-400 tracking-widest px-1">
                                         Target Certification
                                     </label>
-                                    <select name="targetCertification" className="w-full bg-neutral-50 border border-neutral-100 rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-coral focus:outline-none transition-all">
+                                    <select name="targetCertification" aria-label="Target Certification" className="w-full bg-neutral-50 border border-neutral-100 rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-coral focus:outline-none transition-all">
                                         <option>TISAX® AL3</option>
                                         <option>CMMC 2.0 Level 2</option>
                                         <option>ISO 27001:2022</option>
