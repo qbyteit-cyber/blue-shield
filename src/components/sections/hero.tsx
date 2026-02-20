@@ -13,9 +13,8 @@ export function Hero() {
 
             <div className="container mx-auto px-6 max-w-7xl relative">
                 <div className="max-w-5xl">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                    <div
+                        className="animate-in fade-in slide-in-from-bottom-5 duration-1000 fill-mode-both"
                     >
                         <span className="inline-block px-3 py-1 mb-6 text-xs font-bold tracking-widest uppercase text-primary-navy bg-primary-navy/5 rounded">
                             European TISAX® & ISO 27001 Experts
@@ -37,7 +36,7 @@ export function Hero() {
                             </Link>
                         </div>
 
-                    </motion.div>
+                    </div>
                 </div>
 
                 <div className="mt-16 md:mt-20 -mx-6 md:mx-0">
