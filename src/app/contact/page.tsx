@@ -235,9 +235,11 @@ export default function ContactPage() {
                                         <p className="text-sm text-neutral-400 leading-relaxed relative z-10">
                                             Founded by Iulian Bozdoghina, ITIS-Secure provides direct technical implementation guidance that moves beyond manual checklists.
                                         </p>
-                                        <div className="mt-8 flex gap-3 relative z-10">
-                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold">TISAX® Specialist</div>
-                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold">CMMC Professional</div>
+                                        <div className="mt-8 flex flex-wrap gap-3 relative z-10">
+                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">TISAX® Specialist</div>
+                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO 27001 Specialist</div>
+                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO 42001 Specialist</div>
+                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">CMMC Professional</div>
                                         </div>
                                     </div>
                                 </div>
