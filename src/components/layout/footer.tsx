@@ -50,9 +50,13 @@ export function Footer() {
                         <h4 className="text-sm font-bold uppercase tracking-widest mb-8 text-accent-coral">Expertise</h4>
                         <ul className="space-y-4 text-sm opacity-60">
                             <li><Link href="/services/tisax" className="hover:opacity-100 transition-opacity">TISAX® Preparation</Link></li>
-
                             <li><Link href="/services/iso-27001" className="hover:opacity-100 transition-opacity">ISO/IEC 27001:2022</Link></li>
                             <li><Link href="/services/isms-implementation" className="hover:opacity-100 transition-opacity">ISMS Implementation</Link></li>
+                            <li><Link href="/services/iso-42001" className="hover:opacity-100 transition-opacity">ISO 42001 Preparation</Link></li>
+                            <li><Link href="/services/tpisr" className="hover:opacity-100 transition-opacity">TPISR Preparation</Link></li>
+                            <li><Link href="/services/nis2" className="hover:opacity-100 transition-opacity">NIS2 Preparation</Link></li>
+                            <li><Link href="/services/dora" className="hover:opacity-100 transition-opacity">DORA Preparation</Link></li>
+                            <li><Link href="/services/gdpr" className="hover:opacity-100 transition-opacity">GDPR Preparation</Link></li>
                         </ul>
                     </div>
 
@@ -61,7 +65,12 @@ export function Footer() {
                         <ul className="space-y-4 text-sm opacity-60">
                             <li><Link href="/industries/automotive" className="hover:opacity-100 transition-opacity">Automotive Supply Chain</Link></li>
                             <li><Link href="/industries/defence" className="hover:opacity-100 transition-opacity">Aerospace & Defence</Link></li>
-                            <li><Link href="/about" className="hover:opacity-100 transition-opacity">About ITIS-Secure</Link></li>
+                            <li><Link href="/industries/government" className="hover:opacity-100 transition-opacity">Government & Public Sector</Link></li>
+                            <li><Link href="/industries/technology" className="hover:opacity-100 transition-opacity">Technology</Link></li>
+                            <li><Link href="/industries/manufacturing" className="hover:opacity-100 transition-opacity">Manufacturing</Link></li>
+                            <li><Link href="/industries/financial" className="hover:opacity-100 transition-opacity">Financial Services</Link></li>
+                            <li><Link href="/industries/energy" className="hover:opacity-100 transition-opacity">Energy & Utilities</Link></li>
+                            <li><Link href="/industries/healthcare" className="hover:opacity-100 transition-opacity">Healthcare</Link></li>
                         </ul>
                     </div>
 
