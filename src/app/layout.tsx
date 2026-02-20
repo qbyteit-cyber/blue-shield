@@ -33,10 +33,10 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg?v=3", type: "image/svg+xml" },
     ],
-    apple: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    apple: "/favicon.svg?v=3",
+    shortcut: "/favicon.svg?v=3",
   },
   openGraph: {
     type: "website",
