@@ -43,6 +43,10 @@ const securityHeaders = [
     key: "Permissions-Policy",
     value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   },
+  {
+    key: "Access-Control-Allow-Origin",
+    value: isDev ? "http://localhost:3000" : "https://itis-secure.com",
+  },
 ];
 
 const nextConfig: NextConfig = {
