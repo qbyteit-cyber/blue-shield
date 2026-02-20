@@ -30,8 +30,8 @@ export function CertificationBadgeStrip() {
                             alt={badge.alt}
                             width={140}
                             height={70}
-                            quality={85}
-                            sizes="(max-width: 768px) 100px, 140px"
+                            quality={75}
+                            sizes="(max-width: 768px) 60px, 140px"
                             className={`badge-slider__img ${badge.className || ""}`}
                         />
                     </div>
