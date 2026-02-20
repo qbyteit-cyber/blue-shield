@@ -6,7 +6,7 @@ const badges = [
     { src: "/badges/iso.svg", alt: "ISO 27001 Certification" },
     { src: "/badges/Logo-ISO-27001.png", alt: "ISO 27001 Logo" },
     { src: "/badges/tisax-enx.png", alt: "TISAX ENX Certification", className: "badge-slider__img--small" },
-    { src: "/badges/iso-9001-certification-badge.webp", alt: "ISO 9001 Certification" },
+    { src: "/badges/iso-9001-certification-badge.svg", alt: "ISO 9001 Certification" },
     { src: "/badges/nis2.jpg", alt: "NIS2 Compliance" },
     { src: "/badges/gdpr.png", alt: "GDPR Compliance" },
     { src: "/badges/tpisr.jpg", alt: "TPISR Compliance", className: "badge-slider__img--small" },
