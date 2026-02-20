@@ -239,7 +239,6 @@ export default function ContactPage() {
                                             <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">TISAX® Specialist</div>
                                             <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO 27001 Specialist</div>
                                             <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO 42001 Specialist</div>
-                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">CMMC Professional</div>
                                         </div>
                                     </div>
                                 </div>
