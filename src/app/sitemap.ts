@@ -19,12 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: `${base}/services/cmmc`,
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 0.8,
-        },
-        {
             url: `${base}/services/iso-27001`,
             lastModified: new Date(),
             changeFrequency: "monthly",

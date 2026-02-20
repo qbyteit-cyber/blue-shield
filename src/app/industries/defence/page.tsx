@@ -28,24 +28,24 @@ export default function DefenceIndustryPage() {
                             className="max-w-3xl"
                         >
                             <div className="flex items-center gap-3 text-accent-coral font-bold text-sm tracking-[0.2em] uppercase mb-6">
-                                <span className="bg-accent-coral/20 px-3 py-1 rounded text-accent-coral text-[10px]">ITAR / NATO / CUI</span>
+                                <span className="bg-accent-coral/20 px-3 py-1 rounded text-accent-coral text-[10px]">AI GOVERNANCE / NATO / ITAR</span>
                             </div>
                             <h1 className="text-4xl md:text-7xl font-black text-white tracking-tighter mb-8 leading-[0.85]">
-                                CMMC 2.0 READINESS <br />
-                                <span className="text-neutral-400">FOR EUROPEAN DEFENCE.</span>
+                                AI TRUST IN <br />
+                                <span className="text-neutral-400">EUROPEAN DEFENCE.</span>
                             </h1>
                             <p className="text-xl text-neutral-400 leading-relaxed mb-10 max-w-2xl font-medium">
-                                Bridge the Gap to NIST 800-171. We help Tier-2 and Tier-3 subcontractors secure DoD and NATO contracts with surgical precision and engineering depth.
+                                Manage AI risk, safety, and ethical transparency. We help Tier-2 and Tier-3 subcontractors secure DoD and NATO autonomous systems contracts with surgical precision and engineering depth.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link href="/contact">
                                     <Button variant="primary" size="lg" className="px-8 h-14 text-base rounded-none bg-accent-coral hover:bg-accent-coral/90 w-full sm:w-auto">
-                                        Book CMMC Consultation
+                                        Book ISO 42001 Consultation
                                     </Button>
                                 </Link>
-                                <Link href="/industries/defence/nist-800-171-matrix">
+                                <Link href="/services/iso-42001">
                                     <Button variant="outline" size="lg" className="px-8 h-14 text-base rounded-none border-white/20 text-white hover:bg-white/10 w-full sm:w-auto">
-                                        NIST 800-171 Matrix
+                                        ISO 42001 Annex Controls
                                     </Button>
                                 </Link>
                             </div>
@@ -64,17 +64,17 @@ export default function DefenceIndustryPage() {
                                     Mission Critical
                                 </div>
                                 <h2 className="text-3xl md:text-5xl font-black text-primary-navy tracking-tighter mb-8 leading-tight">
-                                    The New Standard of Defence Compliance
+                                    The New Standard of AI Defence Compliance
                                 </h2>
                                 <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                                    In global defence, compliance is a matter of National Security. For European suppliers to giants like Lockheed Martin or Airbus, implementing the 110 rigorous technical controls of **CMMC Level 2** is now a mandatory license to operate.
+                                    In global defence, AI governance is a matter of National Security. For European suppliers to giants like Lockheed Martin or Airbus, implementing the rigorous technical controls of **ISO/IEC 42001:2023** is now a mandatory license to operate autonomous systems.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     {[
-                                        { title: "CUI Protection", desc: "Advanced protection of Controlled Unclassified Information." },
-                                        { title: "NIST SP 800-171", desc: "Rev 3 implementation with 100% adherence target." },
-                                        { title: "NIS2 Alignment", desc: "Meeting EU requirements for critical defence entities." },
-                                        { title: "Airworthiness", desc: "Specialized security for aerospace components." }
+                                        { title: "AI Model Integrity", desc: "Advanced protection of training data and algorithm logic." },
+                                        { title: "ISO 42001 Annex A/B Controls", desc: "Implementation of AI-specific risk and impact controls with 100% adherence target." },
+                                        { title: "AI Trust & Transparency", desc: "Meeting EU/NATO requirements for ethical and safe autonomous systems." },
+                                        { title: "Airworthiness", desc: "Specialized safety for AI-driven aerospace components." }
                                     ].map((feat, i) => (
                                         <div key={i} className="flex gap-4">
                                             <CheckCircle className="text-success-emerald shrink-0 mt-1" size={18} />
@@ -94,7 +94,7 @@ export default function DefenceIndustryPage() {
                                 <div className="relative z-10">
                                     <Shield className="text-accent-coral mb-8" size={60} />
                                     <blockquote className="text-2xl font-bold leading-tight mb-8">
-                                        "Compliance is no longer a checklist. It's your license to operate in the €300B NATO defence market."
+                                        "AI Governance is no longer a checklist. It's your license to operate in the €300B NATO defence market."
                                     </blockquote>
                                     <div className="h-px w-full bg-white/10 mb-8" />
                                     <div className="space-y-4">
@@ -108,7 +108,7 @@ export default function DefenceIndustryPage() {
                                     </div>
                                 </div>
                                 <div className="mt-12 text-[10px] uppercase font-bold tracking-[0.2em] opacity-40">
-                                    RPO Ready ● C3PAO Preparation ● NATO STANAG
+                                    AIIA Ready ● ISO 42001 Preparation ● NATO STANAG
                                 </div>
                             </div>
                         </div>
@@ -121,23 +121,23 @@ export default function DefenceIndustryPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {[
                                 {
-                                    title: "CMMC Level 2 Prep",
-                                    desc: "Gap analysis, SSP development, and POA&M management for DoD subs.",
+                                    title: "ISO 42001 Gap Analysis & AIIA",
+                                    desc: "AI Impact Assessment, management system development, and risk mitigation for DoD subs.",
                                     icon: Lock
                                 },
                                 {
                                     title: "DO-326A / ED-202A",
-                                    desc: "Security assurance for aircraft airworthiness and avionics.",
+                                    desc: "Security assurance for AI-driven aircraft airworthiness and avionics.",
                                     icon: Zap
                                 },
                                 {
                                     title: "NATO Alignment",
-                                    desc: "Handling sensitive information according to Alliance standards.",
+                                    desc: "Handling sensitive AI models according to Alliance standards.",
                                     icon: Globe
                                 },
                                 {
                                     title: "ITAR Strategy",
-                                    desc: "Assistance with export control and dual-use technology data security.",
+                                    desc: "Assistance with export control and dual-use AI technology data security.",
                                     icon: Shield
                                 }
                             ].map((service, i) => (
@@ -161,12 +161,12 @@ export default function DefenceIndustryPage() {
                             The Cost of Disqualification
                         </h2>
                         <p className="text-xl text-neutral-600 mb-12 leading-relaxed">
-                            Don't let a missing System Security Plan (SSP) or a single failed NIST control derail your programme. We speak 'avionics' and 'network architecture' as fluently as we speak 'policy'.
+                            Don't let a missing AI Impact Assessment (AIIA) or a single failed ISO 42001 control derail your autonomous systems programme. We speak 'avionics', 'machine learning', and 'model integrity' as fluently as we speak 'policy'.
                         </p>
                         <div className="bg-white p-1 rounded-2xl border border-neutral-200 shadow-2xl overflow-hidden">
                             <div className="grid grid-cols-1 md:grid-cols-3">
                                 {[
-                                    { kpi: "110", label: "NIST Controls" },
+                                    { kpi: "38+", label: "ISO 42001 Controls" },
                                     { kpi: "100%", label: "Confidence" },
                                     { kpi: "0", label: "Non-Conformities" }
                                 ].map((item, i) => (

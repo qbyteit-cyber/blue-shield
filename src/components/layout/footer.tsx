@@ -50,7 +50,7 @@ export function Footer() {
                         <h4 className="text-sm font-bold uppercase tracking-widest mb-8 text-accent-coral">Expertise</h4>
                         <ul className="space-y-4 text-sm opacity-60">
                             <li><Link href="/services/tisax" className="hover:opacity-100 transition-opacity">TISAX® Preparation</Link></li>
-                            <li><Link href="/services/cmmc" className="hover:opacity-100 transition-opacity">CMMC 2.0 Compliance</Link></li>
+
                             <li><Link href="/services/iso-27001" className="hover:opacity-100 transition-opacity">ISO/IEC 27001:2022</Link></li>
                             <li><Link href="/services/isms-implementation" className="hover:opacity-100 transition-opacity">ISMS Implementation</Link></li>
                         </ul>

@@ -30,7 +30,6 @@ const frameworks = [
     { label: "DORA", href: "/services/dora", icon: Building2, desc: "Digital operational resilience for financial entities." },
     { label: "GDPR", href: "/services/gdpr", icon: Lock, desc: "EU data protection regulation compliance." },
     { label: "ISMS Implementation", href: "/services/isms-implementation", icon: ClipboardList, desc: "Full Plan-Do-Check-Act lifecycle management." },
-    { label: "CMMC 2.0", href: "/services/cmmc", icon: Lock, desc: "Cybersecurity Maturity Model for defence contractors." },
 ];
 
 export default function ServicesPage() {

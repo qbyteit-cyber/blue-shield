@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "CMMC 2.0 & DO-326A for Aerospace & Defence",
+    title: "ISO 42001 Certification & AI Trust for European Defence",
     description:
-        "Cybersecurity compliance for aerospace and defence subcontractors. Expert guidance on CMMC 2.0, DO-326A airworthiness, and NIS2 for European critical infrastructure operators.",
+        "Manage AI risk, safety, and ethical transparency in aerospace and defence. Expert guidance on ISO/IEC 42001:2023, AIIA, and DO-326A for European subcontractors.",
     openGraph: {
-        title: "CMMC 2.0 & DO-326A for Aerospace & Defence | ITIS-Secure",
+        title: "ISO 42001 Certification & AI Trust for European Defence | ITIS-Secure",
         description:
-            "Cybersecurity compliance for aerospace and defence subcontractors. Expert guidance on CMMC 2.0, DO-326A airworthiness, and NIS2 for European critical infrastructure operators.",
+            "Manage AI risk, safety, and ethical transparency in aerospace and defence. Expert guidance on ISO/IEC 42001:2023, AIIA, and DO-326A for European subcontractors.",
         url: "https://itis-secure.com/industries/defence",
     },
 };

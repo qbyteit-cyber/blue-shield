@@ -173,7 +173,7 @@ export const rolesPageMeta: PageMeta = {
     frameworks: [
         { label: "ISO 27001", href: "/services/iso-27001" },
         { label: "TISAX", href: "/services/tisax" },
-        { label: "CMMC 2.0", href: "/services/cmmc" },
+
         { label: "NIS2", href: "/services/nis2" },
         { label: "GDPR", href: "/services/gdpr" },
         { label: "DORA", href: "/services/dora" },
