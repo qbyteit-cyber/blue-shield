@@ -82,23 +82,6 @@ export const trainingProgrammes: TrainingProgramme[] = [
         cta: { text: "Request GDPR Training", href: "/contact" },
     },
     {
-        id: "cmmc",
-        title: "CMMC & NIST 800-171",
-        icon: Shield,
-        audience: "Defence contractors, IT and Security teams",
-        duration: "1–2 days",
-        format: "Remote / In-person",
-        highlights: [
-            "CMMC 2.0 model — Level 1, 2, 3 requirements",
-            "NIST SP 800-171 Rev 3 — 110 requirements walkthrough",
-            "CUI handling and documentation",
-            "System Security Plan (SSP) development",
-            "Preparing for C3PAO assessment",
-            "Common assessment failures and how to avoid them",
-        ],
-        cta: { text: "Request CMMC Training", href: "/contact" },
-    },
-    {
         id: "bespoke",
         title: "Bespoke In-House Training",
         icon: Puzzle,

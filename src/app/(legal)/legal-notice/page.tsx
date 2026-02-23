@@ -56,13 +56,6 @@ export default function LegalNoticePage() {
                                 "@type": "Service",
                                 "name": "TISAX® Readiness (AL2/AL3)"
                             }
-                        },
-                        {
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "CMMC 2.0 Level 2 Implementation"
-                            }
                         }
                     ]
                 }

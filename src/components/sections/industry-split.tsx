@@ -17,8 +17,8 @@ const industries = [
     },
     {
         title: "Aerospace & Defence",
-        framework: "CMMC 2.0 & DO-326A",
-        description: "Navigate the transition to CMMC Level 2. We help European defence subcontractors meet DoD and NATO security requirements.",
+        framework: "DO-326A & NIST 800-171",
+        description: "Navigate complex defence frameworks. We help European subcontractors meet DoD and NATO security requirements.",
         icon: ShieldAlert,
         bg: "bg-neutral-100",
         textColor: "text-neutral-900",

@@ -37,7 +37,7 @@
 **Inputs:**
 - **Company Size:** Slider (1-500+ employees)
 - **Sites:** Number of physical locations (1-5)
-- **Target Framework:** Multi-select (TISAX, CMMC, ISO 27001)
+- **Target Framework:** Multi-select (TISAX, ISO 27001, NIS2)
 
 **Output:**
 "Estimated Implementation Investment: **€15k - €45k**"

@@ -49,10 +49,10 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Internal Auditor",
         icon: ClipboardList,
         description:
-            "Design and execute your internal audit programme. Conducting structured audits against ISO 27001, TISAX, CMMC, or NIS2, writing formal audit reports, managing nonconformities, and maintaining the evidence trail certification bodies require.",
+            "Design and execute your internal audit programme. Conducting structured audits against ISO 27001, TISAX, or NIS2, writing formal audit reports, managing nonconformities, and maintaining the evidence trail certification bodies require.",
         typicalEngagement: "Quarterly audit cycles or annual programme",
         relevantFor:
-            "Companies under ISO 27001 surveillance audits, TISAX recertification cycles, or CMMC annual affirmations.",
+            "Companies under ISO 27001 surveillance audits, or TISAX recertification cycles.",
         featured: false,
     },
     {
@@ -63,7 +63,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
             "Own your risk management process. Conducting risk assessments, maintaining the risk register, developing risk treatment plans, and ensuring risk management meets the requirements of your certification framework.",
         typicalEngagement: "Quarterly reviews or project-based",
         relevantFor:
-            "Organisations whose risk assessment is a certification requirement (ISO 27001 Clause 6, TISAX, CMMC RM domain).",
+            "Organisations whose risk assessment is a certification requirement (ISO 27001 Clause 6, TISAX).",
         featured: false,
     },
     {
@@ -185,7 +185,7 @@ export const rolesPageMeta: PageMeta = {
         },
         {
             question: "What qualifications do your outsourced professionals hold?",
-            answer: "Typical credentials include ISO 27001 Lead Auditor (PECB/BSI), CISM, CISSP, TISAX lead assessor experience, and CMMC Registered Practitioner. Specific credentials for your role are confirmed at proposal stage.",
+            answer: "Typical credentials include ISO 27001 Lead Auditor (PECB/BSI), CISM, CISSP, and TISAX lead assessor experience. Specific credentials for your role are confirmed at proposal stage.",
         },
         {
             question: "Can we see the CV/profile of our assigned professional before committing?",

@@ -10,7 +10,7 @@
 | Keyword | Vol | Difficulty | Intent | Target Page |
 | :--- | :--- | :--- | :--- | :--- |
 | **tisax assessment consulting** | 1.2K | Med | Commercial | `/services/tisax` |
-| **cmmc 2.0 consulting europe** | 450 | Low | Commercial | `/services/cmmc` |
+| **nist 800-171 consulting europe** | 450 | Low | Commercial | `/services/nist-800-171` |
 | **cybersecurity compliance romania** | 300 | Low | Local | `/` |
 | **nist 800-171 implementation** | 800 | High | Informational | `/resources/nist-guide` |
 | **tisax al3 requirements checklist** | 200 | Low | Transactional | `/resources/tisax-check` |
@@ -23,7 +23,7 @@
   - `/services/iso-21434-tara`
 - **Pillar 2: Defence & Aerospace**
   - `/industries/defence-aerospace`
-  - `/services/cmmc-readiness`
+  - `/services/nist-800-171-readiness`
   - `/services/do-326a-airworthiness`
 - **Pillar 3: Resources**
   - `/blog/tisax-vs-iso-27001`
@@ -31,14 +31,14 @@
 
 ## 3. PAGE SEO BRIEF — HOMEPAGE
 
-- **Title Tag:** ITIS Secure | Enterprise TISAX & CMMC Compliance Specialists
-- **Meta Description:** From zero to certified. We help Tier-1 Automotive and Defence suppliers achieve TISAX, CMMC, and ISO 27001 compliance. 100% first-time pass rate.
+- **Title Tag:** ITIS Secure | Enterprise TISAX & NIS2 Compliance Specialists
+- **Meta Description:** From zero to certified. We help Tier-1 Automotive and Defence suppliers achieve TISAX, NIS2, and ISO 27001 compliance. 100% first-time pass rate.
 - **H1:** Secure Your Supply Chain Future with Expert Compliance.
 - **Schema:** `Organization`, `LocalBusiness`, `Service`.
 
 ## 4. SCHEMA MARKUP SPECS
 
-- **Service Schema:** Required for TISAX and CMMC pages to show "Rating" and "Service Area".
+- **Service Schema:** Required for TISAX and NIS2 pages to show "Rating" and "Service Area".
 - **FAQ Schema:** Required for FAQ sections at the bottom of service pages to win PAA (People Also Ask).
 - **Article Schema:** For all blog posts and guides to improve E-E-A-T.
 

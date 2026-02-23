@@ -129,7 +129,7 @@ export default function NistMatrixPage() {
                             NIST 800-171 <span className="text-accent-coral">Controls Matrix</span>
                         </h1>
                         <p className="text-xl text-neutral-400 max-w-3xl leading-relaxed">
-                            A comprehensive breakdown of the 110 Controls across 14 Families required for CMMC Level 2 Compliance and safeguarding Controlled Unclassified Information (CUI).
+                            A comprehensive breakdown of the 110 Controls across 14 Families required for safeguarding Controlled Unclassified Information (CUI).
                         </p>
                     </div>
                 </section>
@@ -184,7 +184,7 @@ export default function NistMatrixPage() {
                         </p>
                         <Link href="/contact">
                             <Button variant="primary" size="lg" className="px-12 py-8 text-lg h-auto rounded-xl">
-                                Book CMMC Implementation Call
+                                Book Implementation Call
                             </Button>
                         </Link>
                     </div>

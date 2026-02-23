@@ -115,7 +115,7 @@ export async function GET(request: NextRequest) {
                         fontSize: "22px",
                     }}
                 >
-                    TISAX® · ISO 27001 · CMMC 2.0
+                    TISAX® · ISO 27001 · NIS2
                 </div>
             </div>
         ),

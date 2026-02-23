@@ -36,9 +36,9 @@ export const featuredIndustries: Industry[] = [
         slug: "defence",
         title: "Aerospace & Defence",
         description:
-            "CMMC 2.0 Level 2 readiness for European defence subcontractors. We bridge the gap to NIST 800-171 compliance so you can secure DoD and NATO contracts with surgical precision.",
+            "NIST 800-171 compliance readiness for European defence subcontractors. We bridge the gap so you can secure DoD and NATO contracts with surgical precision.",
         icon: ShieldAlert,
-        frameworks: ["CMMC 2.0", "NIST 800-171", "DO-326A", "ITAR"],
+        frameworks: ["NIST 800-171", "DO-326A", "ITAR"],
         href: "/industries/defence",
         ctaLabel: "Explore Defence Solutions",
     },

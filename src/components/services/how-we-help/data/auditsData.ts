@@ -18,7 +18,7 @@ export const auditServices: AuditService[] = [
             "A structured assessment of your current security posture against your target framework — identifying what controls exist, what's missing, and what requires remediation.",
         deliverable:
             "Gap Analysis Report — control-by-control assessment, RAG status, remediation priorities, estimated effort to close.",
-        frameworks: "ISO 27001 | TISAX | CMMC | NIS2 | DORA | GDPR",
+        frameworks: "ISO 27001 | TISAX | NIS2 | DORA | GDPR",
         bestFor:
             "Companies starting a certification programme or unsure of their current compliance posture.",
         cta: { text: "Book a Gap Analysis", href: "/contact" },
@@ -31,7 +31,7 @@ export const auditServices: AuditService[] = [
             "A systematic internal audit of your ISMS and controls against your target standard, conducted by a qualified lead auditor. Generates the audit evidence that certification bodies require to see. Note: This is an internal assessment that prepares you for official certification — it is not the official certification audit itself.",
         deliverable:
             "Formal Internal Audit Report — findings, nonconformities (major/minor), observations, and corrective action register.",
-        frameworks: "ISO 27001 | TISAX | CMMC | NIS2",
+        frameworks: "ISO 27001 | TISAX | NIS2",
         bestFor:
             "Companies with an existing ISMS who need to demonstrate continual improvement and audit programme compliance.",
         cta: { text: "Book an Internal Audit", href: "/contact" },
@@ -44,7 +44,7 @@ export const auditServices: AuditService[] = [
             "A structured information security risk assessment — threat identification, vulnerability analysis, impact and likelihood scoring, and risk treatment planning using recognised methodology.",
         deliverable:
             "Risk Assessment Report + Risk Treatment Plan + Risk Register + Statement of Applicability input.",
-        frameworks: "All ISO 27001-aligned frameworks + TISAX + CMMC",
+        frameworks: "All ISO 27001-aligned frameworks + TISAX",
         bestFor:
             "Organisations at the start of their ISMS journey or those due for their annual risk assessment review.",
         cta: { text: "Book a Risk Assessment", href: "/contact" },
@@ -57,7 +57,7 @@ export const auditServices: AuditService[] = [
             "Technical security testing — vulnerability scanning, network penetration testing, web application testing, social engineering assessments — to identify exploitable weaknesses in your environment.",
         deliverable:
             "Technical Penetration Test Report — vulnerabilities found, CVE references, CVSS scores, and prioritised remediation guidance.",
-        frameworks: "ISO 27001 A.8 | TISAX technical controls | CMMC AC/SC/SI",
+        frameworks: "ISO 27001 A.8 | TISAX technical controls",
         bestFor:
             "Companies needing technical evidence of control effectiveness for certification, or those wanting to validate their security posture.",
         cta: { text: "Request Penetration Testing", href: "/contact" },
@@ -70,7 +70,7 @@ export const auditServices: AuditService[] = [
             "A full simulation of the official certification assessment — conducted by our lead auditors using the same methodology, evidence requests, and interview process that official assessors use.",
         deliverable:
             "Mock Audit Report — assessment findings, certification readiness score, and a specific action list to close before the official assessment date.",
-        frameworks: "ISO 27001 | TISAX AL2 / AL3 | CMMC Level 2",
+        frameworks: "ISO 27001 | TISAX AL2 / AL3",
         bestFor:
             "Companies 4–8 weeks from their official certification date who want certainty they will pass.",
         cta: { text: "Book a Mock Audit", href: "/contact" },
@@ -80,10 +80,10 @@ export const auditServices: AuditService[] = [
         title: "Supplier & Third-Party Audits",
         icon: Network,
         whatItIs:
-            "Assessment of your vendors, suppliers, and third-party service providers against your information security requirements — meeting ISO 27001 Clause 8.4, TISAX prototype protection requirements, and CMMC supply chain security controls.",
+            "Assessment of your vendors, suppliers, and third-party service providers against your information security requirements — meeting ISO 27001 Clause 8.4, and TISAX prototype protection requirements.",
         deliverable:
             "Third-Party Audit Report per supplier + consolidated risk register for your vendor portfolio.",
-        frameworks: "ISO 27001 A.5.19 | TISAX TPISR | CMMC SR domain",
+        frameworks: "ISO 27001 A.5.19 | TISAX TPISR",
         bestFor:
             "Companies with contractual obligations to audit their supply chain, or those preparing for TISAX TPISR assessment.",
         cta: { text: "Discuss Supplier Audits", href: "/contact" },
@@ -101,7 +101,7 @@ export const auditsPageMeta: PageMeta = {
     ctaPrimary: { text: "Book Your Gap Analysis", href: "/contact" },
     ctaSecondary: { text: "Explore Security Management Frameworks", href: "/services/isms-implementation" },
     trustPoints: [
-        { text: "Audit against ISO 27001, TISAX, CMMC, NIS2 and more" },
+        { text: "Audit against ISO 27001, TISAX, NIS2 and more" },
         { text: "Written audit reports with actionable remediation plans" },
         { text: "Pre-certification mock audits conducted by lead auditors" },
     ],

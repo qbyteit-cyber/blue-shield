@@ -144,7 +144,7 @@ export function ContactMapSection() {
                                     </label>
                                     <select name="targetCertification" aria-label="Target Certification" className="w-full bg-neutral-50 border border-neutral-100 rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-coral focus:outline-none transition-all">
                                         <option>TISAX® AL3</option>
-                                        <option>CMMC 2.0 Level 2</option>
+
                                         <option>ISO 27001:2022</option>
                                         <option>NIS2 Compliance</option>
                                         <option>DORA</option>

@@ -19,7 +19,7 @@
 ├──────────────────────────────────────────────────────────┤
 │                                                          │
 │  [SYSTEM STATUS WIDGET - Top Right]                      │
-│  SCAN: ACTIVE ● ENX: LINKED ● CMMC: COMPLIANT            │
+│  SCAN: ACTIVE ● ENX: LINKED ● NIS2: COMPLIANT            │
 │                                                          │
 │  H1: [Benefit-led headline from Meridian]                │
 │  H2: [Support statement emphasizing 100% pass rate]       │
@@ -46,7 +46,7 @@
 ## SECTION 3: INDUSTRY SPLIT (The Matrix)
 **Layout:** 2-Column Split
 - **Left (Auto):** Deep Dark Navy. Visual: TISAX AL3 Label. Link: Automotive Page.
-- **Right (Defence):** Slate Gray. Visual: CMMC Level 2 Badge. Link: Defence Page.
+- **Right (Defence):** Slate Gray. Visual: NIS2 Readiness Badge. Link: Defence Page.
 
 ---
 

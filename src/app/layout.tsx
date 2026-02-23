@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     template: "%s | ITIS-Secure",
   },
   description:
-    "Expert TISAX®, ISO 27001, CMMC 2.0 and NIS2 compliance consultancy. We take automotive and defence suppliers from zero security posture to full certification. 100% first-time pass rate.",
+    "Expert TISAX®, ISO 27001, and NIS2 compliance consultancy. We take automotive and defence suppliers from zero security posture to full certification. 100% first-time pass rate.",
   keywords: [
     "TISAX certification",
     "ISO 27001 consultant",
-    "CMMC 2.0 compliance",
+
     "automotive cybersecurity",
     "NIS2 compliance Europe",
     "TISAX AL3",

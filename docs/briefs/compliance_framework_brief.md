@@ -6,8 +6,6 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **TISAX** | 5.0 (VDA ISA) | Mandatory | BMW, VW, Mercedes, Tier-1s | 3 Years |
 | **ISO 27001** | 2022 | Optional/Baseline | Global supply chain / ISO 9001 sync | 3 Years |
-| **CMMC 2.0** | Level 2 | Mandatory | US DoD Contractors (inc. EU subs) | 3 Years |
-| **NIST 800-171** | Rev 3 | Mandatory | Any org handling CUI (DoD/NASA) | Constant |
 | **DO-326A** | ED-202A | Mandatory | Aerospace (EASA/FAA Type Cert) | Component Life |
 | **NIS2** | EU 2022/2555 | Mandatory | EU Essential/Important Entities | On-going |
 
@@ -24,7 +22,7 @@
 ## 3. SERVICE DEFINITIONS
 
 - **TISAX® Readiness (AL2/AL3):** Complete preparation for the ENX assessment. Focus on Prototype Protection and Data Protection extensions. (Duration: 3-6 months).
-- **CMMC 2.0 Roadmap:** Implementation of 110 NIST 800-171 practices for Tier-2 defence subcontractors. (Duration: 6-12 months).
+- **NIST 800-171 Roadmap:** Implementation of 110 NIST 800-171 practices for Tier-2 defence subcontractors. (Duration: 6-12 months).
 - **ISO 21434 Automotive Cybersecurity:** Engineering-level compliance for vehicle type approval. Includes TARA (Threat Analysis and Risk Assessment).
 - **DO-326A Airworthiness Security:** Airworthiness security process (ASPP) for avionics software/hardware.
 
@@ -32,12 +30,12 @@
 
 > [!IMPORTANT]
 > **TISAX + ISO 27001:** While TISAX is based on ISO 27001, it has specific automotive requirements. We build an Integrated Management System (IMS) that satisfies both with 80% overlapping effort.
-> **CMMC + NIS2:** Companies complying with NIS2 in Europe can leverage those controls to meet ~60% of CMMC Level 2 requirements.
+> **NIST + NIS2:** Companies complying with NIS2 in Europe can leverage those controls to meet ~60% of NIST 800-171 requirements.
 
 ## 5. TECHNICAL CONTENT BLOCKS (For Website)
 
 - **TISAX AL3:** "Requirement for sensitive information and prototype protection. Involves on-site audits and high-rigor physical security controls."
-- **CMMC Level 2:** "Advanced protection of Controlled Unclassified Information (CUI). Requires 100% adherence to 110 NIST practices with no POA&M allowed for certification."
+
 
 ## 6. COMMON CLIENT MISTAKES
 1. **Scoping too small:** Leaving critical production sites out of TISAX scope, leading to OEM rejection.

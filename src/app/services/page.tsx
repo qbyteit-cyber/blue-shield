@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Our Services | ITIS-Secure",
-    description: "Explore our full suite of cybersecurity compliance services — from TISAX and ISO 27001 to CMMC, NIS2, DORA, and GDPR.",
+    description: "Explore our full suite of cybersecurity compliance services — from TISAX and ISO 27001 to NIS2, DORA, and GDPR.",
 };
 
 const howWeHelp = [

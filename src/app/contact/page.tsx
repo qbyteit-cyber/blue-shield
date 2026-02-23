@@ -117,7 +117,7 @@ export default function ContactPage() {
                                             <label className="text-[10px] font-black uppercase text-neutral-400 tracking-widest px-1">Target Certification</label>
                                             <select name="targetCertification" aria-label="Target Certification" className="w-full bg-neutral-50 border border-neutral-100 rounded-xl px-4 py-4 focus:ring-2 focus:ring-accent-coral focus:outline-none transition-all">
                                                 <option>TISAX® AL3</option>
-                                                <option>CMMC 2.0 Level 2</option>
+
                                                 <option>ISO 27001:2022</option>
                                                 <option>NIS2 / Other Framework</option>
                                             </select>

@@ -6,9 +6,9 @@
 ---
 
 ## SECTION 1 — HERO (Homepage)
-**Eyebrow:** European TISAX® & CMMC Specialists
+**Eyebrow:** European TISAX® & NIS2 Specialists
 **H1:** From Zero to Certified. One Partner. Full Compliance.
-**H2:** We take your company from security gaps to full certification. Expert preparation for TISAX®, CMMC, and ISO 27001 with a 100% first-time pass rate.
+**H2:** We take your company from security gaps to full certification. Expert preparation for TISAX®, NIS2, and ISO 27001 with a 100% first-time pass rate.
 **CTA Primary:** [Book Your Free Gap Assessment]
 **CTA Secondary:** [Compare Frameworks]
 **Trust Line:** Serving Tier-1 Suppliers to BMW, VW, and Porsche.
@@ -32,15 +32,15 @@
 **Link:** [Explore Automotive Solutions]
 
 **Vertical 2: Defence & Aerospace**
-**H3:** CMMC & DO-326A for Mission-Critical Sectors
-**Copy:** Navigate the complex transition to CMMC 2.0 Level 2. We help European defence subcontractors meet DoD and NATO security requirements without derailing production.
+**H3:** DO-326A & NIST 800-171 for Mission-Critical Sectors
+**Copy:** Navigate complex compliance requirements. We help European defence subcontractors meet DoD and NATO security requirements without derailing production.
 **Link:** [Explore Defence Solutions]
 
 ---
 
 ## SECTION 4 — SERVICES OVERVIEW
 **Service 1: TISAX® Readiness:** Full preparation for ENX-accredited assessments.
-**Service 2: CMMC 2.0 Implementation:** SSP, POA&M, and technical control remediation.
+**Service 2: NIST 800-171 Implementation:** SSP, POA&M, and technical control remediation.
 **Service 3: ISO 27001 Management:** Building your ISMS from the ground up.
 **Service 4: DO-326A Airworthiness:** Cybersecurity for aerospace engineers and manufacturers.
 
@@ -56,7 +56,7 @@
 **H2:** Ready to Secure Your Next Major Contract?
 **Copy:** Our experts are ready to conduct an initial gap analysis of your current posture. Response within 4 hours.
 **CTA:** [Book Your Free 30-Min Consultation]
-**Footer Trust Badges:** TISAX® Prepared, ISO 27001 Auditor, CMMC Professional, 100% Pass Rate.
+**Footer Trust Badges:** TISAX® Prepared, ISO 27001 Auditor, NIS2 Specialist, 100% Pass Rate.
 
 ---
 
