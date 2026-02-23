@@ -92,7 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: `${base}/industries/defence`,
+            url: `${base}/services/iso-42001`,
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 0.8,

@@ -64,7 +64,7 @@ export function Footer() {
                         <h4 className="text-sm font-bold uppercase tracking-widest mb-8 text-accent-coral">Industries</h4>
                         <ul className="space-y-4 text-sm opacity-60">
                             <li><Link href="/industries/automotive" className="hover:opacity-100 transition-opacity">Automotive Supply Chain</Link></li>
-                            <li><Link href="/industries/defence" className="hover:opacity-100 transition-opacity">Aerospace & Defence</Link></li>
+                            <li><Link href="/services/iso-42001" className="hover:opacity-100 transition-opacity">ISO 42001 (AI)</Link></li>
                             <li><Link href="/industries/government" className="hover:opacity-100 transition-opacity">Government & Public Sector</Link></li>
                             <li><Link href="/industries/technology" className="hover:opacity-100 transition-opacity">Technology</Link></li>
                             <li><Link href="/industries/manufacturing" className="hover:opacity-100 transition-opacity">Manufacturing</Link></li>

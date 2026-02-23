@@ -7,6 +7,7 @@ import {
     Factory,
     Cpu,
     Building,
+    Brain,
     type LucideIcon,
 } from "lucide-react";
 
@@ -33,14 +34,14 @@ export const featuredIndustries: Industry[] = [
         ctaLabel: "Explore Automotive Solutions",
     },
     {
-        slug: "defence",
-        title: "Aerospace & Defence",
+        slug: "iso-42001",
+        title: "ISO 42001 (AI Governance)",
         description:
-            "NIST 800-171 compliance readiness for European defence subcontractors. We bridge the gap so you can secure DoD and NATO contracts with surgical precision.",
-        icon: ShieldAlert,
-        frameworks: ["NIST 800-171", "DO-326A", "ITAR"],
-        href: "/industries/defence",
-        ctaLabel: "Explore Defence Solutions",
+            "Manage AI risk, safety, and ethical transparency. We help organizations implement the rigorous technical controls of ISO/IEC 42001:2023 for autonomous systems.",
+        icon: Brain,
+        frameworks: ["ISO 42001", "AIIA", "NATO STANAG"],
+        href: "/services/iso-42001",
+        ctaLabel: "Explore AI Solutions",
     },
 ];
 
@@ -111,7 +112,7 @@ export const standardIndustries: Industry[] = [
 /* ── All 8 names (for the ticker) ─────────────────────────── */
 export const allIndustryNames = [
     "Automotive",
-    "Aerospace & Defence",
+    "ISO 42001 (AI)",
     "Government & Public Sector",
     "Technology",
     "Manufacturing",

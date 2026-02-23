@@ -6,7 +6,7 @@ import { CertificationBadgeStrip } from "@/components/sections/CertificationBadg
 import {
     Wrench, GraduationCap, ShieldCheck, Users,
     Award, Car, Globe, Building2, Lock, Network,
-    ClipboardList, ArrowRight,
+    ClipboardList, ArrowRight, Brain,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 };
 
 const howWeHelp = [
+    { label: "ISMS Implementation", href: "/services/isms-implementation", icon: ClipboardList, desc: "Full Plan-Do-Check-Act lifecycle management." },
     { label: "Implementation Support", href: "/services/implementation-support", icon: Wrench, desc: "End-to-end programme management from gap analysis to certification day." },
     { label: "Training & Courses", href: "/services/training", icon: GraduationCap, desc: "Role-based awareness and technical workshops for your team." },
     { label: "Security Audits & Testing", href: "/services/security-audits", icon: ShieldCheck, desc: "Internal audits, penetration testing, and vulnerability assessments." },
@@ -25,11 +26,13 @@ const howWeHelp = [
 const frameworks = [
     { label: "TISAX®", href: "/services/tisax", icon: Car, desc: "Automotive information security for Tier-1 suppliers." },
     { label: "ISO 27001", href: "/services/iso-27001", icon: Award, desc: "The gold standard for information security management systems." },
-    { label: "TPISR", href: "/services/tpisr", icon: Network, desc: "Third-party information security for North American OEMs." },
+    { label: "ISO 42001", href: "/services/iso-42001", icon: Brain, desc: "The new standard for Artificial Intelligence Management Systems (AIMS)." },
+    { label: "ISO 9001", href: "/services/iso-9001", icon: Award, desc: "Quality management systems for process excellence." },
     { label: "NIS2", href: "/services/nis2", icon: Globe, desc: "EU directive for critical infrastructure operators." },
     { label: "DORA", href: "/services/dora", icon: Building2, desc: "Digital operational resilience for financial entities." },
+    { label: "AS9100D", href: "/services/as9100d", icon: Award, desc: "Quality management systems for Aerospace & Defence." },
     { label: "GDPR", href: "/services/gdpr", icon: Lock, desc: "EU data protection regulation compliance." },
-    { label: "ISMS Implementation", href: "/services/isms-implementation", icon: ClipboardList, desc: "Full Plan-Do-Check-Act lifecycle management." },
+    { label: "TPISR", href: "/services/tpisr", icon: Network, desc: "Third-party information security for North American OEMs." },
 ];
 
 export default function ServicesPage() {
@@ -94,7 +97,7 @@ export default function ServicesPage() {
                 <section className="py-24 bg-neutral-900 text-white">
                     <div className="container mx-auto px-6 max-w-7xl">
                         <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-4">
-                            Security Management Frameworks
+                            Management Frameworks
                         </h2>
                         <p className="text-lg text-neutral-400 mb-16 max-w-2xl">
                             We prepare organisations for certification across all applicable frameworks — from automotive to defence, finance to healthcare.

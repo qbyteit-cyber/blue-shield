@@ -12,7 +12,7 @@ import { servicesMenuColumns } from "./ServicesMenuData";
 /* ── Industries dropdown data ───────────────────────────────── */
 const industriesLinks = [
     { label: "Automotive", href: "/industries/automotive" },
-    { label: "Defence", href: "/industries/defence" },
+    { label: "ISO 42001", href: "/services/iso-42001" },
 ];
 
 /* ── Small hover dropdown (for Industries, etc.) ────────────── */

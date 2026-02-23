@@ -6,6 +6,7 @@ import {
     Eye,
     FolderKey,
     BadgeCheck,
+    Brain,
 } from "lucide-react";
 import type { PageMeta, OutsourcedRole, WhoIsThisForCard, ComparisonRow } from "../types";
 
@@ -75,6 +76,17 @@ export const outsourcedRoles: OutsourcedRole[] = [
         typicalEngagement: "1–4 days/month retainer",
         relevantFor:
             "Companies post-certification who need someone to maintain the ISMS without a full-time resource.",
+        featured: false,
+    },
+    {
+        id: "aims-manager",
+        title: "AIMS Manager",
+        icon: Brain,
+        description:
+            "Specialized management of your Artificial Intelligence Management System (ISO 42001). Oversight of AI risk assessments, data quality for training sets, algorithmic transparency, and ethical governance of autonomous components.",
+        typicalEngagement: "2–6 days/month retainer",
+        relevantFor:
+            "Organisations operating complex AI models or autonomous systems that require ongoing ISO 42001 compliance and risk oversight.",
         featured: false,
     },
     {

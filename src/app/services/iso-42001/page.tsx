@@ -8,7 +8,7 @@ import { Shield, Lock, Globe, Zap, ArrowRight, CheckCircle } from "lucide-react"
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
 import Link from "next/link";
 
-export default function DefenceIndustryPage() {
+export default function ISO42001Page() {
     return (
         <>
             <Navbar />
@@ -28,11 +28,11 @@ export default function DefenceIndustryPage() {
                             className="max-w-3xl"
                         >
                             <div className="flex items-center gap-3 text-accent-coral font-bold text-sm tracking-[0.2em] uppercase mb-6">
-                                <span className="bg-accent-coral/20 px-3 py-1 rounded text-accent-coral text-[10px]">AI GOVERNANCE / NATO / ITAR</span>
+                                <span className="bg-accent-coral/20 px-3 py-1 rounded text-accent-coral text-[10px]">ISO/IEC 42001:2023 / AI GOVERNANCE</span>
                             </div>
                             <h1 className="text-4xl md:text-7xl font-black text-white tracking-tighter mb-8 leading-[0.85]">
-                                AI TRUST IN <br />
-                                <span className="text-neutral-400">EUROPEAN DEFENCE.</span>
+                                ISO 42001 <br />
+                                <span className="text-neutral-400">AI MANAGEMENT.</span>
                             </h1>
                             <p className="text-xl text-neutral-400 leading-relaxed mb-10 max-w-2xl font-medium">
                                 Manage AI risk, safety, and ethical transparency. We help Tier-2 and Tier-3 subcontractors secure DoD and NATO autonomous systems contracts with surgical precision and engineering depth.

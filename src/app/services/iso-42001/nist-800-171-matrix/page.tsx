@@ -120,9 +120,9 @@ export default function NistMatrixPage() {
 
                     <div className="container mx-auto px-6 relative z-10 max-w-7xl">
                         <div className="mb-6">
-                            <Link href="/industries/defence" className="inline-flex items-center text-accent-coral font-bold text-sm tracking-widest uppercase hover:underline">
+                            <Link href="/services/iso-42001" className="inline-flex items-center text-accent-coral font-bold text-sm tracking-widest uppercase hover:underline">
                                 <ArrowLeft size={16} className="mr-2" />
-                                Back to Defence
+                                Back to ISO 42001
                             </Link>
                         </div>
                         <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-6">
