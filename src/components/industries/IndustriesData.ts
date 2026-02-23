@@ -34,14 +34,14 @@ export const featuredIndustries: Industry[] = [
         ctaLabel: "Explore Automotive Solutions",
     },
     {
-        slug: "iso-42001",
-        title: "ISO 42001 (AI Governance)",
+        slug: "as9100d",
+        title: "Aerospace & Defence",
         description:
-            "Manage AI risk, safety, and ethical transparency. We help organizations implement the rigorous technical controls of ISO/IEC 42001:2023 for autonomous systems.",
-        icon: Brain,
-        frameworks: ["ISO 42001", "AIIA", "NATO STANAG"],
-        href: "/services/iso-42001",
-        ctaLabel: "Explore AI Solutions",
+            "AS9100 Rev D preparation for Tier-1 and Tier-2 defence contractors. We help you meet the rigorous safety and mission-critical quality standards required by NATO and the DoD.",
+        icon: ShieldAlert,
+        frameworks: ["AS9100D", "ISO 27001", "ISO 42001", "NIST 800-171"],
+        href: "/services/as9100d",
+        ctaLabel: "Explore Defence Solutions",
     },
 ];
 
@@ -112,7 +112,7 @@ export const standardIndustries: Industry[] = [
 /* ── All 8 names (for the ticker) ─────────────────────────── */
 export const allIndustryNames = [
     "Automotive",
-    "ISO 42001 (AI)",
+    "Defence",
     "Government & Public Sector",
     "Technology",
     "Manufacturing",

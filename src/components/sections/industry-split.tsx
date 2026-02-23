@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Car, Brain, ArrowRight } from "lucide-react";
+import { Car, ShieldAlert, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const industries = [
@@ -16,14 +16,14 @@ const industries = [
         href: "/industries/automotive"
     },
     {
-        title: "ISO 42001 (AI Governance)",
-        framework: "AI Management System",
-        description: "Manage AI risk, safety, and ethical transparency. We help organizations implement the rigorous technical controls of ISO/IEC 42001:2023.",
-        icon: Brain,
+        title: "Aerospace & Defence",
+        framework: "AS9100D Compliance",
+        description: "Secure your position in the global ASD supply chain. We help Tier-1 and Tier-2 contractors implement the rigorous safety and quality standards of AS9100 Rev D.",
+        icon: ShieldAlert,
         bg: "bg-neutral-100",
         textColor: "text-neutral-900",
         btnVariant: "text-neutral-900 border-neutral-200 hover:bg-neutral-200",
-        href: "/services/iso-42001"
+        href: "/services/as9100d"
     }
 ];
 

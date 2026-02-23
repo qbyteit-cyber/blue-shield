@@ -80,7 +80,7 @@ export default function IndustriesPage() {
                                 Deep expertise where it matters most.
                             </h2>
                             <p className="text-lg text-neutral-500 leading-relaxed">
-                                Automotive and AI Governance are our core specialities — the sectors where we&apos;ve built our reputation on a{" "}
+                                Automotive and Defence are our core specialities — the sectors where we&apos;ve built our reputation on a{" "}
                                 <span className="text-primary-navy font-semibold">100% first-time certification pass rate</span>.
                                 Every other sector benefits from the same rigour.
                             </p>
