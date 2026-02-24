@@ -3,7 +3,7 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
-import { Shield, Lock, CheckCircle2, FileText, Globe, Server, ShieldCheck, Award } from "lucide-react";
+import { Shield, Lock, CheckCircle2, FileText, Globe, Server, ShieldCheck, Award, Download } from "lucide-react";
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -36,6 +36,33 @@ const documents = [
     { title: "Terms of Service", href: "/terms", icon: FileText },
     { title: "GDPR Compliance", href: "#", icon: CheckCircle2 },
     { title: "Information Security Policy", href: "#", icon: Shield }
+];
+
+const certifications = [
+    {
+        name: "ISO27001:2022",
+        description: "Information Security Management System",
+        href: "/certs/iso27001-certificate.pdf",
+        icon: ShieldCheck
+    },
+    {
+        name: "ISO9001:2015",
+        description: "Quality Management System",
+        href: "/certs/iso9001-certificate.pdf",
+        icon: Award
+    },
+    {
+        name: "AS9100D",
+        description: "Aerospace Quality System",
+        href: "/certs/as9100d-certificate.pdf",
+        icon: Award
+    },
+    {
+        name: "TISAX® AL3",
+        description: "Trusted Information Security Assessment Exchange",
+        href: "/certs/tisax-certificate.pdf",
+        icon: Shield
+    }
 ];
 
 export default function TrustCenterPage() {
@@ -168,30 +195,59 @@ export default function TrustCenterPage() {
                     </div>
                 </section>
 
-                {/* Final Verification CTA */}
+                {/* Final Verification & Certificates CTA */}
                 <section className="py-24 bg-white border-t border-neutral-100">
-                    <div className="container mx-auto px-6 max-w-5xl text-center">
-                        <div className="mb-12">
+                    <div className="container mx-auto px-6 max-w-5xl">
+                        <div className="text-center mb-16">
                             <Shield className="mx-auto text-primary-navy mb-8" size={64} />
                             <h2 className="text-3xl md:text-6xl font-black text-primary-navy tracking-tighter leading-tight mb-8">
                                 Verify Our Credentials.
                             </h2>
-                            <p className="text-xl text-neutral-500 leading-relaxed mb-12">
-                                Need to verify our certifications or request a formal security package for your procurement department?
-                                Our trust team responds to all verification requests within 2 business hours.
+                            <p className="text-xl text-neutral-500 leading-relaxed max-w-2xl mx-auto">
+                                We operate strictly by the frameworks we implement for our clients. Below you can view and download our current active certifications.
                             </p>
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                            <Link href="/contact">
-                                <Button className="bg-primary-navy text-white hover:bg-primary-navy/90 text-lg px-12 py-8 h-auto rounded-xl font-bold">
-                                    Request Trust Package
-                                </Button>
-                            </Link>
-                            <Link href="mailto:office@itis-secure.com">
-                                <Button variant="outline" className="border-neutral-200 text-primary-navy hover:bg-neutral-50 text-lg px-12 py-8 h-auto rounded-xl font-bold">
-                                    Contact Security Lead
-                                </Button>
-                            </Link>
+
+                        {/* Certificates Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+                            {certifications.map((cert) => (
+                                <div key={cert.name} className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 bg-neutral-50 border border-neutral-100 rounded-2xl group hover:border-neutral-200 transition-colors">
+                                    <div className="flex gap-4 items-center mb-6 sm:mb-0">
+                                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 text-primary-navy">
+                                            <cert.icon size={24} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-lg text-primary-navy">{cert.name}</h4>
+                                            <div className="text-sm text-neutral-500">{cert.description}</div>
+                                        </div>
+                                    </div>
+                                    <Link href={cert.href} target="_blank" rel="noopener noreferrer">
+                                        <Button variant="outline" className="w-full sm:w-auto bg-white border-neutral-200 text-primary-navy hover:text-accent-coral hover:border-accent-coral gap-2 transition-colors">
+                                            <Download size={16} />
+                                            Download
+                                        </Button>
+                                    </Link>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="text-center">
+                            <h3 className="text-xl font-bold text-primary-navy mb-4">Require a deeper assessment?</h3>
+                            <p className="text-neutral-500 mb-8 max-w-xl mx-auto">
+                                If your procurement team requires a formal security package, filled-out vendor questionnaire, or direct conversation with our Security Lead, we reply to verification requests within 2 business hours.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                                <Link href="/contact">
+                                    <Button className="bg-primary-navy text-white hover:bg-primary-navy/90 text-lg px-8 py-6 h-auto rounded-xl font-bold w-full sm:w-auto">
+                                        Request Trust Package
+                                    </Button>
+                                </Link>
+                                <Link href="mailto:office@itis-secure.com">
+                                    <Button variant="outline" className="border-neutral-200 text-primary-navy hover:bg-neutral-50 text-lg px-8 py-6 h-auto rounded-xl font-bold w-full sm:w-auto">
+                                        Contact Security Lead
+                                    </Button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>
