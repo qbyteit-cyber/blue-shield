@@ -149,9 +149,9 @@ export function ContactMapSection() {
                                         <option>ISO9001</option>
                                         <option>AS9100D</option>
                                         <option>NIS2</option>
-                                        <option>Other Frameworks</option>
                                         <option>DORA</option>
                                         <option>GDPR</option>
+                                        <option>Other Frameworks</option>
                                     </select>
                                 </div>
                                 <div className="space-y-1.5">
