@@ -53,7 +53,7 @@ export const as9100dData: FrameworkPageData = {
     },
     process: {
         title: "AS9100 Implementation",
-        description: "Our approach focuses on the 'Mission Critical' nature of aerospace operations, ensuring 100% compliance.",
+        description: "Our approach focuses on the 'Mission Critical' nature of aerospace operations, maximizing first-time assessment outcomes.",
         steps: [
             {
                 step: "01",
