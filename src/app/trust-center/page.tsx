@@ -3,7 +3,7 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
-import { Shield, Lock, CheckCircle2, FileText, Globe, Server, ShieldCheck, Award, Download } from "lucide-react";
+import { Shield, Lock, CheckCircle2, FileText, Globe, Server, ShieldCheck, Award, Download, Brain } from "lucide-react";
 import { CertificationBadgeStrip } from "@/components/sections/CertificationBadgeStrip";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -42,26 +42,26 @@ const certifications = [
     {
         name: "ISO27001:2022",
         description: "Information Security Management System",
-        href: "/certs/iso27001-certificate.pdf",
+        en_href: "/certs/CERTIFICAT SMSI-SI452CI-317684-EN-ISO27001.pdf",
+        de_href: "/certs/CERTIFICAT SMSI-SI452CI-317684-DE-ISO27001.pdf",
+        ro_href: "/certs/CERTIFICAT SMSI-SI452CI-317684 RO-ISO27001.pdf",
         icon: ShieldCheck
     },
     {
         name: "ISO9001:2015",
         description: "Quality Management System",
-        href: "/certs/iso9001-certificate.pdf",
+        en_href: "/certs/CERTIFICAT SMC-C452CI-733638-EN-ISO9001.pdf",
+        de_href: "/certs/CERTIFICAT SMC-C452CI-733638-DE-ISO9001.pdf",
+        ro_href: "/certs/CERTIFICAT SMC-C452CI-733638-RO-ISO9001.pdf",
         icon: Award
     },
     {
-        name: "AS9100D",
-        description: "Aerospace Quality System",
-        href: "/certs/as9100d-certificate.pdf",
-        icon: Award
-    },
-    {
-        name: "TISAX® AL3",
-        description: "Trusted Information Security Assessment Exchange",
-        href: "/certs/tisax-certificate.pdf",
-        icon: Shield
+        name: "ISO42001",
+        description: "Artificial Intelligence Management System",
+        en_href: "#",
+        de_href: "#",
+        ro_href: "#",
+        icon: Brain
     }
 ];
 
@@ -209,10 +209,10 @@ export default function TrustCenterPage() {
                         </div>
 
                         {/* Certificates Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+                        <div className="grid grid-cols-1 gap-6 mb-20">
                             {certifications.map((cert) => (
-                                <div key={cert.name} className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 bg-neutral-50 border border-neutral-100 rounded-2xl group hover:border-neutral-200 transition-colors">
-                                    <div className="flex gap-4 items-center mb-6 sm:mb-0">
+                                <div key={cert.name} className="flex flex-col md:flex-row items-start md:items-center justify-between p-6 bg-neutral-50 border border-neutral-100 rounded-2xl group hover:border-neutral-200 transition-colors">
+                                    <div className="flex gap-4 items-center mb-6 md:mb-0">
                                         <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 text-primary-navy">
                                             <cert.icon size={24} />
                                         </div>
@@ -221,12 +221,26 @@ export default function TrustCenterPage() {
                                             <div className="text-sm text-neutral-500">{cert.description}</div>
                                         </div>
                                     </div>
-                                    <Link href={cert.href} target="_blank" rel="noopener noreferrer">
-                                        <Button variant="outline" className="w-full sm:w-auto bg-white border-neutral-200 text-primary-navy hover:text-accent-coral hover:border-accent-coral gap-2 transition-colors">
-                                            <Download size={16} />
-                                            Download
-                                        </Button>
-                                    </Link>
+                                    <div className="flex flex-wrap gap-3 w-full md:w-auto">
+                                        <Link href={cert.en_href} target="_blank" rel="noopener noreferrer" className="flex-1 md:flex-none">
+                                            <Button variant="outline" className="w-full bg-white border-neutral-200 text-primary-navy hover:text-accent-coral hover:border-accent-coral gap-2 transition-colors">
+                                                <Download size={16} />
+                                                EN
+                                            </Button>
+                                        </Link>
+                                        <Link href={cert.de_href} target="_blank" rel="noopener noreferrer" className="flex-1 md:flex-none">
+                                            <Button variant="outline" className="w-full bg-white border-neutral-200 text-primary-navy hover:text-accent-coral hover:border-accent-coral gap-2 transition-colors">
+                                                <Download size={16} />
+                                                DE
+                                            </Button>
+                                        </Link>
+                                        <Link href={cert.ro_href} target="_blank" rel="noopener noreferrer" className="flex-1 md:flex-none">
+                                            <Button variant="outline" className="w-full bg-white border-neutral-200 text-primary-navy hover:text-accent-coral hover:border-accent-coral gap-2 transition-colors">
+                                                <Download size={16} />
+                                                RO
+                                            </Button>
+                                        </Link>
+                                    </div>
                                 </div>
                             ))}
                         </div>
