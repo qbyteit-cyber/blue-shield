@@ -24,7 +24,7 @@ export function Hero() {
                             <span className="text-primary-navy block mt-2">With ITIS-Secure.</span>
                         </h1>
                         <p className="text-lg md:text-xl text-neutral-700 mb-12 leading-relaxed max-w-2xl">
-                            We take your company from security gaps to full certification. Expert preparation for TISAX®, ISO 27001, NIS2, DORA, GDPR, TPISR and other frameworks with a 100% first-time pass rate.
+                            We take your company from security gaps to full certification. Expert preparation for TISAX®, ISO 27001, AS9100D, NIS2, DORA, GDPR, TPISR and other frameworks with an achieved 100% first-time pass rate.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">

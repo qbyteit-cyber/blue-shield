@@ -67,7 +67,7 @@ export default function ISO42001Page() {
                                     The New Standard of AI Defence Compliance
                                 </h2>
                                 <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                                    In global defence, AI governance is a matter of National Security. For European suppliers to giants like Lockheed Martin or Airbus, implementing the rigorous technical controls of **ISO/IEC 42001:2023** is now a mandatory license to operate autonomous systems.
+                                    In global defence, AI governance is a matter of National Security. For European suppliers to giants like Lockheed Martin or Airbus, implementing the rigorous technical controls of <span className="font-bold">ISO/IEC 42001:2023</span> is now a mandatory license to operate autonomous systems.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     {[
@@ -99,7 +99,7 @@ export default function ISO42001Page() {
                                     <div className="h-px w-full bg-white/10 mb-8" />
                                     <div className="space-y-4">
                                         <div className="flex items-center justify-between text-sm">
-                                            <span className="opacity-60">Success Probability</span>
+                                            <span className="opacity-60">Readiness Probability</span>
                                             <span className="text-success-emerald font-bold">100%</span>
                                         </div>
                                         <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
