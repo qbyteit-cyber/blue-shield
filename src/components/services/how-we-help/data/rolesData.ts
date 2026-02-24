@@ -125,7 +125,7 @@ export const whoIsThisForCards: WhoIsThisForCard[] = [
 /* ── Comparison Table ──────────────────────────────────────── */
 export const comparisonRows: ComparisonRow[] = [
     { label: "Annual cost", fullTime: "€80K–€180K", outsourced: "€15K–€60K (scope-dependent)" },
-    { label: "Availability", fullTime: "5 days/week", outsourced: "Agreed days — typically 1–4/month" },
+    { label: "Availability", fullTime: "5 days/week", outsourced: "Agreed days — typically 10–12/month" },
     { label: "Time to start", fullTime: "3–6 months", outsourced: "2–4 weeks" },
     { label: "Certifications", fullTime: "Variable", outsourced: "Verified, current" },
     { label: "Risk if they leave", fullTime: "Critical", outsourced: "Continuity guaranteed" },
