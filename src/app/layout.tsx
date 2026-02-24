@@ -19,14 +19,14 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://itis-secure.com"),
   title: {
-    default: "ITIS-Secure | Enterprise TISAX® & ISO 27001 Compliance",
+    default: "ITIS-Secure | Enterprise TISAX® & ISO27001 Compliance",
     template: "%s | ITIS-Secure",
   },
   description:
-    "Expert TISAX®, ISO 27001, and NIS2 compliance consultancy. We take automotive and defence suppliers from zero security posture to full certification. 100% first-time pass rate.",
+    "Expert TISAX®, ISO27001, and NIS2 compliance consultancy. We take automotive and defence suppliers from zero security posture to full certification. 100% first-time pass rate.",
   keywords: [
     "TISAX certification",
-    "ISO 27001 consultant",
+    "ISO27001 consultant",
 
     "automotive cybersecurity",
     "NIS2 compliance Europe",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/api/og?title=Enterprise+TISAX%C2%AE+%26+ISO+27001+Compliance",
         width: 1200,
         height: 630,
-        alt: "ITIS-Secure — Enterprise TISAX® & ISO 27001 Compliance",
+        alt: "ITIS-Secure — Enterprise TISAX® & ISO27001 Compliance",
       },
     ],
   },

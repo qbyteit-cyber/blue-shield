@@ -133,7 +133,7 @@ export default function AutomotiveIndustryPage() {
                                     icon: Shield
                                 },
                                 {
-                                    title: "ISO 21434 Implementation",
+                                    title: "ISO21434 Implementation",
                                     desc: "Engineering-focused cybersecurity for vehicle type approval and TARA analysis.",
                                     icon: Calendar
                                 },

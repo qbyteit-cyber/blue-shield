@@ -144,7 +144,7 @@ export default function TisaxServicePage() {
                                     <HeartPulse className="text-accent-coral mb-4" size={32} />
                                     <h4 className="text-lg font-bold mb-4">Integrated Management Systems (IMS)</h4>
                                     <p className="text-xs text-white/40 leading-relaxed">
-                                        While TISAX is based on ISO 27001, it has specific automotive requirements. We build an Integrated Management System (IMS) that satisfies both with 80% overlapping effort and NIS2 compliance.
+                                        While TISAX is based on ISO27001, it has specific automotive requirements. We build an Integrated Management System (IMS) that satisfies both with 80% overlapping effort and NIS2 compliance.
                                     </p>
                                 </div>
                             </div>

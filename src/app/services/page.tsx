@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Our Services | ITIS-Secure",
-    description: "Explore our full suite of cybersecurity compliance services — from TISAX and ISO 27001 to NIS2, DORA, and GDPR.",
+    description: "Explore our full suite of cybersecurity compliance services — from TISAX and ISO27001 to NIS2, DORA, and GDPR.",
 };
 
 const howWeHelp = [
@@ -25,9 +25,9 @@ const howWeHelp = [
 
 const frameworks = [
     { label: "TISAX®", href: "/services/tisax", icon: Car, desc: "Automotive information security for Tier-1 suppliers." },
-    { label: "ISO 27001", href: "/services/iso-27001", icon: Award, desc: "The gold standard for information security management systems." },
-    { label: "ISO 42001", href: "/services/iso-42001", icon: Brain, desc: "The new standard for Artificial Intelligence Management Systems (AIMS)." },
-    { label: "ISO 9001", href: "/services/iso-9001", icon: Award, desc: "Quality management systems for process excellence." },
+    { label: "ISO27001", href: "/services/iso-27001", icon: Award, desc: "The gold standard for information security management systems." },
+    { label: "ISO42001", href: "/services/iso-42001", icon: Brain, desc: "The new standard for Artificial Intelligence Management Systems (AIMS)." },
+    { label: "ISO9001", href: "/services/iso-9001", icon: Award, desc: "Quality management systems for process excellence." },
     { label: "NIS2", href: "/services/nis2", icon: Globe, desc: "EU directive for critical infrastructure operators." },
     { label: "DORA", href: "/services/dora", icon: Building2, desc: "Digital operational resilience for financial entities." },
     { label: "AS9100D", href: "/services/as9100d", icon: Award, desc: "Quality management systems for Aerospace & Defence." },

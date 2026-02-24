@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 export async function GET(request: NextRequest) {
     const { searchParams, origin } = new URL(request.url);
-    const title = searchParams.get("title") ?? "Enterprise TISAX® & ISO 27001 Compliance";
+    const title = searchParams.get("title") ?? "Enterprise TISAX® & ISO27001 Compliance";
 
     // Fetch the logo as a base64 data URL — required for edge sandbox rendering
     const logoRes = await fetch(`${origin}/itis-secure-logo.svg`);
@@ -115,7 +115,7 @@ export async function GET(request: NextRequest) {
                         fontSize: "22px",
                     }}
                 >
-                    TISAX® · ISO 27001 · NIS2
+                    TISAX® · ISO27001 · NIS2
                 </div>
             </div>
         ),

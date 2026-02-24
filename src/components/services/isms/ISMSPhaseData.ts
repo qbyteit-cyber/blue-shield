@@ -39,7 +39,7 @@ export const ismsPhases: ISMSPhase[] = [
         pdcaBg: "#EFF6FF",
         icon: "SearchCode",
         introParagraph:
-            "Before building, we diagnose. The Gap Analysis phase establishes the foundation of your entire ISMS programme. We map your current security posture against ISO 27001:2022 and VDA ISA 6.0 requirements, identifying every gap between where you are and where certification demands you to be. This diagnostic precision ensures that no resource is wasted on controls you already satisfy — and no critical gap is left unaddressed.",
+            "Before building, we diagnose. The Gap Analysis phase establishes the foundation of your entire ISMS programme. We map your current security posture against ISO27001:2022 and VDA ISA 6.0 requirements, identifying every gap between where you are and where certification demands you to be. This diagnostic precision ensures that no resource is wasted on controls you already satisfy — and no critical gap is left unaddressed.",
         bullets: [
             { text: "Initialization of new certification projects" },
             { text: "Planning and establishing the ISMS" },
@@ -80,7 +80,7 @@ export const ismsPhases: ISMSPhase[] = [
                 text: "Create and maintain the ISMS framework Dashboards on the internal or cloud infrastructure",
             },
             {
-                text: "Develop and maintain a Statement of Applicability in accordance with ISO 27001, VDA 6, and Client requirements",
+                text: "Develop and maintain a Statement of Applicability in accordance with ISO27001, VDA 6, and Client requirements",
             },
         ],
     },
@@ -179,7 +179,7 @@ export const ismsPhases: ISMSPhase[] = [
         pdcaBg: "#FDF4FF",
         icon: "RefreshCw",
         introParagraph:
-            "Continuous improvement is not optional in ISO 27001. It is a certification requirement. The ACT phase makes it systematic. We implement corrective and preventive action procedures, publish them across your organisation, and ensure that every improvement achieves its intended objective. When it is time for certification or recertification, we stand beside you through every step of the process.",
+            "Continuous improvement is not optional in ISO27001. It is a certification requirement. The ACT phase makes it systematic. We implement corrective and preventive action procedures, publish them across your organisation, and ensure that every improvement achieves its intended objective. When it is time for certification or recertification, we stand beside you through every step of the process.",
         bullets: [
             {
                 text: "Provide valuable input to Management for the continuous improvement of the ISMS",
@@ -215,9 +215,9 @@ export interface FAQItem {
 
 export const ismsFAQs: FAQItem[] = [
     {
-        question: "What is the difference between an ISMS and ISO 27001?",
+        question: "What is the difference between an ISMS and ISO27001?",
         answer:
-            "An Information Security Management System (ISMS) is the actual framework of policies, procedures, controls, and risk management processes that protect your organisation's information. ISO 27001 is the international standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an ISMS. In short, ISO 27001 is the blueprint. Your ISMS is the building.",
+            "An Information Security Management System (ISMS) is the actual framework of policies, procedures, controls, and risk management processes that protect your organisation's information. ISO27001 is the international standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an ISMS. In short, ISO27001 is the blueprint. Your ISMS is the building.",
     },
     {
         question: "How long does ISMS implementation take?",
@@ -227,12 +227,12 @@ export const ismsFAQs: FAQItem[] = [
     {
         question: "Do we need an ISMS before pursuing TISAX?",
         answer:
-            "Yes. TISAX assessments (both AL2 and AL3) are built on top of an ISO 27001-aligned ISMS. The VDA ISA 6.0 catalogue evaluates your ISMS as its foundation. Implementing your ISMS with ITIS-Secure means your TISAX preparation is already 60–70% complete, because we align every control to both standards simultaneously.",
+            "Yes. TISAX assessments (both AL2 and AL3) are built on top of an ISO27001-aligned ISMS. The VDA ISA 6.0 catalogue evaluates your ISMS as its foundation. Implementing your ISMS with ITIS-Secure means your TISAX preparation is already 60–70% complete, because we align every control to both standards simultaneously.",
     },
     {
         question: "What is a Statement of Applicability?",
         answer:
-            "The Statement of Applicability (SoA) is a mandatory ISO 27001 document that lists all Annex A controls and states which are applicable to your organisation, which are not, and the justification for each decision. It is one of the first documents auditors request. We develop and maintain your SoA in alignment with ISO 27001, VDA ISA 6.0, and your specific client requirements.",
+            "The Statement of Applicability (SoA) is a mandatory ISO27001 document that lists all Annex A controls and states which are applicable to your organisation, which are not, and the justification for each decision. It is one of the first documents auditors request. We develop and maintain your SoA in alignment with ISO27001, VDA ISA 6.0, and your specific client requirements.",
     },
     {
         question: "What are Risk Assessment ID Cards?",
@@ -243,16 +243,16 @@ export const ismsFAQs: FAQItem[] = [
         question:
             "What happens after the ISMS is certified — do we need ongoing support?",
         answer:
-            "ISO 27001 certification is not a one-time achievement — it requires ongoing surveillance audits (typically annually) and recertification every three years. Between audits, your ISMS must be actively maintained: risks reassessed, controls updated, incidents managed, and improvements documented. Our ACT phase and continuous improvement services ensure your ISMS stays current as standards and threats evolve.",
+            "ISO27001 certification is not a one-time achievement — it requires ongoing surveillance audits (typically annually) and recertification every three years. Between audits, your ISMS must be actively maintained: risks reassessed, controls updated, incidents managed, and improvements documented. Our ACT phase and continuous improvement services ensure your ISMS stays current as standards and threats evolve.",
     },
     {
         question: "How much does ISMS implementation cost?",
         answer:
-            "Implementation costs vary based on organisation size, scope, existing maturity, and target certifications. A focused ISMS implementation for a single-site company may start from €15,000, while multi-site programmes with TISAX and ISO 27001 alignment scale accordingly. We provide a detailed, transparent proposal after the initial gap assessment — there are no hidden fees.",
+            "Implementation costs vary based on organisation size, scope, existing maturity, and target certifications. A focused ISMS implementation for a single-site company may start from €15,000, while multi-site programmes with TISAX and ISO27001 alignment scale accordingly. We provide a detailed, transparent proposal after the initial gap assessment — there are no hidden fees.",
     },
     {
         question: "Can we implement ISMS and TISAX simultaneously?",
         answer:
-            "Absolutely. And this is the approach we recommend. Since TISAX is built on ISO 27001, implementing both in parallel eliminates duplicate effort and reduces your total investment by approximately 30%. Our methodology is specifically designed to produce an Integrated Management System (IMS) that satisfies both frameworks from day one.",
+            "Absolutely. And this is the approach we recommend. Since TISAX is built on ISO27001, implementing both in parallel eliminates duplicate effort and reduces your total investment by approximately 30%. Our methodology is specifically designed to produce an Integrated Management System (IMS) that satisfies both frameworks from day one.",
     },
 ];

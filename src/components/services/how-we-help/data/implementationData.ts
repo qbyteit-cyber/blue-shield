@@ -14,7 +14,7 @@ export const deliveryAreas: DeliveryArea[] = [
         id: "isms-foundation",
         title: "ISMS Foundation",
         icon: Layers,
-        body: "We establish your Information Security Management System from the ground up. Scope definition, context of organisation, leadership requirements, and the full PDCA operating model aligned to ISO 27001:2022.",
+        body: "We establish your Information Security Management System from the ground up. Scope definition, context of organisation, leadership requirements, and the full PDCA operating model aligned to ISO27001:2022.",
     },
     {
         id: "risk-assessment",
@@ -83,13 +83,13 @@ export const implementationPageMeta: PageMeta = {
     ctaPrimary: { text: "Book Your Free Gap Assessment", href: "/contact" },
     ctaSecondary: { text: "Explore ISMS Implementation", href: "/services/isms-implementation" },
     trustPoints: [
-        { text: "ISO 27001 Lead Auditor certified" },
+        { text: "ISO27001 Lead Auditor certified" },
         { text: "TISAX AL3 preparation specialists" },
         { text: "98% first-time pass rate" },
     ],
     introH2: "What Is Implementation Support?",
     introParagraphs: [
-        "Most companies attempting ISO 27001 or TISAX certification try to do it with their existing IT team, treating it as an internal project. They underestimate the bandwidth required, the depth of expertise needed, and the evidence requirements they don't yet know about. By month three, the project stalls. Policies are half-written, risk assessments are incomplete, and the certification deadline hasn't moved.",
+        "Most companies attempting ISO27001 or TISAX certification try to do it with their existing IT team, treating it as an internal project. They underestimate the bandwidth required, the depth of expertise needed, and the evidence requirements they don't yet know about. By month three, the project stalls. Policies are half-written, risk assessments are incomplete, and the certification deadline hasn't moved.",
         "ITIS-Secure doesn't hand over a framework template and leave. We assign a dedicated expert who works inside your organisation through the full implementation lifecycle: scoping, policy development, control implementation, evidence building, and audit preparation. Your consultant becomes part of your team for the duration of the engagement.",
         "The outcome is a genuinely implemented, audit-ready security programme — not just a folder of policies no one reads. Every control is operational, every piece of evidence is documented, and your team understands what they're running. Note: ITIS-Secure provides implementation support and consultancy. Official certifications are issued by independent accredited certification bodies.",
     ],
@@ -100,13 +100,13 @@ export const implementationPageMeta: PageMeta = {
     ],
     processH2: "Our Implementation Methodology",
     processIntro:
-        "Every engagement follows our proven delivery model — the same process that has achieved a 98% first-time pass rate across TISAX and ISO 27001 programmes.",
+        "Every engagement follows our proven delivery model — the same process that has achieved a 98% first-time pass rate across TISAX and ISO27001 programmes.",
     processSteps: methodologySteps,
     frameworksH2: "Frameworks We Implement",
     frameworksIntro:
         "We implement compliance programmes across every major information security framework relevant to Automotive, Defence, and regulated industries.",
     frameworks: [
-        { label: "ISO 27001", href: "/services/iso-27001" },
+        { label: "ISO27001", href: "/services/iso-27001" },
         { label: "TISAX", href: "/services/tisax" },
 
         { label: "NIS2", href: "/services/nis2" },
@@ -120,7 +120,7 @@ export const implementationPageMeta: PageMeta = {
     faqs: [
         {
             question: "How long does a typical implementation take?",
-            answer: "Timeline depends on scope, existing maturity, and team availability. TISAX AL2 typically takes 8–12 weeks, AL3 10–16 weeks, and ISO 27001 12–18 weeks. We provide a detailed, personalised timeline after completing your gap assessment.",
+            answer: "Timeline depends on scope, existing maturity, and team availability. TISAX AL2 typically takes 8–12 weeks, AL3 10–16 weeks, and ISO27001 12–18 weeks. We provide a detailed, personalised timeline after completing your gap assessment.",
         },
         {
             question: "Do you work alongside our existing IT team?",
@@ -132,14 +132,14 @@ export const implementationPageMeta: PageMeta = {
         },
         {
             question: "Do you guarantee certification?",
-            answer: "We don't certify companies. Certifications are issued by independent accredited bodies (ENX for TISAX, ISO-accredited CBs for ISO 27001). What we guarantee is that our implementation will be ready for assessment. Our 98% first-time pass rate speaks to that.",
+            answer: "We don't certify companies. Certifications are issued by independent accredited bodies (ENX for TISAX, ISO-accredited CBs for ISO27001). What we guarantee is that our implementation will be ready for assessment. Our 98% first-time pass rate speaks to that.",
         },
         {
             question: "How many consultants will be assigned to our project?",
             answer: "Typically a lead consultant with framework-specific specialists for technical controls. Project scope determines team composition. We'll confirm your team structure at proposal stage.",
         },
         {
-            question: "Can you implement TISAX and ISO 27001 simultaneously?",
+            question: "Can you implement TISAX and ISO27001 simultaneously?",
             answer: "Yes. And we recommend it. The frameworks share significant control overlap. Dual implementation reduces total effort by 25–35% compared to sequential projects.",
         },
         {
@@ -148,7 +148,7 @@ export const implementationPageMeta: PageMeta = {
         },
         {
             question: "Do you work with companies of all sizes?",
-            answer: "Yes. From 20-person software suppliers needing TISAX AL2 to multi-site manufacturers requiring ISO 27001 across 6 locations. Our methodology scales to fit your organisation.",
+            answer: "Yes. From 20-person software suppliers needing TISAX AL2 to multi-site manufacturers requiring ISO27001 across 6 locations. Our methodology scales to fit your organisation.",
         },
     ],
     finalCta: {

@@ -68,7 +68,7 @@ export function SchemaMarkup() {
                 "name": "What is the Gap-to-Certified lifecycle?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "It is our proprietary methodology that takes companies from their current security posture to full certification (TISAX, ISO 27001) by identifying gaps, implementing controls, and supporting the final audit."
+                    "text": "It is our proprietary methodology that takes companies from their current security posture to full certification (TISAX, ISO27001) by identifying gaps, implementing controls, and supporting the final audit."
                 }
             },
             {

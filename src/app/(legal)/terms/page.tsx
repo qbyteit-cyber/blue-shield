@@ -48,7 +48,7 @@ export default function TermsOfServicePage() {
                                 <h2 className="m-0 text-2xl">2. Service Provision</h2>
                             </div>
                             <p>
-                                ITIS-Secure provides professional advisory services for TISAX® and ISO 27001 readiness. Our services are based on the current state of regulatory requirements and are provided with the objective of preparing your organization for high-rigor audits.
+                                ITIS-Secure provides professional advisory services for TISAX® and ISO27001 readiness. Our services are based on the current state of regulatory requirements and are provided with the objective of preparing your organization for high-rigor audits.
                             </p>
                         </section>
 

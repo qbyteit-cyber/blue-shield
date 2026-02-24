@@ -117,9 +117,9 @@ export default function ContactPage() {
                                             <label className="text-[10px] font-black uppercase text-neutral-400 tracking-widest px-1">Target Certification</label>
                                             <select name="targetCertification" aria-label="Target Certification" className="w-full bg-neutral-50 border border-neutral-100 rounded-xl px-4 py-4 focus:ring-2 focus:ring-accent-coral focus:outline-none transition-all">
                                                 <option>TISAX® AL3</option>
-                                                <option>ISO 27001:2022</option>
-                                                <option>ISO 42001 (AI)</option>
-                                                <option>ISO 9001</option>
+                                                <option>ISO27001:2022</option>
+                                                <option>ISO42001 (AI)</option>
+                                                <option>ISO9001</option>
                                                 <option>AS9100D</option>
                                                 <option>NIS2</option>
                                                 <option>Other Frameworks</option>
@@ -242,8 +242,8 @@ export default function ContactPage() {
                                         </p>
                                         <div className="mt-8 flex flex-wrap gap-3 relative z-10">
                                             <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">TISAX® Specialist</div>
-                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO 27001 Specialist</div>
-                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO 42001 Specialist</div>
+                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO27001 Specialist</div>
+                                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold whitespace-nowrap">ISO42001 Specialist</div>
                                         </div>
                                     </div>
                                 </div>

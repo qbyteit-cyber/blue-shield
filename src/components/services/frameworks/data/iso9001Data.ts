@@ -2,12 +2,12 @@ import type { FrameworkPageData } from "../types";
 
 export const iso9001Data: FrameworkPageData = {
     meta: {
-        title: "ISO 9001 Quality Management | Process Excellence Services",
-        description: "Streamline your operations and ensure customer satisfaction with ISO 9001:2015 certification readiness. Expert guidance on quality management systems.",
+        title: "ISO9001 Quality Management | Process Excellence Services",
+        description: "Streamline your operations and ensure customer satisfaction with ISO9001:2015 certification readiness. Expert guidance on quality management systems.",
     },
     hero: {
         badge: {
-            text: "ISO 9001:2015",
+            text: "ISO9001:2015",
             icon: "ShieldCheck",
             variant: "iso",
         },
@@ -31,8 +31,8 @@ export const iso9001Data: FrameworkPageData = {
         },
     },
     benefits: {
-        title: "Why Implement ISO 9001?",
-        description: "Beyond a certificate, ISO 9001 provides a framework for sustainable growth and operational efficiency.",
+        title: "Why Implement ISO9001?",
+        description: "Beyond a certificate, ISO9001 provides a framework for sustainable growth and operational efficiency.",
         items: [
             {
                 title: "Efficiency Gains",
@@ -58,7 +58,7 @@ export const iso9001Data: FrameworkPageData = {
             {
                 step: "01",
                 title: "Diagnostic Gap Analysis",
-                description: "Assessing your current processes against the ISO 9001:2015 requirements.",
+                description: "Assessing your current processes against the ISO9001:2015 requirements.",
                 icon: "Search",
             },
             {
@@ -97,7 +97,7 @@ export const iso9001Data: FrameworkPageData = {
     },
     cta: {
         title: "Elevate Your Business Standards Today",
-        description: "Join thousands of successful organizations that have used ISO 9001 to drive growth and efficiency.",
+        description: "Join thousands of successful organizations that have used ISO9001 to drive growth and efficiency.",
         buttonText: "Start QMS Journey",
     },
 };

@@ -62,7 +62,7 @@ export default function IsoServicePage() {
                                 },
                                 {
                                     title: "Auditor-Led Readiness",
-                                    desc: "Preparation led by certified ISO 27001 auditors who know exactly what the external body is looking for.",
+                                    desc: "Preparation led by certified ISO27001 auditors who know exactly what the external body is looking for.",
                                     icon: UserCheck
                                 },
                                 {
@@ -111,7 +111,7 @@ export default function IsoServicePage() {
                                     Expert Oversight for <br className="hidden md:block" /> Every ISO Milestone.
                                 </h2>
                                 <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                                    Compliance with ISO 27001 is not just a badge; it is a foundational baseline for global commerce. We bridge the "Compliance Gap" by providing both the roadmap and the engineers to implement it.
+                                    Compliance with ISO27001 is not just a badge; it is a foundational baseline for global commerce. We bridge the "Compliance Gap" by providing both the roadmap and the engineers to implement it.
                                 </p>
                                 <div className="p-8 bg-primary-navy rounded-2xl text-white">
                                     <div className="flex gap-4 items-center mb-4">
@@ -131,7 +131,7 @@ export default function IsoServicePage() {
                 <section className="py-24 bg-primary-navy text-white text-center">
                     <div className="container mx-auto px-6 max-w-7xl">
                         <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-8">
-                            Start Your ISO 27001 Journey Today.
+                            Start Your ISO27001 Journey Today.
                         </h2>
                         <Link href="/contact">
                             <Button className="bg-accent-coral text-white text-lg px-12 py-8 h-auto rounded-xl font-bold hover:bg-accent-coral/90">

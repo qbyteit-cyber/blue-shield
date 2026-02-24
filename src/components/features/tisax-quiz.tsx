@@ -13,7 +13,7 @@ const questions = [
     },
     {
         id: 2,
-        question: "Is your organization already ISO 27001 certified?",
+        question: "Is your organization already ISO27001 certified?",
         category: "ISMS Maturity"
     },
     {

@@ -109,7 +109,7 @@ export default function ISMSImplementationPage() {
                                     <span className="text-accent-coral">That Gets You Certified.</span>
                                 </h1>
                                 <p className="text-lg text-neutral-600 mb-10 leading-relaxed max-w-xl">
-                                    Your OEM just added ISO 27001 to the contract requirements. Your TISAX deadline is approaching. You need an ISMS that is audit-ready, not a stack of templates. ITIS-Secure implements, documents, and maintains your Information Security Management System end-to-end.
+                                    Your OEM just added ISO27001 to the contract requirements. Your TISAX deadline is approaching. You need an ISMS that is audit-ready, not a stack of templates. ITIS-Secure implements, documents, and maintains your Information Security Management System end-to-end.
                                 </p>
                                 <div className="flex gap-4 mb-10">
                                     <Link href="/contact">
@@ -122,7 +122,7 @@ export default function ISMSImplementationPage() {
                                 <div className="flex flex-wrap gap-6 text-xs font-bold text-neutral-500">
                                     <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> 100% First-Time Pass Rate</span>
                                     <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> 12–16 Week Implementation</span>
-                                    <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> ISO 27001 + TISAX Aligned</span>
+                                    <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> ISO27001 + TISAX Aligned</span>
                                 </div>
                             </motion.div>
 
@@ -171,13 +171,13 @@ export default function ISMSImplementationPage() {
                                         For automotive suppliers pursuing TISAX, defence subcontractors navigating strict security frameworks, or any European company facing NIS2 obligations, an ISMS is no longer optional. It is the contractual baseline. BMW, Volkswagen, and Airbus require evidence of a functioning ISMS before awarding or renewing supply contracts. Without one, you are excluded from the bidding table entirely.
                                     </p>
                                     <p>
-                                        But your ISMS should be viewed as a <strong>business asset</strong>, not just a compliance burden. It is the foundation upon which every future certification is built — ISO 27001, TISAX, NIS2, DORA, and beyond. At ITIS-Secure, we implement your ISMS using the proven ISO 27001 Plan-Do-Check-Act lifecycle, ensuring that every control, every record, and every process is audit-ready from the very first day.
+                                        But your ISMS should be viewed as a <strong>business asset</strong>, not just a compliance burden. It is the foundation upon which every future certification is built — ISO27001, TISAX, NIS2, DORA, and beyond. At ITIS-Secure, we implement your ISMS using the proven ISO27001 Plan-Do-Check-Act lifecycle, ensuring that every control, every record, and every process is audit-ready from the very first day.
                                     </p>
                                 </div>
                             </div>
                             <div className="lg:col-span-2 space-y-6">
                                 {[
-                                    { label: "Frameworks Supported", value: "ISO 27001 · TISAX · NIS2 · DORA" },
+                                    { label: "Frameworks Supported", value: "ISO27001 · TISAX · NIS2 · DORA" },
                                     { label: "Typical Timeline", value: "12–16 Weeks to Certification Readiness" },
                                     { label: "TISAX Overlap", value: "60–70% of TISAX Controls Satisfied" },
                                     { label: "Success Rate", value: "100% First-Time Pass Rate" },
@@ -223,7 +223,7 @@ export default function ISMSImplementationPage() {
                                 In the following, we will be describing our proposal for the delivered services. Please note that the activities refer to the Information Security Management System.
                             </p>
                             <p className="text-neutral-600 max-w-3xl mx-auto leading-relaxed font-medium">
-                                Our ISMS implementation follows the ISO 27001 Plan-Do-Check-Act lifecycle — the internationally recognised framework for building, operating, and continuously improving an information security programme. Each phase builds on the last, creating a living system that evolves with your business and your threat landscape.
+                                Our ISMS implementation follows the ISO27001 Plan-Do-Check-Act lifecycle — the internationally recognised framework for building, operating, and continuously improving an information security programme. Each phase builds on the last, creating a living system that evolves with your business and your threat landscape.
                             </p>
                         </div>
 
@@ -349,7 +349,7 @@ export default function ISMSImplementationPage() {
                                     Your ISMS Is the Foundation for TISAX Certification
                                 </h2>
                                 <p className="text-neutral-600 leading-relaxed mb-6">
-                                    TISAX Assessment Levels 2 and 3 require a functioning ISMS as their foundation. The VDA ISA 6.0 catalogue — the control framework that TISAX auditors use — is built directly on top of ISO 27001 principles. This means every hour invested in your ISMS directly accelerates your TISAX timeline.
+                                    TISAX Assessment Levels 2 and 3 require a functioning ISMS as their foundation. The VDA ISA 6.0 catalogue — the control framework that TISAX auditors use — is built directly on top of ISO27001 principles. This means every hour invested in your ISMS directly accelerates your TISAX timeline.
                                 </p>
                                 <p className="text-neutral-600 leading-relaxed mb-8">
                                     When you implement your ISMS with ITIS-Secure, your TISAX preparation is already 60–70% complete on the day your ISMS goes live. Our methodology is designed to satisfy both frameworks simultaneously, reducing your total investment by approximately 30% compared to treating them as separate projects.
@@ -401,8 +401,8 @@ export default function ISMSImplementationPage() {
                                 },
                                 {
                                     icon: Zap,
-                                    title: "TISAX + ISO 27001 Alignment",
-                                    desc: "One implementation, two certifications. Our built-in framework synergy means automotive suppliers satisfy both ISO 27001 and TISAX requirements simultaneously, reducing total investment by 30%.",
+                                    title: "TISAX + ISO27001 Alignment",
+                                    desc: "One implementation, two certifications. Our built-in framework synergy means automotive suppliers satisfy both ISO27001 and TISAX requirements simultaneously, reducing total investment by 30%.",
                                 },
                                 {
                                     icon: HeartPulse,
@@ -525,7 +525,7 @@ export default function ISMSImplementationPage() {
                                 "@type": "Place",
                                 "name": "Europe"
                             },
-                            "description": "End-to-end ISMS implementation following the ISO 27001 PDCA lifecycle. From gap analysis through certification support.",
+                            "description": "End-to-end ISMS implementation following the ISO27001 PDCA lifecycle. From gap analysis through certification support.",
                             "hasOfferCatalog": {
                                 "@type": "OfferCatalog",
                                 "name": "ISMS Implementation Phases",

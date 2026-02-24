@@ -67,7 +67,7 @@ export function Lifecycle() {
                     <span className="uppercase text-[11px] font-bold text-[#c2410c] tracking-[0.15em] block mb-4">Our Methodology</span>
                     <h2 className="text-4xl md:text-5xl font-[800] text-[#0A2463] tracking-tight mb-6">The Gap-to-Certified Lifecycle</h2>
                     <p className="max-w-3xl mx-auto text-neutral-500 leading-relaxed font-medium">
-                        Whether you're pursuing your first TISAX label, renewing ISO 27001, or upgrading to AL3.
+                        Whether you're pursuing your first TISAX label, renewing ISO27001, or upgrading to AL3.
                         We assess your current posture, close every gap, and stand with you until the auditor signs off.
                     </p>
                 </div>

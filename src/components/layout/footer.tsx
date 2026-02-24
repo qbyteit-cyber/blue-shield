@@ -52,7 +52,7 @@ export function Footer() {
                             <li><Link href="/services/tisax" className="hover:opacity-100 transition-opacity">TISAX® Preparation</Link></li>
                             <li><Link href="/services/iso-27001" className="hover:opacity-100 transition-opacity">ISO/IEC 27001:2022</Link></li>
                             <li><Link href="/services/isms-implementation" className="hover:opacity-100 transition-opacity">ISMS Implementation</Link></li>
-                            <li><Link href="/services/iso-42001" className="hover:opacity-100 transition-opacity">ISO 42001 Preparation</Link></li>
+                            <li><Link href="/services/iso-42001" className="hover:opacity-100 transition-opacity">ISO42001 Preparation</Link></li>
                             <li><Link href="/services/tpisr" className="hover:opacity-100 transition-opacity">TPISR Preparation</Link></li>
                             <li><Link href="/services/nis2" className="hover:opacity-100 transition-opacity">NIS2 Preparation</Link></li>
                             <li><Link href="/services/dora" className="hover:opacity-100 transition-opacity">DORA Preparation</Link></li>

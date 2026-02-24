@@ -50,10 +50,10 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "Internal Auditor",
         icon: ClipboardList,
         description:
-            "Design and execute your internal audit programme. Conducting structured audits against ISO 27001, TISAX, or NIS2, writing formal audit reports, managing nonconformities, and maintaining the evidence trail certification bodies require.",
+            "Design and execute your internal audit programme. Conducting structured audits against ISO27001, TISAX, or NIS2, writing formal audit reports, managing nonconformities, and maintaining the evidence trail certification bodies require.",
         typicalEngagement: "Quarterly audit cycles or annual programme",
         relevantFor:
-            "Companies under ISO 27001 surveillance audits, or TISAX recertification cycles.",
+            "Companies under ISO27001 surveillance audits, or TISAX recertification cycles.",
         featured: false,
     },
     {
@@ -64,7 +64,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
             "Own your risk management process. Conducting risk assessments, maintaining the risk register, developing risk treatment plans, and ensuring risk management meets the requirements of your certification framework.",
         typicalEngagement: "Quarterly reviews or project-based",
         relevantFor:
-            "Organisations whose risk assessment is a certification requirement (ISO 27001 Clause 6, TISAX).",
+            "Organisations whose risk assessment is a certification requirement (ISO27001 Clause 6, TISAX).",
         featured: false,
     },
     {
@@ -83,10 +83,10 @@ export const outsourcedRoles: OutsourcedRole[] = [
         title: "AIMS Manager",
         icon: Brain,
         description:
-            "Specialized management of your Artificial Intelligence Management System (ISO 42001). Oversight of AI risk assessments, data quality for training sets, algorithmic transparency, and ethical governance of autonomous components.",
+            "Specialized management of your Artificial Intelligence Management System (ISO42001). Oversight of AI risk assessments, data quality for training sets, algorithmic transparency, and ethical governance of autonomous components.",
         typicalEngagement: "2–6 days/month retainer",
         relevantFor:
-            "Organisations operating complex AI models or autonomous systems that require ongoing ISO 42001 compliance and risk oversight.",
+            "Organisations operating complex AI models or autonomous systems that require ongoing ISO42001 compliance and risk oversight.",
         featured: false,
     },
     {
@@ -106,7 +106,7 @@ export const outsourcedRoles: OutsourcedRole[] = [
 export const whoIsThisForCards: WhoIsThisForCard[] = [
     {
         title: "We need a CISO for certification",
-        body: "Company pursuing ISO 27001 or TISAX that needs an accountable security owner but doesn't want to hire full-time for a 12-month project.",
+        body: "Company pursuing ISO27001 or TISAX that needs an accountable security owner but doesn't want to hire full-time for a 12-month project.",
     },
     {
         title: "We lost our security manager",
@@ -118,7 +118,7 @@ export const whoIsThisForCards: WhoIsThisForCard[] = [
     },
     {
         title: "Our auditor wants to see an audit programme",
-        body: "Company under ISO 27001 surveillance or TISAX recertification that needs a credible internal audit conducted by a qualified auditor — not their own IT manager reviewing their own work.",
+        body: "Company under ISO27001 surveillance or TISAX recertification that needs a credible internal audit conducted by a qualified auditor — not their own IT manager reviewing their own work.",
     },
 ];
 
@@ -149,7 +149,7 @@ export const rolesPageMeta: PageMeta = {
     ],
     introH2: "Senior Security Expertise, Without the Full-Time Cost",
     introParagraphs: [
-        "Finding a qualified CISO with ISO 27001 lead auditor credentials and TISAX experience who wants to work for a 300-person automotive supplier in Central Europe is genuinely difficult. And even if you find one, the salary is €120,000–€180,000 for a function that might need 2 days of senior attention per week.",
+        "Finding a qualified CISO with ISO27001 lead auditor credentials and TISAX experience who wants to work for a 300-person automotive supplier in Central Europe is genuinely difficult. And even if you find one, the salary is €120,000–€180,000 for a function that might need 2 days of senior attention per week.",
         "ITIS-Secure provides qualified, certified security professionals on a fractional basis. They attend your management reviews, run your audit programme, manage your ISMS, report to your board, and interface with certification bodies — as a full member of your team, not a remote adviser who sends monthly reports.",
         "You get a verifiable credential (their certifications are real, their experience is documented), continuity (the same person, not a revolving door of consultants), and flexibility (scale up before a certification audit, scale back during quiet periods). Our outsourced professionals are engaged through ITIS-Secure and are fully accountable to the terms of your engagement agreement.",
     ],
@@ -183,7 +183,7 @@ export const rolesPageMeta: PageMeta = {
     frameworksIntro:
         "Our outsourced professionals hold active certifications across all major security and privacy frameworks.",
     frameworks: [
-        { label: "ISO 27001", href: "/services/iso-27001" },
+        { label: "ISO27001", href: "/services/iso-27001" },
         { label: "TISAX", href: "/services/tisax" },
 
         { label: "NIS2", href: "/services/nis2" },
@@ -197,7 +197,7 @@ export const rolesPageMeta: PageMeta = {
         },
         {
             question: "What qualifications do your outsourced professionals hold?",
-            answer: "Typical credentials include ISO 27001 Lead Auditor (PECB/BSI), CISM, CISSP, and TISAX lead assessor experience. Specific credentials for your role are confirmed at proposal stage.",
+            answer: "Typical credentials include ISO27001 Lead Auditor (PECB/BSI), CISM, CISSP, and TISAX lead assessor experience. Specific credentials for your role are confirmed at proposal stage.",
         },
         {
             question: "Can we see the CV/profile of our assigned professional before committing?",

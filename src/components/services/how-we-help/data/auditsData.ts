@@ -18,7 +18,7 @@ export const auditServices: AuditService[] = [
             "A structured assessment of your current security posture against your target framework — identifying what controls exist, what's missing, and what requires remediation.",
         deliverable:
             "Gap Analysis Report — control-by-control assessment, RAG status, remediation priorities, estimated effort to close.",
-        frameworks: "ISO 27001 | TISAX | NIS2 | DORA | GDPR",
+        frameworks: "ISO27001 | TISAX | NIS2 | DORA | GDPR",
         bestFor:
             "Companies starting a certification programme or unsure of their current compliance posture.",
         cta: { text: "Book a Gap Analysis", href: "/contact" },
@@ -31,7 +31,7 @@ export const auditServices: AuditService[] = [
             "A systematic internal audit of your ISMS and controls against your target standard, conducted by a qualified lead auditor. Generates the audit evidence that certification bodies require to see. Note: This is an internal assessment that prepares you for official certification — it is not the official certification audit itself.",
         deliverable:
             "Formal Internal Audit Report — findings, nonconformities (major/minor), observations, and corrective action register.",
-        frameworks: "ISO 27001 | TISAX | NIS2",
+        frameworks: "ISO27001 | TISAX | NIS2",
         bestFor:
             "Companies with an existing ISMS who need to demonstrate continual improvement and audit programme compliance.",
         cta: { text: "Book an Internal Audit", href: "/contact" },
@@ -44,7 +44,7 @@ export const auditServices: AuditService[] = [
             "A structured information security risk assessment — threat identification, vulnerability analysis, impact and likelihood scoring, and risk treatment planning using recognised methodology.",
         deliverable:
             "Risk Assessment Report + Risk Treatment Plan + Risk Register + Statement of Applicability input.",
-        frameworks: "All ISO 27001-aligned frameworks + TISAX",
+        frameworks: "All ISO27001-aligned frameworks + TISAX",
         bestFor:
             "Organisations at the start of their ISMS journey or those due for their annual risk assessment review.",
         cta: { text: "Book a Risk Assessment", href: "/contact" },
@@ -57,7 +57,7 @@ export const auditServices: AuditService[] = [
             "Technical security testing — vulnerability scanning, network penetration testing, web application testing, social engineering assessments — to identify exploitable weaknesses in your environment.",
         deliverable:
             "Technical Penetration Test Report — vulnerabilities found, CVE references, CVSS scores, and prioritised remediation guidance.",
-        frameworks: "ISO 27001 A.8 | TISAX technical controls",
+        frameworks: "ISO27001 A.8 | TISAX technical controls",
         bestFor:
             "Companies needing technical evidence of control effectiveness for certification, or those wanting to validate their security posture.",
         cta: { text: "Request Penetration Testing", href: "/contact" },
@@ -70,7 +70,7 @@ export const auditServices: AuditService[] = [
             "A full simulation of the official certification assessment — conducted by our lead auditors using the same methodology, evidence requests, and interview process that official assessors use.",
         deliverable:
             "Mock Audit Report — assessment findings, certification readiness score, and a specific action list to close before the official assessment date.",
-        frameworks: "ISO 27001 | TISAX AL2 / AL3",
+        frameworks: "ISO27001 | TISAX AL2 / AL3",
         bestFor:
             "Companies 4–8 weeks from their official certification date who want certainty they will pass.",
         cta: { text: "Book a Mock Audit", href: "/contact" },
@@ -80,10 +80,10 @@ export const auditServices: AuditService[] = [
         title: "Supplier & Third-Party Audits",
         icon: Network,
         whatItIs:
-            "Assessment of your vendors, suppliers, and third-party service providers against your information security requirements — meeting ISO 27001 Clause 8.4, and TISAX prototype protection requirements.",
+            "Assessment of your vendors, suppliers, and third-party service providers against your information security requirements — meeting ISO27001 Clause 8.4, and TISAX prototype protection requirements.",
         deliverable:
             "Third-Party Audit Report per supplier + consolidated risk register for your vendor portfolio.",
-        frameworks: "ISO 27001 A.5.19 | TISAX TPISR",
+        frameworks: "ISO27001 A.5.19 | TISAX TPISR",
         bestFor:
             "Companies with contractual obligations to audit their supply chain, or those preparing for TISAX TPISR assessment.",
         cta: { text: "Discuss Supplier Audits", href: "/contact" },
@@ -101,14 +101,14 @@ export const auditsPageMeta: PageMeta = {
     ctaPrimary: { text: "Book Your Gap Analysis", href: "/contact" },
     ctaSecondary: { text: "Explore Management Frameworks", href: "/services/isms-implementation" },
     trustPoints: [
-        { text: "Audit against ISO 27001, TISAX, NIS2 and more" },
+        { text: "Audit against ISO27001, TISAX, NIS2 and more" },
         { text: "Written audit reports with actionable remediation plans" },
         { text: "Pre-certification mock audits conducted by lead auditors" },
     ],
     introH2: "Know Your Gaps Before the Auditor Does",
     introParagraphs: [
         "A company invests 6 months and €50,000 in certification preparation, walks into the official assessment, and fails on a major non-conformity that could have been caught in week 3. This scenario is avoidable. Internal auditing is the quality control mechanism for your implementation — it finds the gaps while there's still time to close them.",
-        "ITIS-Secure's audit services are independent, rigorous internal assessments conducted by the same people who prepare clients for official certification. Our auditors know what VDA ISA 6.0 assessors look for, what ISO 27001 auditors scrutinise first, and where companies consistently fail.",
+        "ITIS-Secure's audit services are independent, rigorous internal assessments conducted by the same people who prepare clients for official certification. Our auditors know what VDA ISA 6.0 assessors look for, what ISO27001 auditors scrutinise first, and where companies consistently fail.",
         "Every audit ends with a written report, a prioritised remediation plan, and a clear picture of certification readiness. No vague findings, no unexplained scores — just the specific actions needed to close the gap between where you are and where your certification body expects you to be.",
     ],
     introStats: [
@@ -143,7 +143,7 @@ export const auditsPageMeta: PageMeta = {
     frameworksIntro:
         "Our auditors hold active certifications and practitioner experience across all major security frameworks.",
     frameworks: [
-        { label: "ISO 27001", href: "/services/iso-27001" },
+        { label: "ISO27001", href: "/services/iso-27001" },
         { label: "TISAX AL2", href: "/services/tisax" },
         { label: "TISAX AL3", href: "/services/tisax" },
 
@@ -159,7 +159,7 @@ export const auditsPageMeta: PageMeta = {
         },
         {
             question: "Are your audits official certification audits?",
-            answer: "No. Our audits are internal assessments that prepare you for official certification. Official TISAX labels are issued by ENX-accredited assessment providers; ISO 27001 certificates by accredited certification bodies. We prepare you to pass those official assessments with confidence.",
+            answer: "No. Our audits are internal assessments that prepare you for official certification. Official TISAX labels are issued by ENX-accredited assessment providers; ISO27001 certificates by accredited certification bodies. We prepare you to pass those official assessments with confidence.",
         },
         {
             question: "How long does a gap analysis take?",
@@ -183,7 +183,7 @@ export const auditsPageMeta: PageMeta = {
         },
         {
             question: "Can you audit us against multiple frameworks simultaneously?",
-            answer: "Yes. For companies pursuing TISAX and ISO 27001 simultaneously, a combined audit is significantly more efficient. We map findings across both frameworks in a single integrated report.",
+            answer: "Yes. For companies pursuing TISAX and ISO27001 simultaneously, a combined audit is significantly more efficient. We map findings across both frameworks in a single integrated report.",
         },
     ],
     finalCta: {

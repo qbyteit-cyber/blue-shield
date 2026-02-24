@@ -17,14 +17,14 @@ export function Hero() {
                         className="animate-in fade-in slide-in-from-bottom-5 duration-1000 fill-mode-both"
                     >
                         <span className="inline-block px-3 py-1 mb-6 text-xs font-bold tracking-widest uppercase text-primary-navy bg-primary-navy/5 rounded">
-                            European TISAX® & ISO 27001 Experts
+                            European TISAX® & ISO27001 Experts
                         </span>
                         <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 leading-[1.1] mb-8">
                             <span className="block lg:whitespace-nowrap">Certification. Make it happen</span>
                             <span className="text-primary-navy block mt-2">With ITIS-Secure.</span>
                         </h1>
                         <p className="text-lg md:text-xl text-neutral-700 mb-12 leading-relaxed max-w-2xl">
-                            We take your company from security gaps to full certification. Expert preparation for TISAX®, ISO 27001, AS9100D, NIS2, DORA, GDPR, TPISR and other frameworks with an achieved 100% first-time pass rate.
+                            We take your company from security gaps to full certification. Expert preparation for TISAX®, ISO27001, AS9100D, NIS2, DORA, GDPR, TPISR and other frameworks with an achieved 100% first-time pass rate.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">

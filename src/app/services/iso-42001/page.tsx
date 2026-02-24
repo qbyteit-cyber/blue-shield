@@ -31,7 +31,7 @@ export default function ISO42001Page() {
                                 <span className="bg-accent-coral/20 px-3 py-1 rounded text-accent-coral text-[10px]">ISO/IEC 42001:2023 / AI GOVERNANCE</span>
                             </div>
                             <h1 className="text-4xl md:text-7xl font-black text-white tracking-tighter mb-8 leading-[0.85]">
-                                ISO 42001 <br />
+                                ISO42001 <br />
                                 <span className="text-neutral-400">AI MANAGEMENT.</span>
                             </h1>
                             <p className="text-xl text-neutral-400 leading-relaxed mb-10 max-w-2xl font-medium">
@@ -40,12 +40,12 @@ export default function ISO42001Page() {
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link href="/contact">
                                     <Button variant="primary" size="lg" className="px-8 h-14 text-base rounded-none bg-accent-coral hover:bg-accent-coral/90 w-full sm:w-auto">
-                                        Book ISO 42001 Consultation
+                                        Book ISO42001 Consultation
                                     </Button>
                                 </Link>
                                 <Link href="/services/iso-42001">
                                     <Button variant="outline" size="lg" className="px-8 h-14 text-base rounded-none border-white/20 text-white hover:bg-white/10 w-full sm:w-auto">
-                                        ISO 42001 Annex Controls
+                                        ISO42001 Annex Controls
                                     </Button>
                                 </Link>
                             </div>
@@ -72,7 +72,7 @@ export default function ISO42001Page() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     {[
                                         { title: "AI Model Integrity", desc: "Advanced protection of training data and algorithm logic." },
-                                        { title: "ISO 42001 Annex A/B Controls", desc: "Implementation of AI-specific risk and impact controls with 100% adherence target." },
+                                        { title: "ISO42001 Annex A/B Controls", desc: "Implementation of AI-specific risk and impact controls with 100% adherence target." },
                                         { title: "AI Trust & Transparency", desc: "Meeting EU/NATO requirements for ethical and safe autonomous systems." },
                                         { title: "Airworthiness", desc: "Specialized safety for AI-driven aerospace components." }
                                     ].map((feat, i) => (
@@ -108,7 +108,7 @@ export default function ISO42001Page() {
                                     </div>
                                 </div>
                                 <div className="mt-12 text-[10px] uppercase font-bold tracking-[0.2em] opacity-40">
-                                    AIIA Ready ● ISO 42001 Preparation ● NATO STANAG
+                                    AIIA Ready ● ISO42001 Preparation ● NATO STANAG
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ export default function ISO42001Page() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {[
                                 {
-                                    title: "ISO 42001 Gap Analysis & AIIA",
+                                    title: "ISO42001 Gap Analysis & AIIA",
                                     desc: "AI Impact Assessment, management system development, and risk mitigation for DoD subs.",
                                     icon: Lock
                                 },
@@ -161,12 +161,12 @@ export default function ISO42001Page() {
                             The Cost of Disqualification
                         </h2>
                         <p className="text-xl text-neutral-600 mb-12 leading-relaxed">
-                            Don't let a missing AI Impact Assessment (AIIA) or a single failed ISO 42001 control derail your autonomous systems programme. We speak 'avionics', 'machine learning', and 'model integrity' as fluently as we speak 'policy'.
+                            Don't let a missing AI Impact Assessment (AIIA) or a single failed ISO42001 control derail your autonomous systems programme. We speak 'avionics', 'machine learning', and 'model integrity' as fluently as we speak 'policy'.
                         </p>
                         <div className="bg-white p-1 rounded-2xl border border-neutral-200 shadow-2xl overflow-hidden">
                             <div className="grid grid-cols-1 md:grid-cols-3">
                                 {[
-                                    { kpi: "38+", label: "ISO 42001 Controls" },
+                                    { kpi: "38+", label: "ISO42001 Controls" },
                                     { kpi: "100%", label: "Confidence" },
                                     { kpi: "0", label: "Non-Conformities" }
                                 ].map((item, i) => (

@@ -3,16 +3,16 @@
 import Image from "next/image";
 
 const badges = [
-    { src: "/badges/iso.svg", alt: "ISO 27001 Certification" },
-    { src: "/badges/Logo-ISO-27001.png", alt: "ISO 27001 Logo" },
+    { src: "/badges/iso.svg", alt: "ISO27001 Certification" },
+    { src: "/badges/Logo-ISO-27001.png", alt: "ISO27001 Logo" },
     { src: "/badges/tisax-enx.png", alt: "TISAX ENX Certification", className: "badge-slider__img--small" },
-    { src: "/badges/iso-9001-certification-badge.svg", alt: "ISO 9001 Certification" },
+    { src: "/badges/iso-9001-certification-badge.svg", alt: "ISO9001 Certification" },
     { src: "/badges/nis2.jpg", alt: "NIS2 Compliance" },
     { src: "/badges/gdpr.png", alt: "GDPR Compliance" },
     { src: "/badges/tpisr.jpg", alt: "TPISR Compliance", className: "badge-slider__img--small" },
 ];
 
-const standards = ["TISAX", "ISO 27001", "NIS2", "DORA", "GDPR", "TPISR"];
+const standards = ["TISAX", "ISO27001", "NIS2", "DORA", "GDPR", "TPISR"];
 
 export function CertificationBadgeStrip() {
     return (

@@ -15,20 +15,20 @@ import type { PageMeta, TrainingProgramme, TrainingFormat, AudienceCard } from "
 export const trainingProgrammes: TrainingProgramme[] = [
     {
         id: "iso-27001",
-        title: "ISO 27001 / ISMS Training",
+        title: "ISO27001 / ISMS Training",
         icon: Award,
         audience: "Information Security Managers, IT Directors, Quality Managers",
         duration: "1–3 days",
         format: "In-person / Remote / Blended",
         highlights: [
-            "ISO 27001:2022 standard structure and requirements",
+            "ISO27001:2022 standard structure and requirements",
             "Building and maintaining an ISMS",
             "Risk assessment methodology",
             "Conducting internal audits",
             "Preparing for external certification",
             "Managing nonconformities and corrective actions",
         ],
-        cta: { text: "Request ISO 27001 Training", href: "/contact" },
+        cta: { text: "Request ISO27001 Training", href: "/contact" },
     },
     {
         id: "tisax",
@@ -160,8 +160,8 @@ export const trainingPageMeta: PageMeta = {
     ],
     introH2: "Build the Expertise Your Compliance Requires",
     introParagraphs: [
-        "The compliance gap is often a knowledge gap. Companies implement frameworks with external consultants, then fail to maintain compliance because their own team doesn't understand what they're running. This is particularly acute with TISAX (3-year recertification cycle) and ISO 27001 (annual surveillance audits). Frameworks that require continuous, informed operation.",
-        "ITIS-Secure training is delivered by practitioners. People who have run TISAX assessments, conducted ISO 27001 audits, and implemented NIS2 programmes for real organisations. Not academics. Not slide-deck readers. People who've seen what auditors look for and what causes non-conformities.",
+        "The compliance gap is often a knowledge gap. Companies implement frameworks with external consultants, then fail to maintain compliance because their own team doesn't understand what they're running. This is particularly acute with TISAX (3-year recertification cycle) and ISO27001 (annual surveillance audits). Frameworks that require continuous, informed operation.",
+        "ITIS-Secure training is delivered by practitioners. People who have run TISAX assessments, conducted ISO27001 audits, and implemented NIS2 programmes for real organisations. Not academics. Not slide-deck readers. People who've seen what auditors look for and what causes non-conformities.",
         "Whether your team needs a half-day awareness session or a full 3-day auditor certification programme, we build and deliver the course around your frameworks, your industry, and your timeline.",
     ],
     introStats: [
@@ -194,7 +194,7 @@ export const trainingPageMeta: PageMeta = {
     frameworksIntro:
         "Our training programmes cover the full spectrum of information security and compliance frameworks.",
     frameworks: [
-        { label: "ISO 27001", href: "/services/iso-27001" },
+        { label: "ISO27001", href: "/services/iso-27001" },
         { label: "TISAX", href: "/services/tisax" },
 
         { label: "NIS2", href: "/services/nis2" },
@@ -205,7 +205,7 @@ export const trainingPageMeta: PageMeta = {
     faqs: [
         {
             question: "Are your courses accredited?",
-            answer: "Our courses are practitioner-led and based on official framework standards. All training prepares participants for accredited certification exams (e.g., PECB ISO 27001 Lead Auditor). Certificates of completion are issued for all courses; framework certifications require separate accredited exams.",
+            answer: "Our courses are practitioner-led and based on official framework standards. All training prepares participants for accredited certification exams (e.g., PECB ISO27001 Lead Auditor). Certificates of completion are issued for all courses; framework certifications require separate accredited exams.",
         },
         {
             question: "Can you deliver training in languages other than English?",
@@ -217,7 +217,7 @@ export const trainingPageMeta: PageMeta = {
         },
         {
             question: "Do you offer certifications or certificates of completion?",
-            answer: "Certificates of completion are provided for all ITIS courses. Framework certifications (e.g., ISO 27001 Lead Auditor) require sitting a separate accredited exam — our courses prepare you for those exams.",
+            answer: "Certificates of completion are provided for all ITIS courses. Framework certifications (e.g., ISO27001 Lead Auditor) require sitting a separate accredited exam — our courses prepare you for those exams.",
         },
         {
             question: "Can training be delivered at our premises?",

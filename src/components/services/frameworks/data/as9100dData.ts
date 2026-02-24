@@ -32,7 +32,7 @@ export const as9100dData: FrameworkPageData = {
     },
     benefits: {
         title: "The ASD Industry Standard",
-        description: "AS9100 builds upon ISO 9001 with specific requirements for safety, reliability, and technology for aerospace and defence.",
+        description: "AS9100 builds upon ISO9001 with specific requirements for safety, reliability, and technology for aerospace and defence.",
         items: [
             {
                 title: "Tier-1 Eligibility",

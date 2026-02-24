@@ -83,7 +83,7 @@ export const gdprData: FrameworkPageData = {
     },
     expert: {
         title: "Article 32: Security of Processing",
-        description: "GDPR works hand-in-hand with ISO 27001. You cannot have privacy without security. We implement the technical controls required by law.",
+        description: "GDPR works hand-in-hand with ISO27001. You cannot have privacy without security. We implement the technical controls required by law.",
         points: [
             "Pseudonymisation and encryption of personal data.",
             "Ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems.",

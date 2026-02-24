@@ -32,9 +32,9 @@ export const servicesMenuColumns: MenuColumn[] = [
         heading: "Management Frameworks",
         items: [
             { label: "TISAX", href: "/services/tisax", icon: Car },
-            { label: "ISO 27001", href: "/services/iso-27001", icon: Award },
-            { label: "ISO 42001", href: "/services/iso-42001", icon: Brain },
-            { label: "ISO 9001", href: "/services/iso-9001", icon: Award },
+            { label: "ISO27001", href: "/services/iso-27001", icon: Award },
+            { label: "ISO42001", href: "/services/iso-42001", icon: Brain },
+            { label: "ISO9001", href: "/services/iso-9001", icon: Award },
             { label: "NIS2", href: "/services/nis2", icon: Globe },
             { label: "DORA", href: "/services/dora", icon: Building2 },
             { label: "AS9100D", href: "/services/as9100d", icon: Award },

@@ -261,7 +261,7 @@ export default function IndustriesPage() {
 
                         {/* Trust line */}
                         <p className="text-[11px] font-bold tracking-[0.15em] uppercase text-white/25">
-                            ISO 27001 · TISAX® · NIS2 · DORA · GDPR · SOC 2 · IEC 62443
+                            ISO27001 · TISAX® · NIS2 · DORA · GDPR · SOC 2 · IEC 62443
                         </p>
                     </div>
                 </section>

@@ -32,7 +32,7 @@ export default function AS9100DPage() {
                                     At ITIS-Secure, we recognize that in the aviation, space, and defense (AS&amp;D) industries, there is zero room for error. Reliability isn&apos;t just a goal; it is a requirement. To meet the rigorous demands of our partners and regulatory bodies, ITIS-Secure is proud to operate under the AS9100D Quality Management System (QMS).
                                 </p>
                                 <p>
-                                    As the premier international standard for the aerospace industry, AS9100D incorporates the entirety of ISO 9001:2015 while adding over 100 additional requirements specifically designed to ensure the safety, reliability, and airworthiness of products and services.
+                                    As the premier international standard for the aerospace industry, AS9100D incorporates the entirety of ISO9001:2015 while adding over 100 additional requirements specifically designed to ensure the safety, reliability, and airworthiness of products and services.
                                 </p>
                             </div>
                         </div>
