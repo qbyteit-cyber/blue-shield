@@ -36,7 +36,7 @@ export default function AutomotiveIndustryPage() {
                                 <span className="text-accent-coral">Secure Your OEM Contracts.</span>
                             </h1>
                             <p className="text-xl text-white/60 leading-relaxed mb-10 max-w-2xl">
-                                The definitive TISAX® AL3 preparation roadmap for Tier-1 suppliers. We bridge the gap between your current posture and ENX label readiness with a 100% first-time pass rate.
+                                The definitive TISAX® AL3 preparation roadmap for Tier-1 suppliers. We bridge the gap between your current posture and ENX label readiness. Our process is built to maximize first-time assessment outcomes.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link href="/contact">
