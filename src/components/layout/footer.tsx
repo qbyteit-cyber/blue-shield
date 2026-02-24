@@ -80,6 +80,7 @@ export function Footer() {
                             <li><Link href="/privacy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link></li>
                             <li><Link href="/terms" className="hover:opacity-100 transition-opacity">Terms of Service</Link></li>
                             <li><Link href="/legal-notice" className="hover:opacity-100 transition-opacity">Legal Notice</Link></li>
+                            <li><Link href="/trust-center" className="hover:opacity-100 transition-opacity">Trust Center</Link></li>
                             <li><Link href="/accessibility" className="hover:opacity-100 transition-opacity">Accessibility</Link></li>
                             <li>
                                 <button

@@ -135,6 +135,8 @@ export function Navbar() {
                     <Link href="/industries" className="hover:text-primary-navy transition-colors">Industries</Link>
 
                     <Link href="/about" className="hover:text-primary-navy transition-colors">About</Link>
+
+                    <Link href="/trust-center" className="hover:text-primary-navy transition-colors">Trust Center</Link>
                 </div>
 
                 {/* CTA + Mobile Toggle */}
@@ -233,6 +235,15 @@ export function Navbar() {
                         onClick={() => setMobileOpen(false)}
                     >
                         About Us
+                    </Link>
+
+                    {/* Trust Center */}
+                    <Link
+                        href="/trust-center"
+                        className="flex items-center px-6 py-5 text-base font-semibold text-neutral-800 border-b border-neutral-100 hover:bg-neutral-50 transition-colors"
+                        onClick={() => setMobileOpen(false)}
+                    >
+                        Trust Center
                     </Link>
                 </div>
             )}
