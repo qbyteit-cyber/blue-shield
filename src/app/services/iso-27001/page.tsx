@@ -116,7 +116,7 @@ export default function IsoServicePage() {
                                 <div className="p-8 bg-primary-navy rounded-2xl text-white">
                                     <div className="flex gap-4 items-center mb-4">
                                         <Shield className="text-accent-coral" size={24} />
-                                        <div className="font-bold tracking-tight">100% First-Time Pass Rate</div>
+                                        <div className="font-bold tracking-tight">First-Time Pass Rate</div>
                                     </div>
                                     <p className="text-xs text-white/60 leading-relaxed">
                                         Our methodologies are built on years of hands-on lead auditor experience, ensuring that when the external body arrives, you have 0 major non-conformities.
