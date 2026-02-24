@@ -30,7 +30,7 @@ export default function IsoServicePage() {
                                 <span className="text-accent-coral underline decoration-from-font underline-offset-8">INFORMATION SECURITY.</span>
                             </h1>
                             <p className="text-xl text-neutral-500 leading-relaxed mb-10 max-w-2xl mx-auto">
-                                Building your Information Security Management System (ISMS) from the ground up. Expert-led preparation for the global supply chain with 100% first-time pass guarantee.
+                                Building your Information Security Management System (ISMS) from the ground up with expert-led preparation for the global supply chain, developed to maximizing first-time assessment outcomes.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link href="/contact">
