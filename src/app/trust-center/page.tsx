@@ -25,8 +25,8 @@ const pillars = [
         icon: Lock
     },
     {
-        title: "Zero-Failure Guarantee",
-        description: "Our methodology has achieved a 100% first-time pass rate for every client since inception. We don't stop until your certificate is issued.",
+        title: "Certification-Ready Approach",
+        description: "Our methodology is designed to help clients achieve certification efficiently through structured preparation, evidence alignment, and expert support at every stage.",
         icon: Award
     }
 ];
