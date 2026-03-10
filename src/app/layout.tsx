@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import { CookieConsentComponent } from "@/components/privacy/CookieConsent";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -81,6 +82,21 @@ export default function RootLayout({
           {children}
         </div>
         <CookieConsentComponent />
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-WR3XB1HFE2`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WR3XB1HFE2');
+          `}
+        </Script>
       </body>
     </html>
   );
