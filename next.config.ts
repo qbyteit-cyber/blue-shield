@@ -14,7 +14,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
       "img-src 'self' blob: data: https:; " +
       "font-src 'self' data: https://fonts.gstatic.com; " +
-      "connect-src 'self' https://vitals.vercel-insights.com https://*.sanity.io; " +
+      "connect-src 'self' https://vitals.vercel-insights.com https://*.sanity.io https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; " +
       "frame-ancestors 'none'; " +
       "object-src 'none'; " +
       "upgrade-insecure-requests;",
