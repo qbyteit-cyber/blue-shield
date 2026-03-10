@@ -120,7 +120,7 @@ export default function ISMSImplementationPage() {
                                     </Link>
                                 </div>
                                 <div className="flex flex-wrap gap-6 text-xs font-bold text-neutral-500">
-                                    <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> 100% First-Time Pass Rate</span>
+                                    <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> 100% Audit Readiness</span>
                                     <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> 12–16 Week Implementation</span>
                                     <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-success-emerald" /> ISO27001 + TISAX Aligned</span>
                                 </div>
@@ -180,7 +180,7 @@ export default function ISMSImplementationPage() {
                                     { label: "Frameworks Supported", value: "ISO27001 · TISAX · NIS2 · DORA" },
                                     { label: "Typical Timeline", value: "12–16 Weeks to Certification Readiness" },
                                     { label: "TISAX Overlap", value: "60–70% of TISAX Controls Satisfied" },
-                                    { label: "Success Rate", value: "100% First-Time Pass Rate" },
+                                    { label: "Success Rate", value: "100% Audit Readiness" },
                                 ].map((fact) => (
                                     <div key={fact.label} className="p-6 bg-neutral-50 rounded-2xl border border-neutral-100">
                                         <div className="text-[10px] font-black uppercase tracking-widest text-neutral-400 mb-2">{fact.label}</div>
