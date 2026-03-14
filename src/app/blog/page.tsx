@@ -19,12 +19,12 @@ export default async function BlogLandingPage() {
         );
     }
 
-    const featuredPost = posts[0];
-    const gridPosts = posts.slice(1);
+    const heroPosts = posts.slice(0, 3);
+    const gridPosts = posts.slice(3);
 
     return (
         <main className="min-h-screen bg-white">
-            <BlogHero post={featuredPost} />
+            <BlogHero posts={heroPosts} />
             {/* Could insert a Category Ribbon here in the future */}
             <BlogGrid posts={gridPosts} />
         </main>
