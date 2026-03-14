@@ -3,6 +3,8 @@ import HeroCarousel from "@/components/blog/HeroCarousel";
 import { BlogGrid } from "@/components/blog/BlogGrid";
 import { Metadata } from "next";
 import { toHeroSlide } from "@/lib/blog/adapters";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
     title: "Blog & Insights",
@@ -24,10 +26,14 @@ export default async function BlogLandingPage() {
     const gridPosts = posts.slice(3);
 
     return (
-        <main className="min-h-screen bg-white">
-            <HeroCarousel slides={heroPosts} />
-            {/* Could insert a Category Ribbon here in the future */}
-            <BlogGrid posts={gridPosts} />
-        </main>
+        <>
+            <Navbar />
+            <main className="min-h-screen bg-white">
+                <HeroCarousel slides={heroPosts} />
+                {/* Could insert a Category Ribbon here in the future */}
+                <BlogGrid posts={gridPosts} />
+            </main>
+            <Footer />
+        </>
     );
 }
