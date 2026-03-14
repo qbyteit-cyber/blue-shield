@@ -21,7 +21,7 @@ const mockAuthorIulian: BlogAuthor = {
 export const mockPosts: BlogPost[] = [
     {
         _id: "post-2",
-        title: "vCISO as a Service: Bridging the Security Leadership Gap",
+        title: "[vCISO](/services/outsourced-roles) as a Service: Bridging the Security Leadership Gap",
         slug: "vciso-as-a-service-benefits",
         publishedAt: "2026-03-07T19:10:37.481Z",
         excerpt: "For mid-sized automotive tier suppliers and technology service providers, hiring a full-time Chief Information Security Officer (CISO) is often prohibitively expensive and unnecessary for day-to-da...",
@@ -64,7 +64,7 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-3",
-        title: "ISO 27001:2022 Transition Toolkit: Updating Your ISMS",
+        title: "[ISO 27001](/services/iso-27001):2022 Transition Toolkit: Updating Your ISMS",
         slug: "iso-27001-2022-transition-toolkit",
         publishedAt: "2026-02-28T19:10:37.482Z",
         excerpt: "The transition period for the ISO/IEC 27001:2022 standard is rapidly closing. Organizations currently certified under the 2013 standard must upgrade their Information Security Management Systems (I...",
@@ -118,10 +118,10 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-4",
-        title: "The Anatomy of a Modern Penetration Test: Beyond Automated Scans",
+        title: "The Anatomy of a Modern [Penetration Test](/services/security-audits): Beyond Automated Scans",
         slug: "anatomy-modern-penetration-test",
         publishedAt: "2026-02-21T19:10:37.482Z",
-        excerpt: "In the enterprise security space, there is a dangerous misconception that running an automated vulnerability scanner constitutes a \"penetration test.\"",
+        excerpt: "In the enterprise security space, there is a dangerous misconception that running an automated vulnerability scanner constitutes a \"[penetration test](/services/security-audits).\"",
         mainImage: { asset: { url: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=800&auto=format&fit=crop" }, alt: "Blog post image" },
         author: mockAuthorIulian,
         categories: [mockCategories[0]],
@@ -154,10 +154,10 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-5",
-        title: "Navigating the NIS2 Directive: Securing Your Supply Chain",
+        title: "Navigating the [NIS2](/services/nis2) Directive: Securing Your Supply Chain",
         slug: "navigating-nis2-directive-supply-chain",
         publishedAt: "2026-02-14T19:10:37.482Z",
-        excerpt: "The updated Network and Information Security Directive (NIS2) completely overhauls the cybersecurity landscape across the European Union. Unlike its predecessor, NIS2 aggressively expands the scope...",
+        excerpt: "The updated Network and Information Security Directive ([NIS2](/services/nis2)) completely overhauls the cybersecurity landscape across the European Union. Unlike its predecessor, NIS2 aggressively expands the scope...",
         mainImage: { asset: { url: "https://images.unsplash.com/photo-1586528116311-ad8ed7c8260b?q=80&w=800&auto=format&fit=crop" }, alt: "Blog post image" },
         author: mockAuthorIulian,
         categories: [mockCategories[2], mockCategories[0]],
@@ -200,7 +200,7 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-6",
-        title: "Building a Cyber-Resilient Culture: Effective Security Awareness Training",
+        title: "Building a Cyber-Resilient Culture: Effective [Security Awareness Training](/services/training)",
         slug: "building-cyber-resilient-culture",
         publishedAt: "2026-02-07T19:10:37.482Z",
         excerpt: "Despite millions of dollars invested in Next-Generation Firewalls (NGFW), Endpoint Detection and Response (EDR), and [Cloud Security Posture Management (CSPM) tools](/blog/cspm-finding-misconfigura...",
@@ -242,10 +242,10 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-7",
-        title: "TISAX® vs. ISO 27001: Which Certification Does Your Business Actually Need?",
+        title: "[TISAX](/services/tisax)® vs. [ISO 27001](/services/iso-27001): Which Certification Does Your Business Actually Need?",
         slug: "tisax-vs-iso-27001-comparison",
         publishedAt: "2026-01-31T19:10:37.482Z",
-        excerpt: "For organizations navigating the complex landscape of information security compliance, deciding between ISO/IEC 27001 and TISAX® (Trusted Information Security Assessment Exchange) is a critical str...",
+        excerpt: "For organizations navigating the complex landscape of information security compliance, deciding between ISO/IEC 27001 and [TISAX](/services/tisax)® (Trusted Information Security Assessment Exchange) is a critical str...",
         mainImage: { asset: { url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" }, alt: "Blog post image" },
         author: mockAuthorIulian,
         categories: [mockCategories[1], mockCategories[4]],
@@ -332,7 +332,7 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-9",
-        title: "DORA: The Digital Operational Resilience Act Explained",
+        title: "[DORA](/services/dora): The Digital Operational Resilience Act Explained",
         slug: "dora-digital-operational-resilience-act",
         publishedAt: "2026-01-17T19:10:37.482Z",
         excerpt: "The financial sector is the primary target for advanced cybercrime syndicates and state-sponsored attacks. In response to the growing systemic risk posed by digital interconnectedness, the European...",
@@ -371,10 +371,10 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-10",
-        title: "Automotive Cybersecurity: Integrating ISO/SAE 21434 with TISAX®",
+        title: "Automotive Cybersecurity: Integrating ISO/SAE 21434 with [TISAX](/services/tisax)®",
         slug: "automotive-cybersecurity-iso-21434-tisax",
         publishedAt: "2026-01-10T19:10:37.482Z",
-        excerpt: "For automotive suppliers, the mandate for cybersecurity has never been more complex. Today's connected vehicles contain upwards of 100 million lines of code, transforming them into mobile data cent...",
+        excerpt: "For [automotive suppliers](/industries/automotive), the mandate for cybersecurity has never been more complex. Today's connected vehicles contain upwards of 100 million lines of code, transforming them into mobile data cent...",
         mainImage: { asset: { url: "https://images.unsplash.com/photo-1503378415752-9f37ff86af80?q=80&w=800&auto=format&fit=crop" }, alt: "Blog post image" },
         author: mockAuthorIulian,
         categories: [mockCategories[1], mockCategories[4]],
@@ -490,7 +490,7 @@ export const mockPosts: BlogPost[] = [
     },
     {
         _id: "post-13",
-        title: "Internal vs. External Audits for ISO 27001",
+        title: "Internal vs. External Audits for [ISO 27001](/services/iso-27001)",
         slug: "internal-vs-external-audits-iso-27001",
         publishedAt: "2025-12-20T19:10:37.482Z",
         excerpt: "Securing an ISO/IEC 27001 certification is a rigorous process involving multiple layers of assessment. For many organizations, the terminology surrounding the audit lifecycle—Stage 1, Stage 2, inte...",
