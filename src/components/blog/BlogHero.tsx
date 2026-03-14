@@ -29,8 +29,11 @@ export function BlogHero({ posts }: BlogHeroProps) {
     return (
         <section className="relative w-full overflow-hidden bg-[#001f3f] text-white">
             {/* Background gradient to match the dark blue aesthetic */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#001024] via-[#002244] to-[#013565] pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#001024] via-[#002244] to-[#013565] pointer-events-none" />
             
+            {/* Dark overlay specifically for image contrast */}
+            <div className="absolute inset-0 bg-black/40 z-[1] pointer-events-none" />
+
             {/* Decorative abstract curved lines (SVG) on the right */}
             <div className="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none opacity-40 mix-blend-screen flex justify-end">
                 <svg viewBox="0 0 1000 800" className="h-full w-auto object-cover transform translate-x-1/4 scale-150" xmlns="http://www.w3.org/2000/svg">
@@ -93,18 +96,21 @@ export function BlogHero({ posts }: BlogHeroProps) {
                                 <div className="w-full lg:w-1/2 flex flex-col items-start gap-5 lg:gap-6 justify-center">
                                     {/* Metadata Row */}
                                     <div className="flex flex-wrap items-center gap-3 text-sm font-medium">
-                                        <span className="text-white uppercase tracking-wider font-bold text-[11px] lg:text-xs">{category}</span>
-                                        <span className="text-white/70 text-xs lg:text-sm">{publishDate}</span>
+                                        <span className="text-white uppercase tracking-wider font-bold text-xs lg:text-sm">{category}</span>
+                                        <span className="text-white/80 text-xs lg:text-sm">{publishDate}</span>
                                         {authorName && (
-                                            <span className="text-white/70 text-xs lg:text-sm ml-1">{authorName}</span>
+                                            <>
+                                                <span className="text-white/60 text-xs">·</span>
+                                                <span className="text-white/80 text-xs lg:text-sm">{authorName}</span>
+                                            </>
                                         )}
                                     </div>
 
-                                    <Link href={`/blog/${post.slug}`} className="group space-y-3 lg:space-y-4">
-                                        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold leading-tight group-hover:text-blue-200 transition-colors duration-300">
+                                    <Link href={`/blog/${post.slug}`} className="group space-y-4 lg:space-y-6">
+                                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] group-hover:text-amber-400 transition-colors duration-300 drop-shadow-lg">
                                             {post.title}
                                         </h1>
-                                        <p className="text-base md:text-lg text-blue-100/80 line-clamp-3 leading-relaxed max-w-2xl font-light">
+                                        <p className="text-lg md:text-xl text-white/90 line-clamp-3 leading-relaxed max-w-2xl font-light drop-shadow">
                                             {post.excerpt}
                                         </p>
                                     </Link>
@@ -113,10 +119,13 @@ export function BlogHero({ posts }: BlogHeroProps) {
                                     <div className="flex items-center w-full mt-4 justify-between max-w-md">
                                         <Link
                                             href={`/blog/${post.slug}`}
-                                            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#0070f3] text-white font-semibold rounded-full hover:bg-blue-600 transition-colors duration-300 shadow-lg shadow-blue-500/20 text-sm whitespace-nowrap"
+                                            className="inline-flex items-center justify-center w-auto px-6 py-3 bg-[#0070f3] text-white font-bold rounded-full hover:bg-blue-600 transition-colors duration-300 shadow-xl group/btn gap-2"
+                                            aria-label="Read article"
                                         >
-                                            <ChevronRight className="w-4 h-4" strokeWidth={3} />
-                                            Read article
+                                            <span>Read article</span>
+                                            <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                            </svg>
                                         </Link>
 
                                         {/* Pagination Dots */}

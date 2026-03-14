@@ -34,7 +34,7 @@ export function BlogCard({ post }: BlogCardProps) {
                     {post.categories.map((category) => (
                         <span
                             key={category.slug}
-                            className="text-xs font-bold uppercase tracking-wider text-[#005686]"
+                            className="text-[10px] font-bold uppercase tracking-widest text-[#005686]"
                         >
                             {category.title}
                         </span>
