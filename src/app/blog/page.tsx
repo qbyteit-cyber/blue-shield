@@ -1,6 +1,7 @@
 import { getLatestPosts } from "@/lib/sanity/queries";
 import HeroCarousel from "@/components/blog/HeroCarousel";
 import { BlogGrid } from "@/components/blog/BlogGrid";
+import { ExploreTopics } from "@/components/blog/ExploreTopics";
 import { Metadata } from "next";
 import { toHeroSlide } from "@/lib/blog/adapters";
 import { Navbar } from "@/components/layout/navbar";
@@ -23,14 +24,27 @@ export default async function BlogLandingPage() {
     }
 
     const heroPosts = posts.slice(0, 3).map(toHeroSlide);
-    const gridPosts = posts.slice(3);
+    const heroPostIds = new Set(posts.slice(0, 3).map(p => p._id));
+
+    // Find up to 3 posts for the "Certifications" topic block, ensuring no overlap with Hero
+    const certificationsPosts = posts
+        .filter(post => !heroPostIds.has(post._id))
+        .filter(post => 
+            post.categories?.some(c => ['tisax', 'compliance', 'iso-27001'].includes(c.slug))
+        )
+        .slice(0, 3);
+        
+    const certPostIds = new Set(certificationsPosts.map(p => p._id));
+
+    // The rest goes to the grid
+    const gridPosts = posts.filter(p => !heroPostIds.has(p._id) && !certPostIds.has(p._id));
 
     return (
         <>
             <Navbar />
             <main className="min-h-screen bg-white">
                 <HeroCarousel slides={heroPosts} />
-                {/* Could insert a Category Ribbon here in the future */}
+                <ExploreTopics certificationsPosts={certificationsPosts} />
                 <BlogGrid posts={gridPosts} />
             </main>
             <Footer />
