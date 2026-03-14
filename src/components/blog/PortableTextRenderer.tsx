@@ -22,6 +22,9 @@ export function PortableTextRenderer({ blocks }: PortableTextRendererProps) {
                 if (block.style === "h3") {
                     return <h3 key={index}>{textContent}</h3>;
                 }
+                if (block.listItem === "bullet") {
+                    return <ul key={index} className="my-2"><li className="ml-6 list-disc">{textContent}</li></ul>;
+                }
                 return <p key={index}>{textContent}</p>;
             })}
         </div>
