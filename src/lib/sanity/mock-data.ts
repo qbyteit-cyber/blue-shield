@@ -21,15 +21,26 @@ const mockAuthorIulian: BlogAuthor = {
 export const mockPosts: BlogPost[] = [
     {
         _id: "post-1",
-        title: "Understanding TISAX® AL3: A Guide to the Highest Level of Information Security in Automotive",
-        slug: "understanding-tisax-al3-guide",
+        title: "What are the main requirements for TISAX certification?",
+        slug: "main-requirements-for-tisax-certification",
         publishedAt: "2026-03-01T10:00:00Z",
-        excerpt: "Achieving TISAX® Assessment Level 3 is critical for suppliers handling highly confidential data. We break down the requirements, common pitfalls, and how to fast-track your compliance.",
+        excerpt: "For automotive suppliers, the question is no longer if you need TISAX®, but how quickly and effectively you can achieve the required labels. We break down the core ISMS pillar, specialized modules, and the path to Maturity Level 3.",
         mainImage: { asset: { url: "https://images.unsplash.com/photo-1617814088514-6338be556d11?q=80&w=1200&auto=format&fit=crop" }, alt: "Automotive engineering and technical data" },
         author: mockAuthorIulian,
         categories: [mockCategories[1], mockCategories[4]],
         readTimeMinutes: 7,
-        body: [{ _type: "block", style: "normal", children: [{ _type: "span", text: "The automotive industry demands rigorous information security." }]}],
+        body: [
+            {
+                _type: "block",
+                style: "normal",
+                children: [
+                    {
+                        _type: "span",
+                        text: "For automotive suppliers, the question is no longer if you need TISAX® (Trusted Information Security Assessment Exchange), but how quickly and effectively you can achieve the required labels. As the industry moves toward higher levels of automation and digital integration, the requirements have become more rigorous, particularly with the release of VDA ISA 6.0.\n\nAt its core, TISAX is not a certification in the traditional sense like ISO 27001. It is an assessment and exchange mechanism. To obtain a TISAX label, your organization must demonstrate maturity across three specific catalogues defined by the VDA ISA (Information Security Assessment).\n\n1. The Core Pillar: Information Security\n\nThe primary requirement for nearly every TISAX assessment is the implementation of a robust Information Security Management System (ISMS). This catalogue is based heavily on ISO 27001 but contains automotive-specific enhancements.\n\nKey Requirements include:\n\nOrganizational Security: Defined roles, responsibilities, and management commitment.\n\nHuman Resources: Security training for all employees and strictly defined onboarding/offboarding processes.\n\nPhysical Security: Secure perimeters, access control for server rooms, and protection against environmental threats.\n\nIdentity and Access Management: Implementation of the \"Need-to-Know\" principle and multi-factor authentication (MFA) for sensitive systems.\n\nOperational Security: Documented patch management, malware protection, and backup strategies.\n\nIncident Management: A proven process for detecting, reporting, and responding to security breaches.\n\n2. Specialized Modules: Prototype & Data Protection\n\nDepending on your business model, you may be required to meet additional modules beyond basic information security.\n\nPrototype Protection: If you handle physical or digital vehicle prototypes, you must meet stringent physical security requirements. This includes visual shielding (preventing unauthorized views of prototypes), secure storage zones, and specialized handling protocols for test drives and events.\n\nData Protection: This module is based on the GDPR (Article 28). It is mandatory if you act as a \"Processor\" of personal data on behalf of an OEM, such as in marketing, HR services, or connected car data management.\n\n3. Understanding the Maturity Level 3 Requirement\n\nTISAX does not operate on a pass/fail basis. Instead, it uses a maturity model from 0 to 5. To receive a label, your organization must typically achieve a Maturity Level 3 (Established) for all relevant requirements.\n\nAn \"Established\" process means:\n\nThe process is fully documented.\n\nThe process is consistently followed by all relevant staff.\n\nThere is sustainable evidence that the process has been active over time.\n\n4. Assessment Levels (AL) and Audit Depth\n\nThe \"depth\" of your audit is determined by the sensitivity of the data you handle, assigned by your customer (the OEM).\n\nAssessment Level 1 (AL1): A self-assessment only. This is generally for internal purposes and does not result in a TISAX label for external exchange.\n\nAssessment Level 2 (AL2): A plausibility check of your self-assessment, usually conducted remotely via document review and interviews. This is common for \"Confidential\" information.\n\nAssessment Level 3 (AL3): A comprehensive audit including an on-site inspection of your facilities. This is mandatory for \"Strictly Confidential\" data or \"Prototype Protection.\"\n\nThe Strategic Path: Gap-to-Certified Lifecycle\n\nAt itis-secure.com, we view these requirements as more than a compliance checklist. They are the building blocks of digital resilience. Navigating VDA ISA 6.0 requires a strategic approach that bridges the gap between your current IT operations and the high-maturity expectations of the automotive industry.\n\nThe most efficient route to compliance involves a rigorous gap analysis followed by a structured implementation of the ISMS. This ensures that when the auditor arrives, every control is not just \"in place\" but \"established\" and demonstrable.\n\nNext Step for Your Business\nDoes your organization currently meet the Maturity Level 3 requirements for Information Security? Our experts specialize in the \"Gap-to-Certified Lifecycle,\" helping you secure your position in the automotive supply chain with minimal operational disruption."
+                    }
+                ]
+            }
+        ],
     },
     {
         _id: "post-2",
