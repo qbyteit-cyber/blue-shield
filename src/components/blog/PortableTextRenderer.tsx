@@ -8,7 +8,7 @@ interface PortableTextRendererProps {
 // This handles basic text rendering so the mock data displays beautifully.
 export function PortableTextRenderer({ blocks }: PortableTextRendererProps) {
     return (
-        <div className="prose prose-lg prose-slate max-w-none prose-headings:text-[#005686] prose-a:text-[#005686]">
+        <div className="prose prose-lg md:prose-xl prose-slate max-w-none prose-headings:text-[#005686] prose-headings:font-bold prose-h2:mt-12 prose-h2:mb-6 prose-p:text-slate-700 prose-p:leading-relaxed prose-a:text-[#0077c5] prose-a:underline hover:prose-a:text-[#005686] transition-colors prose-strong:text-slate-900">
             {blocks.map((block, index) => {
                 if (block._type !== "block" || !block.children) {
                     return null; // unsupported block type for this dummy renderer
