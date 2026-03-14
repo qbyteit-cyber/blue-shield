@@ -126,8 +126,8 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
                 </span>
               </div>
               
-              <h1>{slide.title}</h1>
-              <p>{slide.excerpt}</p>
+              <h1>{slide.title.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}</h1>
+              <p>{slide.excerpt.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}</p>
               
               <Link href={slide.href} className={styles.heroBtn} tabIndex={isActive ? 0 : -1}>
                 <span className={styles.heroBtnArrow} aria-hidden="true">

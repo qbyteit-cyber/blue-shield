@@ -43,12 +43,12 @@ export function BlogCard({ post }: BlogCardProps) {
 
                     {/* Title */}
                     <h3 className="text-[20px] font-semibold text-slate-900 mb-3 leading-[1.3] group-hover:text-[#0870d3] transition-colors line-clamp-3">
-                        {post.title}
+                        {post.title.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}
                     </h3>
 
                     {/* Excerpt */}
                     <p className="text-slate-600 text-[15px] leading-relaxed line-clamp-3 mb-4">
-                        {post.excerpt}
+                        {post.excerpt.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}
                     </p>
                     
                     {/* Optional: Add date at the bottom if needed to fill space, or leave empty as 3ds does for most masonry cards */}

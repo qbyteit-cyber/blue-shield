@@ -71,11 +71,11 @@ export default async function BlogPostPage({ params }: PageProps) {
                                 )}
                                 
                                 <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-white">
-                                    {post.title}
+                                    {post.title.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}
                                 </h1>
                                 
                                 <p className="text-lg md:text-xl text-slate-200 leading-relaxed max-w-2xl mb-8">
-                                    {post.excerpt}
+                                    {post.excerpt.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}
                                 </p>
 
                                 <div className="flex items-center gap-3">
