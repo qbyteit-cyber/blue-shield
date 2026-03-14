@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@import "../styles/tokens.css";
 
 @theme inline {
   --color-primary-navy: #0a2463;

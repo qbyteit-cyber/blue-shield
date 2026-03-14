@@ -1,0 +1,470 @@
+<!-- ═══════════════════════════════════════════════════════════════════
+     ITIS-SECURE — HERO CAROUSEL  (standalone, self-contained)
+     
+     Layout:  [IMAGE 47fr] [GAP 6fr] [TEXT 47fr]
+     Image:   aspect-ratio 5/3, border-radius 10px, deep shadow
+     Button:  pill shape, circled arrow LEFT of label
+     Slides:  3 items, auto-advance 6s, dot navigation bottom-right
+     BG:      --navy (#061626), animated wave SVG, radial blue glow
+     Font:    Plus Jakarta Sans 800 (Google Fonts)
+
+     USAGE IN YOUR PROJECT
+     ─────────────────────
+     1. Copy the <style> block into your global CSS (or a hero.css file).
+     2. Copy the <section class="hero"> block into your page template.
+     3. Copy the <script> block (or merge with your existing JS bundle).
+     4. Replace each SVG inside .hero-img-wrap with a real <img> tag:
+           <img src="/images/blog/article-slug.jpg" alt="…">
+     5. Update .hero-tag, .hero-byline, h1, p, and href="#" per article.
+     6. Add/remove <div class="hero-slide"> blocks as needed; 
+        update the dot buttons (data-t="…") to match slide count.
+     
+     CSS DEPENDENCIES
+     ─────────────────
+     Requires these CSS variables defined upstream (e.g. :root in base.css):
+       --navy: #061626
+       --blue: #1264d4
+       --blue-h: #1a72e8
+       --page-px: clamp(1.5rem, 5vw, 4rem)
+       --page-w: 1280px
+     (All vars are also declared inline below for standalone use.)
+════════════════════════════════════════════════════════════════════ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hero Section — ITIS-Secure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+
+  <style>
+  /* ── Reset (remove if already in your base styles) ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  /* ── Design tokens (remove if declared in your :root) ── */
+  :root {
+    --navy:    #061626;
+    --blue:    #1264d4;
+    --blue-h:  #1a72e8;
+    --page-px: clamp(1.5rem, 5vw, 4rem);
+    --page-w:  1280px;
+  }
+
+  /* ─────────────────────────────────────────────
+     HERO WRAPPER
+  ───────────────────────────────────────────── */
+  .hero {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+    padding: 0 var(--page-px);
+  }
+
+  /* Layered background effects */
+  .hero-glow {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 60% 90% at 100% 50%, rgba(18,100,212,.22) 0%, transparent 60%),
+      radial-gradient(ellipse 35% 50% at 0% 80%, rgba(6,22,38,.7) 0%, transparent 55%);
+  }
+  .hero-waves {
+    position: absolute; top: 0; right: 0; bottom: 0;
+    width: 58%; pointer-events: none; overflow: hidden;
+  }
+  .hero-waves svg { width: 100%; height: 100%; }
+
+  /* ─────────────────────────────────────────────
+     SLIDE  (hidden by default, .active = visible)
+     Grid: 47fr  6fr  47fr  = image | gap | text
+  ───────────────────────────────────────────── */
+  .hero-slide { display: none; }
+
+  .hero-slide.active {
+    display: grid;
+    grid-template-columns: 47fr 6fr 47fr;
+    align-items: center;
+    padding: 64px 0 72px;
+    min-height: 420px;
+    position: relative; z-index: 2;
+    max-width: var(--page-w);
+    margin: 0 auto;
+  }
+
+  /* ─────────────────────────────────────────────
+     IMAGE COLUMN  (col 1)
+  ───────────────────────────────────────────── */
+  .hero-img-col { grid-column: 1; }
+
+  .hero-img-wrap {
+    width: 100%;
+    aspect-ratio: 5 / 3;          /* exact reference ratio */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 24px 60px rgba(0,0,0,.5),
+      0  4px 16px rgba(0,0,0,.3);
+  }
+  /* When using real photos: */
+  .hero-img-wrap img {
+    width: 100%; height: 100%;
+    display: block; object-fit: cover;
+  }
+  /* When using SVG placeholders: */
+  .hero-img-wrap svg {
+    width: 100%; height: 100%; display: block;
+  }
+
+  /* ─────────────────────────────────────────────
+     TEXT COLUMN  (col 3)
+  ───────────────────────────────────────────── */
+  .hero-text-col { grid-column: 3; }
+
+  /* Eyebrow row: [CATEGORY TAG]  Date · Author */
+  .hero-meta {
+    display: flex; align-items: center; gap: .65rem;
+    margin-bottom: 1rem;
+  }
+  .hero-tag {
+    font-size: .65rem; font-weight: 800;
+    letter-spacing: .12em; text-transform: uppercase;
+    color: #fff;
+    background: rgba(255,255,255,.14);
+    padding: .22rem .6rem; border-radius: 3px;
+  }
+  .hero-byline { font-size: .8rem; color: rgba(255,255,255,.48); }
+  .hero-byline-sep { opacity: .4; }
+
+  /* Headline */
+  .hero-text-col h1 {
+    font-size: clamp(1.6rem, 2.5vw, 2.35rem);
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -.02em;
+    color: #fff;
+    margin-bottom: .9rem;
+  }
+
+  /* Excerpt */
+  .hero-text-col p {
+    font-size: .9rem; line-height: 1.72;
+    color: rgba(255,255,255,.58);
+    margin-bottom: 1.75rem;
+    max-width: 440px;
+  }
+
+  /* CTA button — pill, circled arrow LEFT of label */
+  .hero-btn {
+    display: inline-flex; align-items: center; gap: .55rem;
+    background: var(--blue); color: #fff;
+    padding: .65rem 1.35rem; border-radius: 100px;
+    font-size: .84rem; font-weight: 700;
+    transition: background .15s, transform .15s, box-shadow .15s;
+  }
+  .hero-btn:hover {
+    background: var(--blue-h);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(18,100,212,.5);
+  }
+  .hero-btn-arrow {
+    width: 18px; height: 18px; border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .hero-btn-arrow svg { width: 9px; height: 9px; }
+
+  /* ─────────────────────────────────────────────
+     DOT NAVIGATION  (bottom-right)
+  ───────────────────────────────────────────── */
+  .hero-dots {
+    position: absolute;
+    right: var(--page-px); bottom: 1.6rem;
+    display: flex; gap: .55rem; z-index: 10;
+  }
+  .hero-dot-btn {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: rgba(255,255,255,.28); padding: 0;
+    transition: background .2s, transform .2s;
+  }
+  .hero-dot-btn.on { background: #fff; transform: scale(1.15); }
+
+  /* ─────────────────────────────────────────────
+     RESPONSIVE
+  ───────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .hero-slide.active {
+      display: flex; flex-direction: column-reverse;
+      gap: 2rem; padding: 3rem 0;
+    }
+    .hero-img-col, .hero-text-col { width: 100%; }
+    .hero-text-col p { max-width: none; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     HERO CAROUSEL
+═══════════════════════════════════════════════════ -->
+<section class="hero">
+
+  <!-- Background layers (decorative, no markup changes needed) -->
+  <div class="hero-glow"></div>
+  <div class="hero-waves">
+    <svg viewBox="0 0 720 420" fill="none" preserveAspectRatio="xMaxYMid slice" style="width:100%;height:100%">
+      <path d="M-40 70  Q240 30  500 170 T780 130" stroke="white" stroke-width="1.1" fill="none" opacity=".18"/>
+      <path d="M-40 130 Q240 90  500 230 T780 190" stroke="white" stroke-width=".95" fill="none" opacity=".16"/>
+      <path d="M-40 190 Q240 150 500 290 T780 250" stroke="white" stroke-width=".8"  fill="none" opacity=".14"/>
+      <path d="M-40 250 Q240 210 500 350 T780 310" stroke="white" stroke-width=".65" fill="none" opacity=".12"/>
+      <path d="M-40 310 Q240 270 500 400 T780 370" stroke="white" stroke-width=".5"  fill="none" opacity=".1"/>
+      <path d="M-40 370 Q240 330 500 450 T780 430" stroke="white" stroke-width=".4"  fill="none" opacity=".08"/>
+      <path d="M-40 20  Q220  0  460 120 T760 80"  stroke="white" stroke-width=".75" fill="none" opacity=".14"/>
+    </svg>
+  </div>
+
+  <!--
+    ═══════════════ SLIDE 1 ═══════════════
+    Replace the SVG inside .hero-img-wrap with:
+      <img src="/images/your-photo.jpg" alt="Article description">
+    Update .hero-tag, .hero-byline, h1, p, and href per article.
+  -->
+  <div class="hero-slide active" id="hs0">
+    <div class="hero-img-col">
+      <div class="hero-img-wrap">
+        <!--
+          REPLACE THIS SVG with your article's featured image:
+          <img src="/images/blog/vda-isa-6.jpg" alt="VDA ISA 6.0 dashboard">
+        -->
+        <svg viewBox="0 0 540 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="540" height="324" fill="#072040"/>
+          <g opacity=".045" stroke="white" stroke-width=".8">
+            <line x1="0" y1="54" x2="540" y2="54"/><line x1="0" y1="108" x2="540" y2="108"/>
+            <line x1="0" y1="162" x2="540" y2="162"/><line x1="0" y1="216" x2="540" y2="216"/>
+            <line x1="0" y1="270" x2="540" y2="270"/>
+            <line x1="90" y1="0" x2="90" y2="324"/><line x1="180" y1="0" x2="180" y2="324"/>
+            <line x1="270" y1="0" x2="270" y2="324"/><line x1="360" y1="0" x2="360" y2="324"/>
+            <line x1="450" y1="0" x2="450" y2="324"/>
+          </g>
+          <rect x="52" y="38" width="436" height="248" rx="10" fill="#0c2e58" stroke="rgba(18,100,212,.35)" stroke-width="1"/>
+          <rect x="52" y="38" width="436" height="42" rx="10" fill="#0f3468"/>
+          <rect x="52" y="62" width="436" height="18" fill="#0f3468"/>
+          <circle cx="78" cy="59" r="6" fill="rgba(255,255,255,.11)"/><circle cx="95" cy="59" r="6" fill="rgba(255,255,255,.07)"/><circle cx="112" cy="59" r="6" fill="rgba(255,255,255,.05)"/>
+          <text x="270" y="63" text-anchor="middle" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,.44)" letter-spacing="1">VDA ISA 6.0 · Assessment Dashboard</text>
+          <rect x="72" y="98" width="100" height="42" rx="5" fill="rgba(16,185,129,.11)" stroke="rgba(16,185,129,.28)" stroke-width="1"/>
+          <text x="122" y="115" text-anchor="middle" font-family="monospace" font-size="7" fill="#6ee7b7" letter-spacing=".5">STATUS</text>
+          <text x="122" y="130" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">CERTIFIED</text>
+          <rect x="182" y="98" width="100" height="42" rx="5" fill="rgba(245,158,11,.1)" stroke="rgba(245,158,11,.25)" stroke-width="1"/>
+          <text x="232" y="115" text-anchor="middle" font-family="monospace" font-size="7" fill="#fbbf24" letter-spacing=".5">LEVEL</text>
+          <text x="232" y="130" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#f59e0b">AL3</text>
+          <rect x="292" y="98" width="100" height="42" rx="5" fill="rgba(18,100,212,.1)" stroke="rgba(18,100,212,.28)" stroke-width="1"/>
+          <text x="342" y="115" text-anchor="middle" font-family="monospace" font-size="7" fill="#93c5fd" letter-spacing=".5">VALIDITY</text>
+          <text x="342" y="130" text-anchor="middle" font-family="monospace" font-size="9.5" font-weight="bold" fill="#60a5fa">12 months</text>
+          <text x="72" y="162" font-family="monospace" font-size="8" fill="rgba(255,255,255,.38)">Control Coverage</text>
+          <rect x="72" y="168" width="320" height="7" rx="3.5" fill="rgba(255,255,255,.07)"/>
+          <rect x="72" y="168" width="285" height="7" rx="3.5" fill="#1264d4"/>
+          <text x="400" y="175" font-family="monospace" font-size="8" fill="rgba(255,255,255,.5)">89%</text>
+          <text x="72" y="196" font-family="monospace" font-size="8" fill="rgba(255,255,255,.38)">Prototype Protection</text>
+          <rect x="72" y="202" width="320" height="7" rx="3.5" fill="rgba(255,255,255,.07)"/>
+          <rect x="72" y="202" width="298" height="7" rx="3.5" fill="#10b981"/>
+          <text x="400" y="209" font-family="monospace" font-size="8" fill="rgba(255,255,255,.5)">93%</text>
+          <text x="72" y="230" font-family="monospace" font-size="8" fill="rgba(255,255,255,.38)">Third-Party Risk</text>
+          <rect x="72" y="236" width="320" height="7" rx="3.5" fill="rgba(255,255,255,.07)"/>
+          <rect x="72" y="236" width="224" height="7" rx="3.5" fill="#f59e0b"/>
+          <text x="400" y="243" font-family="monospace" font-size="8" fill="rgba(255,255,255,.5)">70%</text>
+          <path d="M438 52 L480 67 L480 100 Q480 128 438 137 Q396 128 396 100 L396 67 Z" fill="rgba(18,100,212,.18)" stroke="rgba(18,100,212,.55)" stroke-width="1.5"/>
+          <path d="M422 97 L430 105 L454 82" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="52" y="268" width="436" height="18" fill="rgba(4,22,38,.35)"/>
+          <text x="270" y="279" text-anchor="middle" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,.28)" letter-spacing="1">ITIS-Secure · TISAX® Intelligence Platform</text>
+          <ellipse cx="270" cy="162" rx="210" ry="120" fill="rgba(18,100,212,.04)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-text-col">
+      <div class="hero-meta">
+        <span class="hero-tag">TISAX® AL3</span>
+        <span class="hero-byline">June 4, 2025 <span class="hero-byline-sep">&middot;</span> Dr. Stefan Ionescu</span>
+      </div>
+      <h1>VDA ISA 6.0 Is Here: What Automotive Tier&#8209;1 Suppliers Must Do Before Their Next Audit</h1>
+      <p>The updated Information Security Assessment catalogue raises the bar for prototype protection and third-party risk. Every material change mapped, with a remediation path for your 2025 label renewal.</p>
+      <a href="#" class="hero-btn">
+        <span class="hero-btn-arrow">
+          <svg fill="none" viewBox="0 0 9 9"><path d="M1 4.5h7M5 2l2.5 2.5L5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Read article
+      </a>
+    </div>
+  </div>
+
+  <!--
+    ═══════════════ SLIDE 2 ═══════════════
+    Duplicate this block for each additional article.
+    Add matching dot button below (data-t="1").
+  -->
+  <div class="hero-slide" id="hs1">
+    <div class="hero-img-col">
+      <div class="hero-img-wrap">
+        <!-- REPLACE with: <img src="/images/blog/nis2-tracker.jpg" alt="NIS2 EU map"> -->
+        <svg viewBox="0 0 540 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="540" height="324" fill="#060e1e"/>
+          <g opacity=".045" stroke="white" stroke-width=".8">
+            <line x1="0" y1="54" x2="540" y2="54"/><line x1="0" y1="108" x2="540" y2="108"/>
+            <line x1="0" y1="162" x2="540" y2="162"/><line x1="0" y1="216" x2="540" y2="216"/>
+            <line x1="0" y1="270" x2="540" y2="270"/>
+            <line x1="90" y1="0" x2="90" y2="324"/><line x1="180" y1="0" x2="180" y2="324"/>
+            <line x1="270" y1="0" x2="270" y2="324"/><line x1="360" y1="0" x2="360" y2="324"/>
+            <line x1="450" y1="0" x2="450" y2="324"/>
+          </g>
+          <circle cx="156" cy="108" r="20" fill="#0c2550" stroke="rgba(18,100,212,.5)" stroke-width="1.5"/><text x="156" y="112" text-anchor="middle" font-family="monospace" font-size="9" fill="#93c5fd">DE</text>
+          <circle cx="300" cy="82" r="20" fill="#0c2550" stroke="rgba(18,100,212,.5)" stroke-width="1.5"/><text x="300" y="86" text-anchor="middle" font-family="monospace" font-size="9" fill="#93c5fd">FR</text>
+          <circle cx="192" cy="228" r="20" fill="#0c2550" stroke="rgba(18,100,212,.45)" stroke-width="1.5"/><text x="192" y="232" text-anchor="middle" font-family="monospace" font-size="9" fill="#93c5fd">RO</text>
+          <circle cx="378" cy="218" r="20" fill="#0c2550" stroke="rgba(18,100,212,.45)" stroke-width="1.5"/><text x="378" y="222" text-anchor="middle" font-family="monospace" font-size="9" fill="#93c5fd">NL</text>
+          <circle cx="420" cy="118" r="20" fill="#0c2550" stroke="rgba(245,158,11,.45)" stroke-width="1.5"/><text x="420" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#fbbf24">PL</text>
+          <circle cx="252" cy="138" r="20" fill="#0c2550" stroke="rgba(16,185,129,.45)" stroke-width="1.5"/><text x="252" y="142" text-anchor="middle" font-family="monospace" font-size="9" fill="#6ee7b7">IT</text>
+          <circle cx="270" cy="172" r="36" fill="#0e2e5c" stroke="rgba(18,100,212,.75)" stroke-width="2"/>
+          <text x="270" y="167" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#60a5fa">NIS2</text>
+          <text x="270" y="182" text-anchor="middle" font-family="monospace" font-size="8" fill="rgba(255,255,255,.42)">Directive</text>
+          <line x1="176" y1="108" x2="237" y2="158" stroke="rgba(18,100,212,.3)" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="300" y1="102" x2="282" y2="138" stroke="rgba(18,100,212,.3)" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="212" y1="228" x2="248" y2="206" stroke="rgba(18,100,212,.3)" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="358" y1="218" x2="304" y2="192" stroke="rgba(18,100,212,.3)" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="401" y1="118" x2="304" y2="162" stroke="rgba(245,158,11,.3)" stroke-width="1" stroke-dasharray="4 3"/>
+          <rect x="52" y="274" width="120" height="26" rx="5" fill="rgba(16,185,129,.1)" stroke="rgba(16,185,129,.28)" stroke-width="1"/>
+          <text x="112" y="291" text-anchor="middle" font-family="monospace" font-size="8" fill="#10b981">&#10003; Transposed (18)</text>
+          <rect x="182" y="274" width="130" height="26" rx="5" fill="rgba(245,158,11,.09)" stroke="rgba(245,158,11,.25)" stroke-width="1"/>
+          <text x="247" y="291" text-anchor="middle" font-family="monospace" font-size="8" fill="#f59e0b">&#9888; In Progress (7)</text>
+          <rect x="322" y="274" width="120" height="26" rx="5" fill="rgba(244,63,94,.09)" stroke="rgba(244,63,94,.25)" stroke-width="1"/>
+          <text x="382" y="291" text-anchor="middle" font-family="monospace" font-size="8" fill="#fb7185">&#10005; Pending (2)</text>
+          <ellipse cx="270" cy="172" rx="130" ry="80" fill="rgba(18,100,212,.055)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-text-col">
+      <div class="hero-meta">
+        <span class="hero-tag">NIS2 Directive</span>
+        <span class="hero-byline">May 22, 2025 <span class="hero-byline-sep">&middot;</span> Ana-Maria Popa</span>
+      </div>
+      <h1>NIS2 Transposition Tracker: Where Each EU Member State Stands Right Now</h1>
+      <p>The October 2024 deadline has passed. We map the legislative status across all 27 member states and the compliance implications for essential and important entities operating cross-border.</p>
+      <a href="#" class="hero-btn">
+        <span class="hero-btn-arrow">
+          <svg fill="none" viewBox="0 0 9 9"><path d="M1 4.5h7M5 2l2.5 2.5L5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Read article
+      </a>
+    </div>
+  </div>
+
+  <!--
+    ═══════════════ SLIDE 3 ═══════════════
+  -->
+  <div class="hero-slide" id="hs2">
+    <div class="hero-img-col">
+      <div class="hero-img-wrap">
+        <!-- REPLACE with: <img src="/images/blog/iso27001-soa.jpg" alt="ISO 27001 certificate"> -->
+        <svg viewBox="0 0 540 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="540" height="324" fill="#061830"/>
+          <g opacity=".045" stroke="white" stroke-width=".8">
+            <line x1="0" y1="54" x2="540" y2="54"/><line x1="0" y1="108" x2="540" y2="108"/>
+            <line x1="0" y1="162" x2="540" y2="162"/><line x1="0" y1="216" x2="540" y2="216"/>
+            <line x1="0" y1="270" x2="540" y2="270"/>
+            <line x1="90" y1="0" x2="90" y2="324"/><line x1="180" y1="0" x2="180" y2="324"/>
+            <line x1="270" y1="0" x2="270" y2="324"/><line x1="360" y1="0" x2="360" y2="324"/>
+            <line x1="450" y1="0" x2="450" y2="324"/>
+          </g>
+          <rect x="78" y="30" width="228" height="264" rx="8" fill="#0c2a50" stroke="rgba(18,100,212,.35)" stroke-width="1.2"/>
+          <rect x="78" y="30" width="228" height="40" rx="8" fill="#0f3268"/>
+          <rect x="78" y="54" width="228" height="16" fill="#0f3268"/>
+          <text x="192" y="55" text-anchor="middle" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,.42)" letter-spacing="1.5">CERTIFICATE OF CONFORMITY</text>
+          <text x="192" y="95" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(255,255,255,.36)">ISO/IEC</text>
+          <text x="192" y="128" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1264d4">27001</text>
+          <text x="192" y="146" text-anchor="middle" font-family="monospace" font-size="8" fill="rgba(255,255,255,.38)">:2022 Information Security Management</text>
+          <line x1="95" y1="158" x2="289" y2="158" stroke="rgba(255,255,255,.07)" stroke-width="1"/>
+          <path d="M100 174 L106 180 L118 168" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="128" y="180" font-family="monospace" font-size="8" fill="rgba(255,255,255,.52)">Certified ISMS</text>
+          <path d="M100 196 L106 202 L118 190" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="128" y="202" font-family="monospace" font-size="8" fill="rgba(255,255,255,.52)">93 Annex A Controls</text>
+          <path d="M100 218 L106 224 L118 212" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="128" y="224" font-family="monospace" font-size="8" fill="rgba(255,255,255,.52)">First-Time Pass Rate</text>
+          <path d="M100 240 L106 246 L118 234" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="128" y="246" font-family="monospace" font-size="8" fill="rgba(255,255,255,.52)">3-Year Validity Period</text>
+          <circle cx="258" cy="272" r="22" fill="#08203a" stroke="rgba(245,158,11,.5)" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <text x="258" y="269" text-anchor="middle" font-family="monospace" font-size="7" font-weight="bold" fill="#f59e0b">CERT</text>
+          <text x="258" y="279" text-anchor="middle" font-family="monospace" font-size="6" fill="rgba(245,158,11,.6)">2025</text>
+          <rect x="322" y="52" width="166" height="220" rx="7" fill="rgba(12,42,80,.6)" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+          <text x="405" y="78" text-anchor="middle" font-family="monospace" font-size="8" fill="rgba(255,255,255,.36)" letter-spacing=".5">SCOPE COVERAGE</text>
+          <rect x="340" y="86" width="130" height="8" rx="4" fill="rgba(255,255,255,.07)"/>
+          <rect x="340" y="86" width="116" height="8" rx="4" fill="#1264d4"/>
+          <text x="478" y="94" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,.45)">89%</text>
+          <text x="340" y="116" font-family="monospace" font-size="8" fill="rgba(255,255,255,.36)" letter-spacing=".5">RISK TREATMENT</text>
+          <rect x="340" y="124" width="130" height="8" rx="4" fill="rgba(255,255,255,.07)"/>
+          <rect x="340" y="124" width="124" height="8" rx="4" fill="#10b981"/>
+          <text x="478" y="132" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,.45)">95%</text>
+          <text x="340" y="154" font-family="monospace" font-size="8" fill="rgba(255,255,255,.36)" letter-spacing=".5">AUDIT READINESS</text>
+          <rect x="340" y="162" width="130" height="8" rx="4" fill="rgba(255,255,255,.07)"/>
+          <rect x="340" y="162" width="102" height="8" rx="4" fill="#f59e0b"/>
+          <text x="478" y="170" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,.45)">78%</text>
+          <ellipse cx="270" cy="162" rx="240" ry="130" fill="rgba(18,100,212,.03)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-text-col">
+      <div class="hero-meta">
+        <span class="hero-tag">ISO 27001</span>
+        <span class="hero-byline">May 30, 2025 <span class="hero-byline-sep">&middot;</span> Mihai Dragomir</span>
+      </div>
+      <h1>Statement of Applicability: How to Write One That Actually Passes the Audit</h1>
+      <p>The SoA is the most scrutinised document in any ISO 27001 certification. Build one that is auditor-ready and operationally useful &mdash; without creating compliance debt downstream.</p>
+      <a href="#" class="hero-btn">
+        <span class="hero-btn-arrow">
+          <svg fill="none" viewBox="0 0 9 9"><path d="M1 4.5h7M5 2l2.5 2.5L5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Read article
+      </a>
+    </div>
+  </div>
+
+  <!-- Dot navigation: one button per slide, data-t = slide index -->
+  <div class="hero-dots">
+    <button class="hero-dot-btn on" data-t="0"></button>
+    <button class="hero-dot-btn"    data-t="1"></button>
+    <button class="hero-dot-btn"    data-t="2"></button>
+  </div>
+
+</section><!-- /hero -->
+
+
+<script>
+/* ── Hero carousel — zero-dependency, ~500 bytes ── */
+(function () {
+  var slides = document.querySelectorAll('.hero-slide');
+  var btns   = document.querySelectorAll('.hero-dot-btn');
+  var cur = 0, timer;
+
+  function go(n) {
+    slides[cur].classList.remove('active');
+    btns[cur].classList.remove('on');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    btns[cur].classList.add('on');
+  }
+
+  btns.forEach(function (b, i) {
+    b.addEventListener('click', function () { go(i); reset(); });
+  });
+
+  function reset() {
+    clearInterval(timer);
+    timer = setInterval(function () { go(cur + 1); }, 6000);
+  }
+  reset();
+})();
+</script>
+
+</body>
+</html>

@@ -1,7 +1,8 @@
 import { getLatestPosts } from "@/lib/sanity/queries";
-import { BlogHero } from "@/components/blog/BlogHero";
+import HeroCarousel from "@/components/blog/HeroCarousel";
 import { BlogGrid } from "@/components/blog/BlogGrid";
 import { Metadata } from "next";
+import { toHeroSlide } from "@/lib/blog/adapters";
 
 export const metadata: Metadata = {
     title: "Blog & Insights",
@@ -19,12 +20,12 @@ export default async function BlogLandingPage() {
         );
     }
 
-    const heroPosts = posts.slice(0, 3);
+    const heroPosts = posts.slice(0, 3).map(toHeroSlide);
     const gridPosts = posts.slice(3);
 
     return (
         <main className="min-h-screen bg-white">
-            <BlogHero posts={heroPosts} />
+            <HeroCarousel slides={heroPosts} />
             {/* Could insert a Category Ribbon here in the future */}
             <BlogGrid posts={gridPosts} />
         </main>

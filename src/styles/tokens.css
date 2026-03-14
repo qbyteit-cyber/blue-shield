@@ -1,0 +1,7 @@
+:root {
+  --navy: #061626;
+  --blue: #1264d4;
+  --blue-h: #1a72e8;
+  --page-px: clamp(1.5rem, 5vw, 4rem);
+  --page-w: 1280px;
+}
