@@ -15,17 +15,25 @@ export function PortableTextRenderer({ blocks }: PortableTextRendererProps) {
                 }
 
                 const textContent = block.children.map((child: any) => child.text).join("");
+                
+                // Super simple regex to convert **bold** and [link](url) to HTML
+                const htmlContent = textContent
+                    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
 
                 if (block.style === "h2") {
-                    return <h2 key={index}>{textContent}</h2>;
+                    return <h2 key={index} dangerouslySetInnerHTML={{ __html: htmlContent }} />;
                 }
                 if (block.style === "h3") {
-                    return <h3 key={index}>{textContent}</h3>;
+                    return <h3 key={index} dangerouslySetInnerHTML={{ __html: htmlContent }} />;
                 }
                 if (block.listItem === "bullet") {
-                    return <ul key={index} className="my-2"><li className="ml-6 list-disc">{textContent}</li></ul>;
+                    return <ul key={index} className="my-2"><li className="ml-6 list-disc" dangerouslySetInnerHTML={{ __html: htmlContent }} /></ul>;
                 }
-                return <p key={index}>{textContent}</p>;
+                if (block.listItem === "number") {
+                    return <ol key={index} className="my-2"><li className="ml-6 list-decimal" dangerouslySetInnerHTML={{ __html: htmlContent }} /></ol>;
+                }
+                return <p key={index} dangerouslySetInnerHTML={{ __html: htmlContent }} />;
             })}
         </div>
     );
