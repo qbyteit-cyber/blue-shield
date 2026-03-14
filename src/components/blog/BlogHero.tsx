@@ -60,7 +60,7 @@ export function BlogHero({ posts }: BlogHeroProps) {
                         });
                         
                         // Author Name
-                        const authorName = post.author?.name || "Hub ITIS Secure";
+                        const authorName = post.author?.name || "Iulian";
                         
                         // Category
                         const category = post.categories?.[0]?.title || "Article";
@@ -96,10 +96,7 @@ export function BlogHero({ posts }: BlogHeroProps) {
                                         <span className="text-white uppercase tracking-wider font-bold text-[11px] lg:text-xs">{category}</span>
                                         <span className="text-white/70 text-xs lg:text-sm">{publishDate}</span>
                                         {authorName && (
-                                            <>
-                                                <span className="text-white/40 text-xs">—</span>
-                                                <span className="text-white/70 text-xs lg:text-sm">{authorName}</span>
-                                            </>
+                                            <span className="text-white/70 text-xs lg:text-sm ml-1">{authorName}</span>
                                         )}
                                     </div>
 
@@ -113,7 +110,7 @@ export function BlogHero({ posts }: BlogHeroProps) {
                                     </Link>
 
                                     {/* Action Row */}
-                                    <div className="flex items-center w-full mt-4 gap-8">
+                                    <div className="flex items-center w-full mt-4 justify-between max-w-md">
                                         <Link
                                             href={`/blog/${post.slug}`}
                                             className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#0070f3] text-white font-semibold rounded-full hover:bg-blue-600 transition-colors duration-300 shadow-lg shadow-blue-500/20 text-sm whitespace-nowrap"
@@ -123,18 +120,18 @@ export function BlogHero({ posts }: BlogHeroProps) {
                                         </Link>
 
                                         {/* Pagination Dots */}
-                                        <div className="flex items-center gap-3">
+                                        <div className="flex items-center gap-4 pl-8">
                                             {posts.map((_, dotIndex) => (
                                                 <button
                                                     key={`dot-${dotIndex}`}
                                                     onClick={() => setCurrentIndex(dotIndex)}
-                                                    className="relative flex items-center justify-center w-6 h-6 focus:outline-none group"
+                                                    className="relative flex items-center justify-center w-4 h-4 focus:outline-none group"
                                                     aria-label={`Go to slide ${dotIndex + 1}`}
                                                 >
                                                     {dotIndex === currentIndex ? (
                                                         // Active dot with outline
                                                         <>
-                                                            <span className="absolute w-5 h-5 rounded-full border-[1.5px] border-white"></span>
+                                                            <span className="absolute w-6 h-6 rounded-full border-[1.5px] border-white"></span>
                                                             <span className="w-1.5 h-1.5 rounded-full bg-white z-10"></span>
                                                         </>
                                                     ) : (

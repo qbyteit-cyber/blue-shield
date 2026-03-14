@@ -15,7 +15,7 @@ export function BlogCard({ post }: BlogCardProps) {
         year: 'numeric'
     });
 
-    const authorName = post.author?.name || "Hub ITIS Secure";
+    const authorName = post.author?.name || "Iulian";
 
     return (
         <article className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100 h-full">
