@@ -15,59 +15,48 @@ export function BlogCard({ post }: BlogCardProps) {
         year: 'numeric'
     });
 
-    const authorName = post.author?.name || "Iulian";
+    const categoryName = post.categories?.[0]?.title || "Article";
 
     return (
-        <article className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100 h-full">
-            <Link href={`/blog/${post.slug}`} className="relative aspect-video w-full overflow-hidden block">
-                <Image
-                    src={post.mainImage.asset.url}
-                    alt={post.mainImage.alt || post.title}
-                    fill
-                    className="object-cover transform transition-transform duration-700 group-hover:scale-105"
-                />
-            </Link>
+        <article className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 w-full h-full">
+            <Link href={`/blog/${post.slug}`} className="flex flex-col h-full">
+                {/* Image (if present) */}
+                {post.mainImage && (
+                    <div className="relative aspect-video w-full overflow-hidden bg-slate-100 shrink-0">
+                        <Image
+                            src={post.mainImage.asset.url}
+                            alt={post.mainImage.alt || post.title}
+                            fill
+                            className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.03]"
+                        />
+                    </div>
+                )}
 
-            <div className="flex flex-col flex-grow p-6 sm:p-8">
-                {/* Categories */}
-                <div className="flex flex-wrap gap-2 mb-3">
-                    {post.categories.map((category) => (
-                        <span
-                            key={category.slug}
-                            className="text-[10px] font-bold uppercase tracking-widest text-[#005686]"
-                        >
-                            {category.title}
+                {/* Content Container */}
+                <div className="flex flex-col flex-grow p-6">
+                    {/* Category tags */}
+                    <div className="mb-3">
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 group-hover:text-[#0870d3] transition-colors">
+                            {categoryName}
                         </span>
-                    ))}
-                </div>
-
-                {/* Title & Excerpt */}
-                <Link href={`/blog/${post.slug}`} className="flex-grow group/text block">
-                    <h3 className="text-[1.35rem] font-bold text-slate-900 leading-tight mb-3 group-hover/text-[#005686] transition-colors duration-200 line-clamp-2">
-                        {post.title}
-                    </h3>
-                    <p className="text-slate-600 text-base leading-relaxed line-clamp-3 mb-6">
-                        {post.excerpt}
-                    </p>
-                </Link>
-
-                {/* Engagement Row */}
-                <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-sm text-slate-500">
-                    <div className="flex items-center gap-2">
-                        <span>{publishDate}</span>
-                        <span className="w-1 h-1 rounded-full bg-slate-300"></span>
-                        <span className="truncate max-w-[120px]">{authorName}</span>
                     </div>
 
-                    <Link 
-                        href={`/blog/${post.slug}`}
-                        className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-50 group-hover:bg-[#005686] text-[#005686] group-hover:text-white transition-colors duration-300"
-                        aria-label="Read article"
-                    >
-                        <ChevronRight className="w-4 h-4 ml-0.5" strokeWidth={3} />
-                    </Link>
+                    {/* Title */}
+                    <h3 className="text-[20px] font-semibold text-slate-900 mb-3 leading-[1.3] group-hover:text-[#0870d3] transition-colors line-clamp-3">
+                        {post.title}
+                    </h3>
+
+                    {/* Excerpt */}
+                    <p className="text-slate-600 text-[15px] leading-relaxed line-clamp-3 mb-4">
+                        {post.excerpt}
+                    </p>
+                    
+                    {/* Optional: Add date at the bottom if needed to fill space, or leave empty as 3ds does for most masonry cards */}
+                    <div className="mt-auto pt-2">
+                        <span className="text-[13px] text-slate-400 font-medium">{publishDate}</span>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </article>
     );
 }
